@@ -309,7 +309,7 @@
       "steamId64": "76561199803716461",
       "steamId": "STEAM_0:1:921725366",
       "nickname": "-Jersey",
-      "rpName": "{rank} 08-5551 Arctic",
+      "rpName": "PVT 08-5551 Arctic",
       "formation": "Боец 821-ого Батальона",
       "formationId": "821st_trooper",
       "rank": "Рядовой",
@@ -320,30 +320,30 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "Hair": 0,
-        "Facial Hair": 0,
-        "helmet attachments": 1,
-        "helmet": 0,
-        "body": 0,
-        "armor": 0,
-        "Backpack": 0
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-02T21:13:45Z",
-      "lastSeen": "2026-06-02T21:13:45Z",
+      "updatedAt": "2026-06-02T21:15:02Z",
+      "lastSeen": "2026-06-02T21:15:02Z",
       "characterId": "354",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561199803716461",
           "steamId": "STEAM_0:1:921725366",
           "characterId": "354",
           "nickname": "-Jersey",
-          "rpName": "{rank} 08-5551 Arctic",
+          "rpName": "PVT 08-5551 Arctic",
           "formation": "Боец 821-ого Батальона",
           "formationId": "821st_trooper",
           "rank": "Рядовой",
@@ -354,22 +354,22 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "Hair": 0,
-            "Facial Hair": 0,
-            "helmet attachments": 1,
-            "helmet": 0,
-            "body": 0,
-            "armor": 0,
-            "Backpack": 0
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 100,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-02T21:13:45Z",
-          "lastSeen": "2026-06-02T21:13:45Z"
+          "updatedAt": "2026-06-02T21:15:02Z",
+          "lastSeen": "2026-06-02T21:15:02Z"
         }
       ]
     },
@@ -430,5 +430,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-02T21:15:00.610Z"
+  "updatedAt": "2026-06-02T21:15:03.238Z"
 }
