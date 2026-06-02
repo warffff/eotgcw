@@ -28,8 +28,8 @@
       "armor": 450,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-02T21:11:45Z",
-      "lastSeen": "2026-06-02T21:11:45Z",
+      "updatedAt": "2026-06-02T21:13:45Z",
+      "lastSeen": "2026-06-02T21:13:45Z",
       "characterId": "279",
       "active": true,
       "characters": [
@@ -63,8 +63,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-02T21:11:45Z",
-          "lastSeen": "2026-06-02T21:11:45Z"
+          "updatedAt": "2026-06-02T21:13:45Z",
+          "lastSeen": "2026-06-02T21:13:45Z"
         },
         {
           "steamId64": "76561198853890221",
@@ -88,8 +88,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-02T21:11:45Z",
-          "lastSeen": "2026-06-02T21:11:45Z"
+          "updatedAt": "2026-06-02T21:13:45Z",
+          "lastSeen": "2026-06-02T21:13:45Z"
         }
       ]
     },
@@ -309,58 +309,70 @@
       "steamId64": "76561199803716461",
       "steamId": "STEAM_0:1:921725366",
       "nickname": "-Jersey",
-      "rpName": "-Jersey",
-      "formation": "Unassigned",
-      "formationId": "",
-      "rank": "Не указано",
-      "rankId": "Не указано",
-      "faction": "",
-      "factionId": "",
-      "model": "models/player.mdl",
+      "rpName": "{rank} 08-5551 Arctic",
+      "formation": "Боец 821-ого Батальона",
+      "formationId": "821st_trooper",
+      "rank": "Рядовой",
+      "rankId": "pvt",
+      "faction": "Великая Армия Республики",
+      "factionId": "gar",
+      "model": "models/zeus/821_phase1/trp.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0
+        "Hair": 0,
+        "Facial Hair": 0,
+        "helmet attachments": 1,
+        "helmet": 0,
+        "body": 0,
+        "armor": 0,
+        "Backpack": 0
       },
       "skin": 0,
-      "health": 100,
+      "health": 0,
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-02T21:13:26Z",
-      "lastSeen": "2026-06-02T21:13:26Z",
-      "characterId": "active",
-      "active": true,
+      "updatedAt": "2026-06-02T21:13:45Z",
+      "lastSeen": "2026-06-02T21:13:45Z",
+      "characterId": "354",
+      "active": false,
       "characters": [
         {
           "steamId64": "76561199803716461",
           "steamId": "STEAM_0:1:921725366",
-          "characterId": "active",
+          "characterId": "354",
           "nickname": "-Jersey",
-          "rpName": "-Jersey",
-          "formation": "Unassigned",
-          "formationId": "",
-          "rank": "Не указано",
-          "rankId": "Не указано",
-          "faction": "",
-          "factionId": "",
-          "model": "models/player.mdl",
+          "rpName": "{rank} 08-5551 Arctic",
+          "formation": "Боец 821-ого Батальона",
+          "formationId": "821st_trooper",
+          "rank": "Рядовой",
+          "rankId": "pvt",
+          "faction": "Великая Армия Республики",
+          "factionId": "gar",
+          "model": "models/zeus/821_phase1/trp.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0
+            "Hair": 0,
+            "Facial Hair": 0,
+            "helmet attachments": 1,
+            "helmet": 0,
+            "body": 0,
+            "armor": 0,
+            "Backpack": 0
           },
           "skin": 0,
-          "health": 100,
+          "health": 0,
           "armor": 0,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-02T21:13:26Z",
-          "lastSeen": "2026-06-02T21:13:26Z"
+          "updatedAt": "2026-06-02T21:13:45Z",
+          "lastSeen": "2026-06-02T21:13:45Z"
         }
       ]
     }
   },
-  "updatedAt": "2026-06-02T21:13:28.066Z"
+  "updatedAt": "2026-06-02T21:13:46.452Z"
 }
