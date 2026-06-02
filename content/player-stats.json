@@ -1,4 +1,30 @@
 {
-  "players": {},
-  "updatedAt": null
+  "players": {
+    "76561198853890221": {
+      "steamId64": "76561198853890221",
+      "steamId": "STEAM_0:1:446812246",
+      "nickname": "warf",
+      "rpName": "warf",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | Макароньи дольки",
+      "updatedAt": "2026-06-02T16:19:46Z",
+      "lastSeen": "2026-06-02T16:19:46Z"
+    }
+  },
+  "updatedAt": "2026-06-02T16:19:47.696Z"
 }
