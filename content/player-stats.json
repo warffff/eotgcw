@@ -3,14 +3,14 @@
     "76561198853890221": {
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
-      "nickname": "SCC 01-4444 Варф",
-      "rpName": "SCC 01-4444 Варф",
+      "nickname": "warf",
+      "rpName": "warf",
       "formation": "Боец 821-ого Батальона",
-      "formationId": "821st_trooper",
-      "rank": "Старший коммандер",
-      "rankId": "scc",
-      "faction": "Великая Армия Республики",
-      "factionId": "gar",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "",
+      "faction": "",
+      "factionId": "",
       "model": "models/salty/cgi/821/821_salty.mdl",
       "modelImage": "",
       "bodygroups": {
@@ -27,9 +27,9 @@
       "armor": 450,
       "online": true,
       "serverName": "Edge of the Galaxy | Макароньи дольки",
-      "updatedAt": "2026-06-02T16:02:24Z",
-      "lastSeen": "2026-06-02T16:02:24Z"
+      "updatedAt": "2026-06-02T16:02:34Z",
+      "lastSeen": "2026-06-02T16:02:34Z"
     }
   },
-  "updatedAt": "2026-06-02T16:02:25.855Z"
+  "updatedAt": "2026-06-02T16:02:35.186Z"
 }
