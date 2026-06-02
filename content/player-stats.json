@@ -3,27 +3,33 @@
     "76561198853890221": {
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
-      "nickname": "warf",
-      "rpName": "warf",
-      "formation": "Unassigned",
-      "formationId": "",
-      "rank": "Не указано",
-      "rankId": "",
-      "faction": "",
-      "factionId": "",
-      "model": "models/player.mdl",
+      "nickname": "SCC 01-4444 Варф",
+      "rpName": "SCC 01-4444 Варф",
+      "formation": "Боец 821-ого Батальона",
+      "formationId": "821st_trooper",
+      "rank": "Старший коммандер",
+      "rankId": "scc",
+      "faction": "Великая Армия Республики",
+      "factionId": "gar",
+      "model": "models/salty/cgi/821/821_salty.mdl",
       "modelImage": "",
       "bodygroups": {
-        "0": 0
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
       },
       "skin": 0,
-      "health": 100,
-      "armor": 0,
+      "health": 500,
+      "armor": 450,
       "online": true,
       "serverName": "Edge of the Galaxy | Макароньи дольки",
-      "updatedAt": "2026-06-02T16:02:01Z",
-      "lastSeen": "2026-06-02T16:02:01Z"
+      "updatedAt": "2026-06-02T16:02:24Z",
+      "lastSeen": "2026-06-02T16:02:24Z"
     }
   },
-  "updatedAt": "2026-06-02T16:02:01.735Z"
+  "updatedAt": "2026-06-02T16:02:25.855Z"
 }
