@@ -4,32 +4,26 @@
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
       "nickname": "warf",
-      "rpName": "SCC 01-4444 Варф",
-      "formation": "Боец 821-ого Батальона",
-      "formationId": "821st_trooper",
-      "rank": "Старший коммандер",
-      "rankId": "scc",
-      "faction": "Великая Армия Республики",
-      "factionId": "gar",
-      "model": "models/salty/cgi/821/821_salty.mdl",
+      "rpName": "Magister Варф",
+      "formation": "Джедай",
+      "formationId": "jedi",
+      "rank": "Магистр",
+      "rankId": "magister",
+      "faction": "Орден Джедаев",
+      "factionId": "jedi",
+      "model": "models/player/jedi/gotal.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0
+        "0": 0
       },
       "skin": 0,
       "health": 500,
       "armor": 450,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-02T21:52:31Z",
-      "lastSeen": "2026-06-02T21:52:31Z",
+      "updatedAt": "2026-06-02T21:52:55Z",
+      "lastSeen": "2026-06-02T21:52:55Z",
       "characterId": "279",
       "active": true,
       "characters": [
@@ -38,24 +32,18 @@
           "steamId": "STEAM_0:1:446812246",
           "characterId": "279",
           "nickname": "warf",
-          "rpName": "SCC 01-4444 Варф",
-          "formation": "Боец 821-ого Батальона",
-          "formationId": "821st_trooper",
-          "rank": "Старший коммандер",
-          "rankId": "scc",
-          "faction": "Великая Армия Республики",
-          "factionId": "gar",
-          "model": "models/salty/cgi/821/821_salty.mdl",
+          "rpName": "Magister Варф",
+          "formation": "Джедай",
+          "formationId": "jedi",
+          "rank": "Магистр",
+          "rankId": "magister",
+          "faction": "Орден Джедаев",
+          "factionId": "jedi",
+          "model": "models/player/jedi/gotal.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0,
-            "6": 0
+            "0": 0
           },
           "skin": 0,
           "health": 500,
@@ -63,8 +51,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-02T21:52:31Z",
-          "lastSeen": "2026-06-02T21:52:31Z"
+          "updatedAt": "2026-06-02T21:52:55Z",
+          "lastSeen": "2026-06-02T21:52:55Z"
         },
         {
           "steamId64": "76561198853890221",
@@ -88,8 +76,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-02T21:52:31Z",
-          "lastSeen": "2026-06-02T21:52:31Z"
+          "updatedAt": "2026-06-02T21:52:55Z",
+          "lastSeen": "2026-06-02T21:52:55Z"
         }
       ]
     },
@@ -430,5 +418,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-02T21:52:32.804Z"
+  "updatedAt": "2026-06-02T21:52:56.381Z"
 }
