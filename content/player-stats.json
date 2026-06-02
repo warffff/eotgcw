@@ -24,12 +24,12 @@
         "6": 0
       },
       "skin": 0,
-      "health": 500,
-      "armor": 450,
+      "health": 483,
+      "armor": 380,
       "online": true,
       "serverName": "Edge of the Galaxy | Макароньи дольки",
-      "updatedAt": "2026-06-02T17:21:03Z",
-      "lastSeen": "2026-06-02T17:21:03Z",
+      "updatedAt": "2026-06-02T17:23:03Z",
+      "lastSeen": "2026-06-02T17:23:03Z",
       "characterId": "279",
       "active": true,
       "characters": [
@@ -58,13 +58,13 @@
             "6": 0
           },
           "skin": 0,
-          "health": 500,
-          "armor": 450,
+          "health": 483,
+          "armor": 380,
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | Макароньи дольки",
-          "updatedAt": "2026-06-02T17:21:03Z",
-          "lastSeen": "2026-06-02T17:21:03Z"
+          "updatedAt": "2026-06-02T17:23:03Z",
+          "lastSeen": "2026-06-02T17:23:03Z"
         },
         {
           "steamId64": "76561198853890221",
@@ -83,16 +83,16 @@
           "modelGltf": "",
           "bodygroups": {},
           "skin": 0,
-          "health": 500,
-          "armor": 450,
+          "health": 483,
+          "armor": 380,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | Макароньи дольки",
-          "updatedAt": "2026-06-02T17:21:03Z",
-          "lastSeen": "2026-06-02T17:21:03Z"
+          "updatedAt": "2026-06-02T17:23:03Z",
+          "lastSeen": "2026-06-02T17:23:03Z"
         }
       ]
     }
   },
-  "updatedAt": "2026-06-02T17:21:04.224Z"
+  "updatedAt": "2026-06-02T17:23:04.114Z"
 }
