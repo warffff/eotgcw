@@ -23,11 +23,11 @@
       "skin": 0,
       "health": 100,
       "armor": 0,
-      "online": true,
+      "online": false,
       "serverName": "Edge of the Galaxy | Макароньи дольки",
-      "updatedAt": "2026-06-02T16:24:48Z",
-      "lastSeen": "2026-06-02T16:24:48Z"
+      "updatedAt": "2026-06-02T16:26:41Z",
+      "lastSeen": "2026-06-02T16:26:41Z"
     }
   },
-  "updatedAt": "2026-06-02T16:24:49.053Z"
+  "updatedAt": "2026-06-02T16:26:42.046Z"
 }
