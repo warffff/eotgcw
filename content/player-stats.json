@@ -28,8 +28,8 @@
       "armor": 450,
       "online": true,
       "serverName": "Edge of the Galaxy | Макароньи дольки",
-      "updatedAt": "2026-06-02T19:39:10Z",
-      "lastSeen": "2026-06-02T19:39:10Z",
+      "updatedAt": "2026-06-02T19:39:12Z",
+      "lastSeen": "2026-06-02T19:39:12Z",
       "characterId": "279",
       "active": true,
       "characters": [
@@ -63,8 +63,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | Макароньи дольки",
-          "updatedAt": "2026-06-02T19:39:10Z",
-          "lastSeen": "2026-06-02T19:39:10Z"
+          "updatedAt": "2026-06-02T19:39:12Z",
+          "lastSeen": "2026-06-02T19:39:12Z"
         },
         {
           "steamId64": "76561198853890221",
@@ -88,8 +88,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | Макароньи дольки",
-          "updatedAt": "2026-06-02T19:39:10Z",
-          "lastSeen": "2026-06-02T19:39:10Z"
+          "updatedAt": "2026-06-02T19:39:12Z",
+          "lastSeen": "2026-06-02T19:39:12Z"
         }
       ]
     },
@@ -238,5 +238,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-02T19:39:10.998Z"
+  "updatedAt": "2026-06-02T19:39:12.942Z"
 }
