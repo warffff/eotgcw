@@ -4,7 +4,7 @@
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
       "nickname": "warf",
-      "rpName": "{rank} Варф",
+      "rpName": "Magister Варф",
       "formation": "Джедай",
       "formationId": "jedi",
       "rank": "Магистр",
@@ -14,23 +14,25 @@
       "model": "models/player/jedi/gotal.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {},
+      "bodygroups": {
+        "0": 0
+      },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 1500,
+      "armor": 400,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-02T22:51:55Z",
-      "lastSeen": "2026-06-02T22:51:55Z",
+      "updatedAt": "2026-06-02T22:53:27Z",
+      "lastSeen": "2026-06-02T22:53:27Z",
       "characterId": "279",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198853890221",
           "steamId": "STEAM_0:1:446812246",
           "characterId": "279",
           "nickname": "warf",
-          "rpName": "{rank} Варф",
+          "rpName": "Magister Варф",
           "formation": "Джедай",
           "formationId": "jedi",
           "rank": "Магистр",
@@ -40,15 +42,17 @@
           "model": "models/player/jedi/gotal.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {},
+          "bodygroups": {
+            "0": 0
+          },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 1500,
+          "armor": 400,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-02T22:51:55Z",
-          "lastSeen": "2026-06-02T22:51:55Z"
+          "updatedAt": "2026-06-02T22:53:27Z",
+          "lastSeen": "2026-06-02T22:53:27Z"
         },
         {
           "steamId64": "76561198853890221",
@@ -67,13 +71,13 @@
           "modelGltf": "",
           "bodygroups": {},
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 1500,
+          "armor": 400,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-02T22:51:55Z",
-          "lastSeen": "2026-06-02T22:51:55Z"
+          "updatedAt": "2026-06-02T22:53:27Z",
+          "lastSeen": "2026-06-02T22:53:27Z"
         }
       ]
     },
@@ -414,5 +418,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-02T22:51:56.837Z"
+  "updatedAt": "2026-06-02T22:53:28.723Z"
 }
