@@ -4,7 +4,7 @@
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
       "nickname": "warf",
-      "rpName": "{rank} 08-4214 Warf",
+      "rpName": "CDT 08-4214 Warf",
       "formation": "Кадет",
       "formationId": "cadet",
       "rank": "Кадет",
@@ -14,23 +14,28 @@
       "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {},
+      "bodygroups": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
       "skin": 0,
-      "health": 0,
+      "health": 100,
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T00:12:20Z",
-      "lastSeen": "2026-06-03T00:12:20Z",
+      "updatedAt": "2026-06-03T00:12:58Z",
+      "lastSeen": "2026-06-03T00:12:58Z",
       "characterId": "368",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198853890221",
           "steamId": "STEAM_0:1:446812246",
           "characterId": "368",
           "nickname": "warf",
-          "rpName": "{rank} 08-4214 Warf",
+          "rpName": "CDT 08-4214 Warf",
           "formation": "Кадет",
           "formationId": "cadet",
           "rank": "Кадет",
@@ -40,15 +45,20 @@
           "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {},
+          "bodygroups": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          },
           "skin": 0,
-          "health": 0,
+          "health": 100,
           "armor": 0,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T00:12:20Z",
-          "lastSeen": "2026-06-03T00:12:20Z"
+          "updatedAt": "2026-06-03T00:12:58Z",
+          "lastSeen": "2026-06-03T00:12:58Z"
         }
       ]
     },
@@ -389,5 +399,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T00:12:20.879Z"
+  "updatedAt": "2026-06-03T00:12:59.095Z"
 }
