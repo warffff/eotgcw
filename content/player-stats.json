@@ -4260,7 +4260,7 @@
       "steamId64": "76561198932889218",
       "steamId": "STEAM_0:0:486311745",
       "nickname": "Trap",
-      "rpName": "{rank} 27-5555 Файвз",
+      "rpName": "CPL 27-5555 Файвз",
       "formation": "Боец 501-го легиона",
       "formationId": "501st_trooper",
       "rank": "Капрал",
@@ -4271,28 +4271,28 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "backpack": 3,
-        "Helmet": 0,
-        "binos": 2,
-        "flashlighthelmet": 0,
-        "Body": 0
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 200,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T15:55:44Z",
-      "lastSeen": "2026-06-03T15:55:44Z",
+      "updatedAt": "2026-06-03T15:56:20Z",
+      "lastSeen": "2026-06-03T15:56:20Z",
       "characterId": "159",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198932889218",
           "steamId": "STEAM_0:0:486311745",
           "characterId": "159",
           "nickname": "Trap",
-          "rpName": "{rank} 27-5555 Файвз",
+          "rpName": "CPL 27-5555 Файвз",
           "formation": "Боец 501-го легиона",
           "formationId": "501st_trooper",
           "rank": "Капрал",
@@ -4303,23 +4303,23 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "backpack": 3,
-            "Helmet": 0,
-            "binos": 2,
-            "flashlighthelmet": 0,
-            "Body": 0
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 200,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T15:55:44Z",
-          "lastSeen": "2026-06-03T15:55:44Z"
+          "updatedAt": "2026-06-03T15:56:20Z",
+          "lastSeen": "2026-06-03T15:56:20Z"
         }
       ]
     }
   },
-  "updatedAt": "2026-06-03T15:55:45.387Z"
+  "updatedAt": "2026-06-03T15:56:22.045Z"
 }
