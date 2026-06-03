@@ -3964,7 +3964,7 @@
       "steamId64": "76561198299852856",
       "steamId": "STEAM_0:0:169793564",
       "nickname": "Nøkk",
-      "rpName": "{rank} 06-3850 Nyokk",
+      "rpName": "SPC 06-3850 Nyokk",
       "formation": "Боец роты DOOM",
       "formationId": "doom_trooper",
       "rank": "Специалист",
@@ -3974,23 +3974,31 @@
       "model": "models/doom/joker/soldier/doom_soldier.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {},
+      "bodygroups": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 150,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T15:41:32Z",
-      "lastSeen": "2026-06-03T15:41:32Z",
+      "updatedAt": "2026-06-03T15:41:35Z",
+      "lastSeen": "2026-06-03T15:41:35Z",
       "characterId": "113",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198299852856",
           "steamId": "STEAM_0:0:169793564",
           "characterId": "113",
           "nickname": "Nøkk",
-          "rpName": "{rank} 06-3850 Nyokk",
+          "rpName": "SPC 06-3850 Nyokk",
           "formation": "Боец роты DOOM",
           "formationId": "doom_trooper",
           "rank": "Специалист",
@@ -4000,18 +4008,26 @@
           "model": "models/doom/joker/soldier/doom_soldier.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {},
+          "bodygroups": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 150,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T15:41:32Z",
-          "lastSeen": "2026-06-03T15:41:32Z"
+          "updatedAt": "2026-06-03T15:41:35Z",
+          "lastSeen": "2026-06-03T15:41:35Z"
         }
       ]
     }
   },
-  "updatedAt": "2026-06-03T15:41:33.449Z"
+  "updatedAt": "2026-06-03T15:41:36.580Z"
 }
