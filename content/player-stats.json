@@ -1987,7 +1987,7 @@
       "steamId64": "76561199095805790",
       "steamId": "STEAM_0:0:567770031",
       "nickname": "Yoshi",
-      "rpName": "SGT RC-1748 Yoshi",
+      "rpName": "{rank} RC-1748 Yoshi",
       "formation": "RC Black Wolves",
       "formationId": "RCBW_trooper",
       "rank": "Сержант",
@@ -1998,33 +1998,33 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
+        "Ohrstück": 0,
+        "Beine": 0,
+        "Helm": 0,
+        "Thermalfernglas": 0,
+        "Gürtel Munnition": 0,
+        "Schulterplatte": 0,
+        "Kama": 0,
+        "Torso": 0,
+        "Handschuhe": 0,
+        "Gürtel": 0
       },
       "skin": 0,
-      "health": 160,
-      "armor": 160,
+      "health": 0,
+      "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T13:39:36Z",
-      "lastSeen": "2026-06-03T13:39:36Z",
+      "updatedAt": "2026-06-03T13:40:42Z",
+      "lastSeen": "2026-06-03T13:40:42Z",
       "characterId": "333",
-      "active": true,
+      "active": false,
       "characters": [
         {
           "steamId64": "76561199095805790",
           "steamId": "STEAM_0:0:567770031",
           "characterId": "333",
           "nickname": "Yoshi",
-          "rpName": "SGT RC-1748 Yoshi",
+          "rpName": "{rank} RC-1748 Yoshi",
           "formation": "RC Black Wolves",
           "formationId": "RCBW_trooper",
           "rank": "Сержант",
@@ -2035,25 +2035,25 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0,
-            "6": 0,
-            "7": 0,
-            "8": 0,
-            "9": 0
+            "Ohrstück": 0,
+            "Beine": 0,
+            "Helm": 0,
+            "Thermalfernglas": 0,
+            "Gürtel Munnition": 0,
+            "Schulterplatte": 0,
+            "Kama": 0,
+            "Torso": 0,
+            "Handschuhe": 0,
+            "Gürtel": 0
           },
           "skin": 0,
-          "health": 160,
-          "armor": 160,
+          "health": 0,
+          "armor": 0,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T13:39:36Z",
-          "lastSeen": "2026-06-03T13:39:36Z"
+          "updatedAt": "2026-06-03T13:40:42Z",
+          "lastSeen": "2026-06-03T13:40:42Z"
         },
         {
           "steamId64": "76561199095805790",
@@ -2072,13 +2072,13 @@
           "modelGltf": "",
           "bodygroups": {},
           "skin": 0,
-          "health": 160,
-          "armor": 160,
+          "health": 0,
+          "armor": 0,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T13:39:36Z",
-          "lastSeen": "2026-06-03T13:39:36Z"
+          "updatedAt": "2026-06-03T13:40:42Z",
+          "lastSeen": "2026-06-03T13:40:42Z"
         }
       ]
     },
@@ -2304,5 +2304,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T13:40:32.451Z"
+  "updatedAt": "2026-06-03T13:40:43.063Z"
 }
