@@ -4282,7 +4282,7 @@
       "steamId64": "76561198449954761",
       "steamId": "STEAM_0:1:244844516",
       "nickname": "s1ynce",
-      "rpName": "{rank} 08-3627 Niko",
+      "rpName": "PVT 08-3627 Niko",
       "formation": "Боец 501-го легиона",
       "formationId": "501st_trooper",
       "rank": "Рядовой",
@@ -4292,23 +4292,31 @@
       "model": "models/501st_nco/pm_501st_nco.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {},
+      "bodygroups": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T17:30:08Z",
-      "lastSeen": "2026-06-03T17:30:08Z",
+      "updatedAt": "2026-06-03T17:30:26Z",
+      "lastSeen": "2026-06-03T17:30:26Z",
       "characterId": "383",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198449954761",
           "steamId": "STEAM_0:1:244844516",
           "characterId": "383",
           "nickname": "s1ynce",
-          "rpName": "{rank} 08-3627 Niko",
+          "rpName": "PVT 08-3627 Niko",
           "formation": "Боец 501-го легиона",
           "formationId": "501st_trooper",
           "rank": "Рядовой",
@@ -4318,15 +4326,23 @@
           "model": "models/501st_nco/pm_501st_nco.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {},
+          "bodygroups": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 100,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:30:08Z",
-          "lastSeen": "2026-06-03T17:30:08Z"
+          "updatedAt": "2026-06-03T17:30:26Z",
+          "lastSeen": "2026-06-03T17:30:26Z"
         }
       ]
     },
@@ -4600,5 +4616,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T17:30:13.764Z"
+  "updatedAt": "2026-06-03T17:30:27.212Z"
 }
