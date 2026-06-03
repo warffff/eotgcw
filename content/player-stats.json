@@ -4497,7 +4497,7 @@
       "steamId64": "76561198339578751",
       "steamId": "STEAM_0:1:189656511",
       "nickname": "фотограф",
-      "rpName": "{rank} 07-3453",
+      "rpName": "SSG 07-3453",
       "formation": "Боец КГ",
       "formationId": "CG_trooper",
       "rank": "Старший сержант",
@@ -4508,36 +4508,24 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "hair": 0,
-        "holster_l": 0,
-        "forearm": 0,
-        "kama": 1,
-        "holster_r": 1,
-        "Body": 0,
-        "antenna": 0,
-        "backpack": 0,
-        "fhair": 0,
-        "Helmet": 0,
-        "flashlighthelmet": 0,
-        "binos": 0,
-        "pauldron": 0
+        "0": 0
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 150,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T16:26:51Z",
-      "lastSeen": "2026-06-03T16:26:51Z",
+      "updatedAt": "2026-06-03T16:27:24Z",
+      "lastSeen": "2026-06-03T16:27:24Z",
       "characterId": "51",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198339578751",
           "steamId": "STEAM_0:1:189656511",
           "characterId": "51",
           "nickname": "фотограф",
-          "rpName": "{rank} 07-3453",
+          "rpName": "SSG 07-3453",
           "formation": "Боец КГ",
           "formationId": "CG_trooper",
           "rank": "Старший сержант",
@@ -4548,31 +4536,19 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "hair": 0,
-            "holster_l": 0,
-            "forearm": 0,
-            "kama": 1,
-            "holster_r": 1,
-            "Body": 0,
-            "antenna": 0,
-            "backpack": 0,
-            "fhair": 0,
-            "Helmet": 0,
-            "flashlighthelmet": 0,
-            "binos": 0,
-            "pauldron": 0
+            "0": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 150,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T16:26:51Z",
-          "lastSeen": "2026-06-03T16:26:51Z"
+          "updatedAt": "2026-06-03T16:27:24Z",
+          "lastSeen": "2026-06-03T16:27:24Z"
         }
       ]
     }
   },
-  "updatedAt": "2026-06-03T16:27:05.969Z"
+  "updatedAt": "2026-06-03T16:27:25.603Z"
 }
