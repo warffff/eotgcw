@@ -2165,7 +2165,7 @@
       "steamId64": "76561198848915913",
       "steamId": "STEAM_0:1:444325092",
       "nickname": "society.",
-      "rpName": "LT 06-1187 Trauma",
+      "rpName": "{rank} 06-1187 Trauma",
       "formation": "Боец 5-ого отделения",
       "formationId": "5th_trooper",
       "rank": "Лейтенант",
@@ -2176,36 +2176,36 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0,
-        "10": 0,
-        "11": 0,
-        "12": 0
+        "Bicep_Ammo_Right": 0,
+        "Front_Pockets": 0,
+        "kama": 0,
+        "TCW_ALPHA_BELT": 0,
+        "alpha_rangefinder": 0,
+        "Alpha_Pauldron": 0,
+        "ARC_Alpha_Kama_Extra": 0,
+        "armor_WA": 0,
+        "ARC_Alpha_HandPad": 0,
+        "Bicep_Ammo_Left": 0,
+        "helmetWA": 0,
+        "ARC_Pauldron_Puch": 0,
+        "Belt_Pock": 0
       },
       "skin": 0,
-      "health": 350,
-      "armor": 400,
+      "health": 0,
+      "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T14:33:36Z",
-      "lastSeen": "2026-06-03T14:33:36Z",
+      "updatedAt": "2026-06-03T14:34:16Z",
+      "lastSeen": "2026-06-03T14:34:16Z",
       "characterId": "26",
-      "active": true,
+      "active": false,
       "characters": [
         {
           "steamId64": "76561198848915913",
           "steamId": "STEAM_0:1:444325092",
           "characterId": "26",
           "nickname": "society.",
-          "rpName": "LT 06-1187 Trauma",
+          "rpName": "{rank} 06-1187 Trauma",
           "formation": "Боец 5-ого отделения",
           "formationId": "5th_trooper",
           "rank": "Лейтенант",
@@ -2216,28 +2216,28 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0,
-            "6": 0,
-            "7": 0,
-            "8": 0,
-            "9": 0,
-            "10": 0,
-            "11": 0,
-            "12": 0
+            "Bicep_Ammo_Right": 0,
+            "Front_Pockets": 0,
+            "kama": 0,
+            "TCW_ALPHA_BELT": 0,
+            "alpha_rangefinder": 0,
+            "Alpha_Pauldron": 0,
+            "ARC_Alpha_Kama_Extra": 0,
+            "armor_WA": 0,
+            "ARC_Alpha_HandPad": 0,
+            "Bicep_Ammo_Left": 0,
+            "helmetWA": 0,
+            "ARC_Pauldron_Puch": 0,
+            "Belt_Pock": 0
           },
           "skin": 0,
-          "health": 350,
-          "armor": 400,
+          "health": 0,
+          "armor": 0,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:33:36Z",
-          "lastSeen": "2026-06-03T14:33:36Z"
+          "updatedAt": "2026-06-03T14:34:16Z",
+          "lastSeen": "2026-06-03T14:34:16Z"
         },
         {
           "steamId64": "76561198848915913",
@@ -2263,13 +2263,13 @@
             "heads": 0
           },
           "skin": 0,
-          "health": 350,
-          "armor": 400,
+          "health": 0,
+          "armor": 0,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:33:36Z",
-          "lastSeen": "2026-06-03T14:33:36Z"
+          "updatedAt": "2026-06-03T14:34:16Z",
+          "lastSeen": "2026-06-03T14:34:16Z"
         },
         {
           "steamId64": "76561198848915913",
@@ -2298,13 +2298,13 @@
             "pauldron": 0
           },
           "skin": 4,
-          "health": 350,
-          "armor": 400,
+          "health": 0,
+          "armor": 0,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:33:36Z",
-          "lastSeen": "2026-06-03T14:33:36Z"
+          "updatedAt": "2026-06-03T14:34:16Z",
+          "lastSeen": "2026-06-03T14:34:16Z"
         }
       ]
     },
@@ -2688,5 +2688,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T14:33:41.819Z"
+  "updatedAt": "2026-06-03T14:34:17.257Z"
 }
