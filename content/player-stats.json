@@ -638,8 +638,8 @@
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T11:51:36Z",
-      "lastSeen": "2026-06-03T11:51:36Z",
+      "updatedAt": "2026-06-03T11:53:36Z",
+      "lastSeen": "2026-06-03T11:53:36Z",
       "characterId": "129",
       "active": false,
       "characters": [
@@ -685,8 +685,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T11:51:36Z",
-          "lastSeen": "2026-06-03T11:51:36Z"
+          "updatedAt": "2026-06-03T11:53:36Z",
+          "lastSeen": "2026-06-03T11:53:36Z"
         }
       ]
     },
@@ -694,7 +694,7 @@
       "steamId64": "76561198960901640",
       "steamId": "STEAM_0:0:500317956",
       "nickname": "[BLT] ꧁༺FANATKA༻꧂",
-      "rpName": "CDT 08-0000 Enigma",
+      "rpName": "{rank} 08-0000 Enigma",
       "formation": "Кадет",
       "formationId": "cadet",
       "rank": "Кадет",
@@ -704,28 +704,23 @@
       "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0
-      },
+      "bodygroups": {},
       "skin": 0,
-      "health": 100,
+      "health": 0,
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T11:51:36Z",
-      "lastSeen": "2026-06-03T11:51:36Z",
-      "characterId": "356",
-      "active": true,
+      "updatedAt": "2026-06-03T11:53:36Z",
+      "lastSeen": "2026-06-03T11:53:36Z",
+      "characterId": "376",
+      "active": false,
       "characters": [
         {
           "steamId64": "76561198960901640",
           "steamId": "STEAM_0:0:500317956",
-          "characterId": "356",
+          "characterId": "376",
           "nickname": "[BLT] ꧁༺FANATKA༻꧂",
-          "rpName": "CDT 08-0000 Enigma",
+          "rpName": "{rank} 08-0000 Enigma",
           "formation": "Кадет",
           "formationId": "cadet",
           "rank": "Кадет",
@@ -735,23 +730,18 @@
           "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0
-          },
+          "bodygroups": {},
           "skin": 0,
-          "health": 100,
+          "health": 0,
           "armor": 0,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T11:51:36Z",
-          "lastSeen": "2026-06-03T11:51:36Z"
+          "updatedAt": "2026-06-03T11:53:36Z",
+          "lastSeen": "2026-06-03T11:53:36Z"
         }
       ]
     }
   },
-  "updatedAt": "2026-06-03T11:51:37.566Z"
+  "updatedAt": "2026-06-03T11:53:37.367Z"
 }
