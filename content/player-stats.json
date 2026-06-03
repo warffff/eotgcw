@@ -3247,7 +3247,63 @@
           "lastSeen": "2026-06-03T15:19:36Z"
         }
       ]
+    },
+    "76561198079131489": {
+      "steamId64": "76561198079131489",
+      "steamId": "STEAM_0:1:59432880",
+      "nickname": "Vanych",
+      "rpName": "Vanych",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-03T15:19:58Z",
+      "lastSeen": "2026-06-03T15:19:58Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561198079131489",
+          "steamId": "STEAM_0:1:59432880",
+          "characterId": "active",
+          "nickname": "Vanych",
+          "rpName": "Vanych",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T15:19:58Z",
+          "lastSeen": "2026-06-03T15:19:58Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-03T15:19:38.175Z"
+  "updatedAt": "2026-06-03T15:20:00.074Z"
 }
