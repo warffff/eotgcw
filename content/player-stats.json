@@ -4658,55 +4658,67 @@
       "steamId64": "76561198149814604",
       "steamId": "STEAM_0:0:94774438",
       "nickname": "Waxer",
-      "rpName": "Waxer",
-      "formation": "Unassigned",
-      "formationId": "",
-      "rank": "Не указано",
-      "rankId": "Не указано",
-      "faction": "",
-      "factionId": "",
-      "model": "models/player.mdl",
+      "rpName": "{rank} 04-442 Gooner",
+      "formation": "Боец 821-ого Батальона",
+      "formationId": "821st_trooper",
+      "rank": "Капрал",
+      "rankId": "cpl",
+      "faction": "Великая Армия Республики",
+      "factionId": "gar",
+      "model": "models/zeus/821_phase1/821_tech.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0
+        "Hair": 0,
+        "Facial Hair": 0,
+        "helmet attachments": 0,
+        "helmet": 0,
+        "body": 0,
+        "armor": 0,
+        "Backpack": 0
       },
       "skin": 0,
-      "health": 100,
+      "health": 0,
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T20:31:27Z",
-      "lastSeen": "2026-06-03T20:31:27Z",
-      "characterId": "active",
-      "active": true,
+      "updatedAt": "2026-06-03T20:31:56Z",
+      "lastSeen": "2026-06-03T20:31:56Z",
+      "characterId": "53",
+      "active": false,
       "characters": [
         {
           "steamId64": "76561198149814604",
           "steamId": "STEAM_0:0:94774438",
-          "characterId": "active",
+          "characterId": "53",
           "nickname": "Waxer",
-          "rpName": "Waxer",
-          "formation": "Unassigned",
-          "formationId": "",
-          "rank": "Не указано",
-          "rankId": "Не указано",
-          "faction": "",
-          "factionId": "",
-          "model": "models/player.mdl",
+          "rpName": "{rank} 04-442 Gooner",
+          "formation": "Боец 821-ого Батальона",
+          "formationId": "821st_trooper",
+          "rank": "Капрал",
+          "rankId": "cpl",
+          "faction": "Великая Армия Республики",
+          "factionId": "gar",
+          "model": "models/zeus/821_phase1/821_tech.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0
+            "Hair": 0,
+            "Facial Hair": 0,
+            "helmet attachments": 0,
+            "helmet": 0,
+            "body": 0,
+            "armor": 0,
+            "Backpack": 0
           },
           "skin": 0,
-          "health": 100,
+          "health": 0,
           "armor": 0,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T20:31:27Z",
-          "lastSeen": "2026-06-03T20:31:27Z"
+          "updatedAt": "2026-06-03T20:31:56Z",
+          "lastSeen": "2026-06-03T20:31:56Z"
         }
       ]
     },
@@ -5326,8 +5338,8 @@
       "armor": 450,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T20:29:56Z",
-      "lastSeen": "2026-06-03T20:29:56Z",
+      "updatedAt": "2026-06-03T20:31:56Z",
+      "lastSeen": "2026-06-03T20:31:56Z",
       "characterId": "188",
       "active": true,
       "characters": [
@@ -5372,8 +5384,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T20:29:56Z",
-          "lastSeen": "2026-06-03T20:29:56Z"
+          "updatedAt": "2026-06-03T20:31:56Z",
+          "lastSeen": "2026-06-03T20:31:56Z"
         }
       ]
     },
@@ -5875,5 +5887,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T20:31:28.737Z"
+  "updatedAt": "2026-06-03T20:31:57.825Z"
 }
