@@ -4946,7 +4946,7 @@
         "poncho": 0,
         "medarmplus": 0,
         "med_hand": 1,
-        "helmet_attachments_2": 0,
+        "wolf_arm": 0,
         "kama_app": 0,
         "base": 0,
         "belt": 0,
@@ -4959,16 +4959,16 @@
         "helmet_attachments_3": 1,
         "helmet": 0,
         "razgruz": 1,
-        "wolf_arm": 0,
+        "helmet_attachments_2": 0,
         "pauldron": 1
       },
       "skin": 5,
       "health": 0,
       "armor": 0,
-      "online": true,
+      "online": false,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T18:23:56Z",
-      "lastSeen": "2026-06-03T18:23:56Z",
+      "updatedAt": "2026-06-03T18:25:19Z",
+      "lastSeen": "2026-06-03T18:25:19Z",
       "characterId": "154",
       "active": false,
       "characters": [
@@ -4991,7 +4991,7 @@
             "poncho": 0,
             "medarmplus": 0,
             "med_hand": 1,
-            "helmet_attachments_2": 0,
+            "wolf_arm": 0,
             "kama_app": 0,
             "base": 0,
             "belt": 0,
@@ -5004,17 +5004,17 @@
             "helmet_attachments_3": 1,
             "helmet": 0,
             "razgruz": 1,
-            "wolf_arm": 0,
+            "helmet_attachments_2": 0,
             "pauldron": 1
           },
           "skin": 5,
           "health": 0,
           "armor": 0,
-          "online": true,
+          "online": false,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T18:23:56Z",
-          "lastSeen": "2026-06-03T18:23:56Z"
+          "updatedAt": "2026-06-03T18:25:19Z",
+          "lastSeen": "2026-06-03T18:25:19Z"
         }
       ]
     },
@@ -5085,5 +5085,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T18:23:58.157Z"
+  "updatedAt": "2026-06-03T18:25:21.008Z"
 }
