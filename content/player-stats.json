@@ -2128,10 +2128,10 @@
       "skin": 0,
       "health": 350,
       "armor": 400,
-      "online": true,
+      "online": false,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T17:20:23Z",
-      "lastSeen": "2026-06-03T17:20:23Z",
+      "updatedAt": "2026-06-03T17:20:54Z",
+      "lastSeen": "2026-06-03T17:20:54Z",
       "characterId": "26",
       "active": true,
       "characters": [
@@ -2168,11 +2168,11 @@
           "skin": 0,
           "health": 350,
           "armor": 400,
-          "online": true,
+          "online": false,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:20:23Z",
-          "lastSeen": "2026-06-03T17:20:23Z"
+          "updatedAt": "2026-06-03T17:20:54Z",
+          "lastSeen": "2026-06-03T17:20:54Z"
         },
         {
           "steamId64": "76561198848915913",
@@ -2200,11 +2200,11 @@
           "skin": 0,
           "health": 350,
           "armor": 400,
-          "online": true,
+          "online": false,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:20:23Z",
-          "lastSeen": "2026-06-03T17:20:23Z"
+          "updatedAt": "2026-06-03T17:20:54Z",
+          "lastSeen": "2026-06-03T17:20:54Z"
         },
         {
           "steamId64": "76561198848915913",
@@ -2235,11 +2235,11 @@
           "skin": 4,
           "health": 350,
           "armor": 400,
-          "online": true,
+          "online": false,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:20:23Z",
-          "lastSeen": "2026-06-03T17:20:23Z"
+          "updatedAt": "2026-06-03T17:20:54Z",
+          "lastSeen": "2026-06-03T17:20:54Z"
         }
       ]
     },
@@ -4660,5 +4660,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T17:20:53.556Z"
+  "updatedAt": "2026-06-03T17:20:55.326Z"
 }
