@@ -3133,7 +3133,63 @@
           "lastSeen": "2026-06-03T15:16:56Z"
         }
       ]
+    },
+    "76561198387219582": {
+      "steamId64": "76561198387219582",
+      "steamId": "STEAM_0:0:213476927",
+      "nickname": "Sniper1987",
+      "rpName": "Sniper1987",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-03T15:17:07Z",
+      "lastSeen": "2026-06-03T15:17:07Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561198387219582",
+          "steamId": "STEAM_0:0:213476927",
+          "characterId": "active",
+          "nickname": "Sniper1987",
+          "rpName": "Sniper1987",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T15:17:07Z",
+          "lastSeen": "2026-06-03T15:17:07Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-03T15:16:57.610Z"
+  "updatedAt": "2026-06-03T15:17:08.442Z"
 }
