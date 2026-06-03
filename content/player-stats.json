@@ -1469,7 +1469,7 @@
       "steamId64": "76561198340387530",
       "steamId": "STEAM_0:0:190060901",
       "nickname": "TheHussarGeneral",
-      "rpName": "{rank} 06-1941 Zeta",
+      "rpName": "LT 06-1941 Zeta",
       "formation": "Боец 5-ого отделения",
       "formationId": "5th_trooper",
       "rank": "Лейтенант",
@@ -1479,23 +1479,37 @@
       "model": "models/t_tcw_gar_alpha_wa_lt/t_tcw_gar_alpha_wa_lt.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {},
+      "bodygroups": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0
+      },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 350,
+      "armor": 400,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T13:03:36Z",
-      "lastSeen": "2026-06-03T13:03:36Z",
+      "updatedAt": "2026-06-03T13:05:19Z",
+      "lastSeen": "2026-06-03T13:05:19Z",
       "characterId": "68",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198340387530",
           "steamId": "STEAM_0:0:190060901",
           "characterId": "68",
           "nickname": "TheHussarGeneral",
-          "rpName": "{rank} 06-1941 Zeta",
+          "rpName": "LT 06-1941 Zeta",
           "formation": "Боец 5-ого отделения",
           "formationId": "5th_trooper",
           "rank": "Лейтенант",
@@ -1505,15 +1519,29 @@
           "model": "models/t_tcw_gar_alpha_wa_lt/t_tcw_gar_alpha_wa_lt.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {},
+          "bodygroups": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 350,
+          "armor": 400,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T13:03:36Z",
-          "lastSeen": "2026-06-03T13:03:36Z"
+          "updatedAt": "2026-06-03T13:05:19Z",
+          "lastSeen": "2026-06-03T13:05:19Z"
         },
         {
           "steamId64": "76561198340387530",
@@ -1532,13 +1560,13 @@
           "modelGltf": "",
           "bodygroups": {},
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 350,
+          "armor": 400,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T13:03:36Z",
-          "lastSeen": "2026-06-03T13:03:36Z"
+          "updatedAt": "2026-06-03T13:05:19Z",
+          "lastSeen": "2026-06-03T13:05:19Z"
         }
       ]
     },
@@ -1635,5 +1663,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T13:04:53.755Z"
+  "updatedAt": "2026-06-03T13:05:20.233Z"
 }
