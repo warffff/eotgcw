@@ -538,7 +538,7 @@
       "steamId64": "76561198746255075",
       "steamId": "STEAM_0:1:392994673",
       "nickname": "𝙎𝙡𝙤𝙗𝙗𝙚𝙧𝙮",
-      "rpName": "CPL 06-2589 Tes",
+      "rpName": "CPL 06-2589 Irwin",
       "formation": "Боец 104-го батальона",
       "formationId": "104th_trooper",
       "rank": "Капрал",
@@ -574,8 +574,8 @@
       "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T18:34:19Z",
-      "lastSeen": "2026-06-03T18:34:19Z",
+      "updatedAt": "2026-06-03T18:34:27Z",
+      "lastSeen": "2026-06-03T18:34:27Z",
       "characterId": "129",
       "active": true,
       "characters": [
@@ -584,7 +584,7 @@
           "steamId": "STEAM_0:1:392994673",
           "characterId": "129",
           "nickname": "𝙎𝙡𝙤𝙗𝙗𝙚𝙧𝙮",
-          "rpName": "CPL 06-2589 Tes",
+          "rpName": "CPL 06-2589 Irwin",
           "formation": "Боец 104-го батальона",
           "formationId": "104th_trooper",
           "rank": "Капрал",
@@ -621,8 +621,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T18:34:19Z",
-          "lastSeen": "2026-06-03T18:34:19Z"
+          "updatedAt": "2026-06-03T18:34:27Z",
+          "lastSeen": "2026-06-03T18:34:27Z"
         }
       ]
     },
@@ -5085,5 +5085,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T18:34:20.046Z"
+  "updatedAt": "2026-06-03T18:34:28.565Z"
 }
