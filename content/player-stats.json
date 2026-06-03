@@ -490,59 +490,55 @@
       "steamId64": "76561198150494073",
       "steamId": "STEAM_0:1:95114172",
       "nickname": "Gwir",
-      "rpName": "Гвир",
-      "formation": "Донатный Наёмник",
-      "formationId": "merc_donate",
-      "rank": "Наёмник",
-      "rankId": "gvir",
-      "faction": "Великая Армия Республики",
-      "factionId": "gar",
-      "model": "models/player/swtor/arsenic/throttle/throttle.mdl",
+      "rpName": "Gwir",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0,
-        "1": 1,
-        "2": 0
+        "0": 0
       },
       "skin": 0,
-      "health": 200,
-      "armor": 200,
-      "online": false,
+      "health": 100,
+      "armor": 0,
+      "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T04:24:31Z",
-      "lastSeen": "2026-06-03T04:24:31Z",
-      "characterId": "298",
+      "updatedAt": "2026-06-03T12:49:25Z",
+      "lastSeen": "2026-06-03T12:49:25Z",
+      "characterId": "active",
       "active": true,
       "characters": [
         {
           "steamId64": "76561198150494073",
           "steamId": "STEAM_0:1:95114172",
-          "characterId": "298",
+          "characterId": "active",
           "nickname": "Gwir",
-          "rpName": "Гвир",
-          "formation": "Донатный Наёмник",
-          "formationId": "merc_donate",
-          "rank": "Наёмник",
-          "rankId": "gvir",
-          "faction": "Великая Армия Республики",
-          "factionId": "gar",
-          "model": "models/player/swtor/arsenic/throttle/throttle.mdl",
+          "rpName": "Gwir",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0,
-            "1": 1,
-            "2": 0
+            "0": 0
           },
           "skin": 0,
-          "health": 200,
-          "armor": 200,
-          "online": false,
+          "health": 100,
+          "armor": 0,
+          "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T04:24:31Z",
-          "lastSeen": "2026-06-03T04:24:31Z"
+          "updatedAt": "2026-06-03T12:49:25Z",
+          "lastSeen": "2026-06-03T12:49:25Z"
         }
       ]
     },
@@ -973,5 +969,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T12:47:37.553Z"
+  "updatedAt": "2026-06-03T12:49:26.638Z"
 }
