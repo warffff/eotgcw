@@ -4,7 +4,7 @@
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
       "nickname": "warf",
-      "rpName": "CDT 08-4124 Еблан",
+      "rpName": "CDT 08-4124 ыфвфыв",
       "formation": "Кадет",
       "formationId": "cadet",
       "rank": "Кадет",
@@ -25,9 +25,9 @@
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T00:21:18Z",
-      "lastSeen": "2026-06-03T00:21:18Z",
-      "characterId": "373",
+      "updatedAt": "2026-06-03T00:21:40Z",
+      "lastSeen": "2026-06-03T00:21:40Z",
+      "characterId": "374",
       "active": true,
       "characters": [
         {
@@ -52,8 +52,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T00:21:18Z",
-          "lastSeen": "2026-06-03T00:21:18Z"
+          "updatedAt": "2026-06-03T00:21:40Z",
+          "lastSeen": "2026-06-03T00:21:40Z"
         },
         {
           "steamId64": "76561198853890221",
@@ -77,15 +77,15 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T00:21:18Z",
-          "lastSeen": "2026-06-03T00:21:18Z"
+          "updatedAt": "2026-06-03T00:21:40Z",
+          "lastSeen": "2026-06-03T00:21:40Z"
         },
         {
           "steamId64": "76561198853890221",
           "steamId": "STEAM_0:1:446812246",
-          "characterId": "373",
+          "characterId": "374",
           "nickname": "warf",
-          "rpName": "CDT 08-4124 Еблан",
+          "rpName": "CDT 08-4124 ыфвфыв",
           "formation": "Кадет",
           "formationId": "cadet",
           "rank": "Кадет",
@@ -107,8 +107,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T00:21:18Z",
-          "lastSeen": "2026-06-03T00:21:18Z"
+          "updatedAt": "2026-06-03T00:21:40Z",
+          "lastSeen": "2026-06-03T00:21:40Z"
         }
       ]
     },
@@ -449,5 +449,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T00:21:18.609Z"
+  "updatedAt": "2026-06-03T00:21:40.696Z"
 }
