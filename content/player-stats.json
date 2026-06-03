@@ -2011,32 +2011,29 @@
       "steamId64": "76561199095805790",
       "steamId": "STEAM_0:0:567770031",
       "nickname": "Yoshi",
-      "rpName": "PVT -Admin",
-      "formation": "Боец 821-ого Батальона",
-      "formationId": "821st_trooper",
-      "rank": "Рядовой",
-      "rankId": "pvt",
+      "rpName": "CDT 07-1111 Quadro",
+      "formation": "Кадет",
+      "formationId": "cadet",
+      "rank": "Кадет",
+      "rankId": "cadet",
       "faction": "Великая Армия Республики",
       "factionId": "gar",
-      "model": "models/zeus/821_phase1/trp.mdl",
+      "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
         "0": 0,
         "1": 0,
         "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0
+        "3": 0
       },
       "skin": 0,
       "health": 300,
       "armor": 300,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T14:05:36Z",
-      "lastSeen": "2026-06-03T14:05:36Z",
+      "updatedAt": "2026-06-03T14:06:04Z",
+      "lastSeen": "2026-06-03T14:06:04Z",
       "characterId": "341",
       "active": true,
       "characters": [
@@ -2073,32 +2070,29 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:05:36Z",
-          "lastSeen": "2026-06-03T14:05:36Z"
+          "updatedAt": "2026-06-03T14:06:04Z",
+          "lastSeen": "2026-06-03T14:06:04Z"
         },
         {
           "steamId64": "76561199095805790",
           "steamId": "STEAM_0:0:567770031",
           "characterId": "341",
           "nickname": "Yoshi",
-          "rpName": "PVT -Admin",
-          "formation": "Боец 821-ого Батальона",
-          "formationId": "821st_trooper",
-          "rank": "Рядовой",
-          "rankId": "pvt",
+          "rpName": "CDT 07-1111 Quadro",
+          "formation": "Кадет",
+          "formationId": "cadet",
+          "rank": "Кадет",
+          "rankId": "cadet",
           "faction": "Великая Армия Республики",
           "factionId": "gar",
-          "model": "models/zeus/821_phase1/trp.mdl",
+          "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
             "0": 0,
             "1": 0,
             "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0,
-            "6": 0
+            "3": 0
           },
           "skin": 0,
           "health": 300,
@@ -2106,8 +2100,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:05:36Z",
-          "lastSeen": "2026-06-03T14:05:36Z"
+          "updatedAt": "2026-06-03T14:06:04Z",
+          "lastSeen": "2026-06-03T14:06:04Z"
         }
       ]
     },
@@ -2614,5 +2608,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T14:05:38.373Z"
+  "updatedAt": "2026-06-03T14:06:05.720Z"
 }
