@@ -4,7 +4,7 @@
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
       "nickname": "warf",
-      "rpName": "CDT 08-4214 Цфк",
+      "rpName": "CDT 08-4124 Еблан",
       "formation": "Кадет",
       "formationId": "cadet",
       "rank": "Кадет",
@@ -25,36 +25,11 @@
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T00:20:21Z",
-      "lastSeen": "2026-06-03T00:20:21Z",
-      "characterId": "372",
+      "updatedAt": "2026-06-03T00:21:16Z",
+      "lastSeen": "2026-06-03T00:21:16Z",
+      "characterId": "373",
       "active": true,
       "characters": [
-        {
-          "steamId64": "76561198853890221",
-          "steamId": "STEAM_0:1:446812246",
-          "characterId": "370",
-          "nickname": "warf",
-          "rpName": "{rank} 08-5818 Еблан",
-          "formation": "Кадет",
-          "formationId": "cadet",
-          "rank": "Кадет",
-          "rankId": "cadet",
-          "faction": "Великая Армия Республики",
-          "factionId": "gar",
-          "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
-          "modelImage": "",
-          "modelGltf": "",
-          "bodygroups": {},
-          "skin": 0,
-          "health": 100,
-          "armor": 0,
-          "online": true,
-          "active": false,
-          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T00:20:21Z",
-          "lastSeen": "2026-06-03T00:20:21Z"
-        },
         {
           "steamId64": "76561198853890221",
           "steamId": "STEAM_0:1:446812246",
@@ -77,15 +52,40 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T00:20:21Z",
-          "lastSeen": "2026-06-03T00:20:21Z"
+          "updatedAt": "2026-06-03T00:21:16Z",
+          "lastSeen": "2026-06-03T00:21:16Z"
         },
         {
           "steamId64": "76561198853890221",
           "steamId": "STEAM_0:1:446812246",
           "characterId": "372",
           "nickname": "warf",
-          "rpName": "CDT 08-4214 Цфк",
+          "rpName": "{rank} 08-4214 Цфк",
+          "formation": "Кадет",
+          "formationId": "cadet",
+          "rank": "Кадет",
+          "rankId": "cadet",
+          "faction": "Великая Армия Республики",
+          "factionId": "gar",
+          "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {},
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": false,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T00:21:16Z",
+          "lastSeen": "2026-06-03T00:21:16Z"
+        },
+        {
+          "steamId64": "76561198853890221",
+          "steamId": "STEAM_0:1:446812246",
+          "characterId": "373",
+          "nickname": "warf",
+          "rpName": "CDT 08-4124 Еблан",
           "formation": "Кадет",
           "formationId": "cadet",
           "rank": "Кадет",
@@ -107,8 +107,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T00:20:21Z",
-          "lastSeen": "2026-06-03T00:20:21Z"
+          "updatedAt": "2026-06-03T00:21:16Z",
+          "lastSeen": "2026-06-03T00:21:16Z"
         }
       ]
     },
@@ -449,5 +449,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T00:20:21.559Z"
+  "updatedAt": "2026-06-03T00:21:16.771Z"
 }
