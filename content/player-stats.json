@@ -2086,7 +2086,7 @@
       "steamId64": "76561198392183475",
       "steamId": "STEAM_0:1:215958873",
       "nickname": "Люциан",
-      "rpName": "{rank} 07-7070 Lucian",
+      "rpName": "LT 07-7070 Lucian",
       "formation": "Штаб",
       "formationId": "8th_trooper",
       "rank": "Офицер штаба",
@@ -2097,29 +2097,29 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "rank": 17,
-        "fhair": 4,
-        "model": 0,
-        "hat": 8,
-        "pistols": 0,
-        "heads": 0
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T13:37:36Z",
-      "lastSeen": "2026-06-03T13:37:36Z",
+      "updatedAt": "2026-06-03T13:38:10Z",
+      "lastSeen": "2026-06-03T13:38:10Z",
       "characterId": "314",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198392183475",
           "steamId": "STEAM_0:1:215958873",
           "characterId": "314",
           "nickname": "Люциан",
-          "rpName": "{rank} 07-7070 Lucian",
+          "rpName": "LT 07-7070 Lucian",
           "formation": "Штаб",
           "formationId": "8th_trooper",
           "rank": "Офицер штаба",
@@ -2130,24 +2130,24 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "rank": 17,
-            "fhair": 4,
-            "model": 0,
-            "hat": 8,
-            "pistols": 0,
-            "heads": 0
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 100,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T13:37:36Z",
-          "lastSeen": "2026-06-03T13:37:36Z"
+          "updatedAt": "2026-06-03T13:38:10Z",
+          "lastSeen": "2026-06-03T13:38:10Z"
         }
       ]
     }
   },
-  "updatedAt": "2026-06-03T13:37:37.933Z"
+  "updatedAt": "2026-06-03T13:38:11.995Z"
 }
