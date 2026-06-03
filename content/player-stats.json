@@ -4,44 +4,30 @@
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
       "nickname": "warf",
-      "rpName": "CR 08-4214 фвыфвф",
-      "formation": "Боец 104-го батальона",
-      "formationId": "104th_trooper",
-      "rank": "Курсант",
-      "rankId": "cr",
+      "rpName": "CDT 08-4214 Цфк",
+      "formation": "Кадет",
+      "formationId": "cadet",
+      "rank": "Кадет",
+      "rankId": "cadet",
       "faction": "Великая Армия Республики",
       "factionId": "gar",
-      "model": "models/sigma/104th/trooper1.mdl",
+      "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
         "0": 0,
         "1": 0,
         "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0,
-        "10": 0,
-        "11": 0,
-        "12": 0,
-        "13": 0,
-        "14": 0,
-        "15": 0,
-        "16": 0,
-        "17": 0
+        "3": 0
       },
       "skin": 0,
       "health": 100,
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T14:41:36Z",
-      "lastSeen": "2026-06-03T14:41:36Z",
-      "characterId": "371",
+      "updatedAt": "2026-06-03T14:42:42Z",
+      "lastSeen": "2026-06-03T14:42:42Z",
+      "characterId": "372",
       "active": true,
       "characters": [
         {
@@ -49,7 +35,7 @@
           "steamId": "STEAM_0:1:446812246",
           "characterId": "371",
           "nickname": "warf",
-          "rpName": "CR 08-4214 фвыфвф",
+          "rpName": "{rank} 08-4214 фвыфвф",
           "formation": "Боец 104-го батальона",
           "formationId": "104th_trooper",
           "rank": "Курсант",
@@ -59,41 +45,22 @@
           "model": "models/sigma/104th/trooper1.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0,
-            "6": 0,
-            "7": 0,
-            "8": 0,
-            "9": 0,
-            "10": 0,
-            "11": 0,
-            "12": 0,
-            "13": 0,
-            "14": 0,
-            "15": 0,
-            "16": 0,
-            "17": 0
-          },
+          "bodygroups": {},
           "skin": 0,
           "health": 100,
           "armor": 0,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:41:36Z",
-          "lastSeen": "2026-06-03T14:41:36Z"
+          "updatedAt": "2026-06-03T14:42:42Z",
+          "lastSeen": "2026-06-03T14:42:42Z"
         },
         {
           "steamId64": "76561198853890221",
           "steamId": "STEAM_0:1:446812246",
           "characterId": "372",
           "nickname": "warf",
-          "rpName": "{rank} 08-4214 Цфк",
+          "rpName": "CDT 08-4214 Цфк",
           "formation": "Кадет",
           "formationId": "cadet",
           "rank": "Кадет",
@@ -103,15 +70,20 @@
           "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {},
+          "bodygroups": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          },
           "skin": 0,
           "health": 100,
           "armor": 0,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:41:36Z",
-          "lastSeen": "2026-06-03T14:41:36Z"
+          "updatedAt": "2026-06-03T14:42:42Z",
+          "lastSeen": "2026-06-03T14:42:42Z"
         },
         {
           "steamId64": "76561198853890221",
@@ -135,8 +107,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:41:36Z",
-          "lastSeen": "2026-06-03T14:41:36Z"
+          "updatedAt": "2026-06-03T14:42:42Z",
+          "lastSeen": "2026-06-03T14:42:42Z"
         }
       ]
     },
@@ -2808,5 +2780,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T14:42:41.635Z"
+  "updatedAt": "2026-06-03T14:42:43.763Z"
 }
