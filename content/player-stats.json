@@ -1196,14 +1196,14 @@
       "steamId64": "76561198813665727",
       "steamId": "STEAM_0:1:426699999",
       "nickname": "Nikovik",
-      "rpName": "PVT 07-8835 Rover",
-      "formation": "Боец 442-ого батальона",
-      "formationId": "674th_trooper",
-      "rank": "Рядовой",
-      "rankId": "pvt",
+      "rpName": "LT 07-1945 Budko",
+      "formation": "Штаб",
+      "formationId": "8th_trooper",
+      "rank": "Офицер штаба",
+      "rankId": "LT",
       "faction": "Великая Армия Республики",
       "factionId": "gar",
-      "model": "models/blatt/player/442nd/442p1trp.mdl",
+      "model": "0",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
@@ -1213,18 +1213,16 @@
         "3": 0,
         "4": 0,
         "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0
+        "6": 0
       },
       "skin": 0,
-      "health": 80,
+      "health": 100,
       "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T13:23:36Z",
-      "lastSeen": "2026-06-03T13:23:36Z",
-      "characterId": "340",
+      "updatedAt": "2026-06-03T13:24:04Z",
+      "lastSeen": "2026-06-03T13:24:04Z",
+      "characterId": "339",
       "active": true,
       "characters": [
         {
@@ -1232,7 +1230,7 @@
           "steamId": "STEAM_0:1:426699999",
           "characterId": "339",
           "nickname": "Nikovik",
-          "rpName": "{rank} 07-1945 Budko",
+          "rpName": "LT 07-1945 Budko",
           "formation": "Штаб",
           "formationId": "8th_trooper",
           "rank": "Офицер штаба",
@@ -1243,29 +1241,29 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "rank": 17,
-            "pistols": 0,
-            "fhair": 0,
-            "model": 0,
-            "hat": 0,
-            "glasses": 0,
-            "heads": 0
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
           },
           "skin": 0,
-          "health": 80,
+          "health": 100,
           "armor": 100,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T13:23:36Z",
-          "lastSeen": "2026-06-03T13:23:36Z"
+          "updatedAt": "2026-06-03T13:24:04Z",
+          "lastSeen": "2026-06-03T13:24:04Z"
         },
         {
           "steamId64": "76561198813665727",
           "steamId": "STEAM_0:1:426699999",
           "characterId": "340",
           "nickname": "Nikovik",
-          "rpName": "PVT 07-8835 Rover",
+          "rpName": "{rank} 07-8835 Rover",
           "formation": "Боец 442-ого батальона",
           "formationId": "674th_trooper",
           "rank": "Рядовой",
@@ -1275,25 +1273,15 @@
           "model": "models/blatt/player/442nd/442p1trp.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0,
-            "6": 0,
-            "7": 0,
-            "8": 0
-          },
+          "bodygroups": {},
           "skin": 0,
-          "health": 80,
+          "health": 100,
           "armor": 100,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T13:23:36Z",
-          "lastSeen": "2026-06-03T13:23:36Z"
+          "updatedAt": "2026-06-03T13:24:04Z",
+          "lastSeen": "2026-06-03T13:24:04Z"
         }
       ]
     },
@@ -1996,5 +1984,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T13:23:37.985Z"
+  "updatedAt": "2026-06-03T13:24:05.348Z"
 }
