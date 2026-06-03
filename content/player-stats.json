@@ -1670,7 +1670,7 @@
       "steamId64": "76561198235183872",
       "steamId": "STEAM_0:0:137459072",
       "nickname": "взаимная похвала",
-      "rpName": "{rank} 06-7284 Кикбек",
+      "rpName": "PFC 06-7284 Кикбек",
       "formation": "Боец 501-го легиона",
       "formationId": "501st_trooper",
       "rank": "Рядовой 1-го класса",
@@ -1681,29 +1681,29 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "hair": 0,
-        "fhair": 0,
-        "Helmet": 0,
-        "backpack": 0,
-        "Body": 0,
-        "flashlighthelmet": 0
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T15:21:36Z",
-      "lastSeen": "2026-06-03T15:21:36Z",
+      "updatedAt": "2026-06-03T15:21:42Z",
+      "lastSeen": "2026-06-03T15:21:42Z",
       "characterId": "25",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198235183872",
           "steamId": "STEAM_0:0:137459072",
           "characterId": "25",
           "nickname": "взаимная похвала",
-          "rpName": "{rank} 06-7284 Кикбек",
+          "rpName": "PFC 06-7284 Кикбек",
           "formation": "Боец 501-го легиона",
           "formationId": "501st_trooper",
           "rank": "Рядовой 1-го класса",
@@ -1714,21 +1714,21 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "hair": 0,
-            "fhair": 0,
-            "Helmet": 0,
-            "backpack": 0,
-            "Body": 0,
-            "flashlighthelmet": 0
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 100,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T15:21:36Z",
-          "lastSeen": "2026-06-03T15:21:36Z"
+          "updatedAt": "2026-06-03T15:21:42Z",
+          "lastSeen": "2026-06-03T15:21:42Z"
         }
       ]
     },
@@ -3337,5 +3337,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T15:21:38.364Z"
+  "updatedAt": "2026-06-03T15:21:43.720Z"
 }
