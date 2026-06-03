@@ -1422,7 +1422,7 @@
       "rankId": "lt",
       "faction": "Великая Армия Республики",
       "factionId": "gar",
-      "model": "models/t_tcw_gar_alpha_wa_lt/t_tcw_gar_alpha_wa_lt.mdl",
+      "model": "models/t_tcw_gar_alpha_wa_cmd/t_tcw_gar_alpha_wa_cmd.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
@@ -1441,12 +1441,12 @@
         "12": 0
       },
       "skin": 0,
-      "health": 100,
-      "armor": 0,
+      "health": 350,
+      "armor": 400,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T17:37:10Z",
-      "lastSeen": "2026-06-03T17:37:10Z",
+      "updatedAt": "2026-06-03T17:38:00Z",
+      "lastSeen": "2026-06-03T17:38:00Z",
       "characterId": "384",
       "active": true,
       "characters": [
@@ -1467,13 +1467,13 @@
           "modelGltf": "",
           "bodygroups": {},
           "skin": 0,
-          "health": 100,
-          "armor": 0,
+          "health": 350,
+          "armor": 400,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:37:10Z",
-          "lastSeen": "2026-06-03T17:37:10Z"
+          "updatedAt": "2026-06-03T17:38:00Z",
+          "lastSeen": "2026-06-03T17:38:00Z"
         },
         {
           "steamId64": "76561198340387530",
@@ -1492,13 +1492,13 @@
           "modelGltf": "",
           "bodygroups": {},
           "skin": 0,
-          "health": 100,
-          "armor": 0,
+          "health": 350,
+          "armor": 400,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:37:10Z",
-          "lastSeen": "2026-06-03T17:37:10Z"
+          "updatedAt": "2026-06-03T17:38:00Z",
+          "lastSeen": "2026-06-03T17:38:00Z"
         },
         {
           "steamId64": "76561198340387530",
@@ -1512,7 +1512,7 @@
           "rankId": "lt",
           "faction": "Великая Армия Республики",
           "factionId": "gar",
-          "model": "models/t_tcw_gar_alpha_wa_lt/t_tcw_gar_alpha_wa_lt.mdl",
+          "model": "models/t_tcw_gar_alpha_wa_cmd/t_tcw_gar_alpha_wa_cmd.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
@@ -1531,13 +1531,13 @@
             "12": 0
           },
           "skin": 0,
-          "health": 100,
-          "armor": 0,
+          "health": 350,
+          "armor": 400,
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:37:10Z",
-          "lastSeen": "2026-06-03T17:37:10Z"
+          "updatedAt": "2026-06-03T17:38:00Z",
+          "lastSeen": "2026-06-03T17:38:00Z"
         }
       ]
     },
@@ -4739,5 +4739,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T17:37:11.802Z"
+  "updatedAt": "2026-06-03T17:38:02.112Z"
 }
