@@ -250,8 +250,8 @@
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T17:24:23Z",
-      "lastSeen": "2026-06-03T17:24:23Z",
+      "updatedAt": "2026-06-03T17:26:29Z",
+      "lastSeen": "2026-06-03T17:26:29Z",
       "characterId": "224",
       "active": false,
       "characters": [
@@ -285,8 +285,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:24:23Z",
-          "lastSeen": "2026-06-03T17:24:23Z"
+          "updatedAt": "2026-06-03T17:26:29Z",
+          "lastSeen": "2026-06-03T17:26:29Z"
         }
       ]
     },
@@ -2218,30 +2218,30 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0,
-        "10": 0,
-        "11": 0,
-        "12": 0,
-        "13": 0
+        "Right shoulder": 0,
+        "Mech": 0,
+        "Left shin": 0,
+        "Left thigh": 0,
+        "Right forearm": 0,
+        "Left forearm": 0,
+        "Tech armor": 0,
+        "Right thigh": 0,
+        "Torso front": 0,
+        "Right shin": 0,
+        "Left shoulder": 0,
+        "Eyes": 0,
+        "Torso rear": 0,
+        "Head": 0
       },
       "skin": 0,
-      "health": 500,
+      "health": 0,
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T17:24:23Z",
-      "lastSeen": "2026-06-03T17:24:23Z",
+      "updatedAt": "2026-06-03T17:26:30Z",
+      "lastSeen": "2026-06-03T17:26:30Z",
       "characterId": "265",
-      "active": true,
+      "active": false,
       "characters": [
         {
           "steamId64": "76561198059406754",
@@ -2259,29 +2259,29 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0,
-            "6": 0,
-            "7": 0,
-            "8": 0,
-            "9": 0,
-            "10": 0,
-            "11": 0,
-            "12": 0,
-            "13": 0
+            "Right shoulder": 0,
+            "Mech": 0,
+            "Left shin": 0,
+            "Left thigh": 0,
+            "Right forearm": 0,
+            "Left forearm": 0,
+            "Tech armor": 0,
+            "Right thigh": 0,
+            "Torso front": 0,
+            "Right shin": 0,
+            "Left shoulder": 0,
+            "Eyes": 0,
+            "Torso rear": 0,
+            "Head": 0
           },
           "skin": 0,
-          "health": 500,
+          "health": 0,
           "armor": 0,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:24:23Z",
-          "lastSeen": "2026-06-03T17:24:23Z"
+          "updatedAt": "2026-06-03T17:26:30Z",
+          "lastSeen": "2026-06-03T17:26:30Z"
         },
         {
           "steamId64": "76561198059406754",
@@ -2302,13 +2302,13 @@
             "Body": 0
           },
           "skin": 3,
-          "health": 500,
+          "health": 0,
           "armor": 0,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:24:23Z",
-          "lastSeen": "2026-06-03T17:24:23Z"
+          "updatedAt": "2026-06-03T17:26:30Z",
+          "lastSeen": "2026-06-03T17:26:30Z"
         }
       ]
     },
@@ -4014,7 +4014,7 @@
       "steamId64": "76561198771908471",
       "steamId": "STEAM_0:1:405821371",
       "nickname": "chigurh",
-      "rpName": "{rank} 06-4417 Kinder",
+      "rpName": "SPC 06-4417 Kinder",
       "formation": "Боец роты DOOM",
       "formationId": "doom_trooper",
       "rank": "Специалист",
@@ -4025,30 +4025,30 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "Hair": 0,
-        "Facial Hair": 0,
-        "helmet attachments": 0,
-        "helmet": 0,
-        "body": 0,
-        "armor": 0,
-        "Backpack": 1
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 1
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 150,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T17:26:29Z",
-      "lastSeen": "2026-06-03T17:26:29Z",
+      "updatedAt": "2026-06-03T17:24:23Z",
+      "lastSeen": "2026-06-03T17:24:23Z",
       "characterId": "118",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198771908471",
           "steamId": "STEAM_0:1:405821371",
           "characterId": "118",
           "nickname": "chigurh",
-          "rpName": "{rank} 06-4417 Kinder",
+          "rpName": "SPC 06-4417 Kinder",
           "formation": "Боец роты DOOM",
           "formationId": "doom_trooper",
           "rank": "Специалист",
@@ -4059,22 +4059,22 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "Hair": 0,
-            "Facial Hair": 0,
-            "helmet attachments": 0,
-            "helmet": 0,
-            "body": 0,
-            "armor": 0,
-            "Backpack": 1
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 150,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:26:29Z",
-          "lastSeen": "2026-06-03T17:26:29Z"
+          "updatedAt": "2026-06-03T17:24:23Z",
+          "lastSeen": "2026-06-03T17:24:23Z"
         }
       ]
     },
@@ -4620,5 +4620,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T17:26:30.786Z"
+  "updatedAt": "2026-06-03T17:26:31.730Z"
 }
