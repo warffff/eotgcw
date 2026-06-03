@@ -4027,7 +4027,63 @@
           "lastSeen": "2026-06-03T15:41:36Z"
         }
       ]
+    },
+    "76561198771908471": {
+      "steamId64": "76561198771908471",
+      "steamId": "STEAM_0:1:405821371",
+      "nickname": "chigurh",
+      "rpName": "chigurh",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-03T15:42:44Z",
+      "lastSeen": "2026-06-03T15:42:44Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561198771908471",
+          "steamId": "STEAM_0:1:405821371",
+          "characterId": "active",
+          "nickname": "chigurh",
+          "rpName": "chigurh",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T15:42:44Z",
+          "lastSeen": "2026-06-03T15:42:44Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-03T15:41:50.150Z"
+  "updatedAt": "2026-06-03T15:42:45.668Z"
 }
