@@ -909,7 +909,63 @@
           "lastSeen": "2026-06-03T12:35:45Z"
         }
       ]
+    },
+    "76561198144964099": {
+      "steamId64": "76561198144964099",
+      "steamId": "STEAM_0:1:92349185",
+      "nickname": "Чизбургер с двойным сыром",
+      "rpName": "Чизбургер с двойным сыром",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-03T12:38:59Z",
+      "lastSeen": "2026-06-03T12:38:59Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561198144964099",
+          "steamId": "STEAM_0:1:92349185",
+          "characterId": "active",
+          "nickname": "Чизбургер с двойным сыром",
+          "rpName": "Чизбургер с двойным сыром",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T12:38:59Z",
+          "lastSeen": "2026-06-03T12:38:59Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-03T12:37:37.363Z"
+  "updatedAt": "2026-06-03T12:39:00.183Z"
 }
