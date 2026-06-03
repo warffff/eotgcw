@@ -1648,36 +1648,25 @@
       "rankId": "lt",
       "faction": "Великая Армия Республики",
       "factionId": "gar",
-      "model": "models/target/tc13/571st/para/para.mdl",
+      "model": "models/navy/gnavymedic.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
         "0": 0,
         "1": 0,
-        "2": 1,
-        "3": 5,
+        "2": 6,
+        "3": 7,
         "4": 1,
-        "5": 1,
-        "6": 2,
-        "7": 1,
-        "8": 1,
-        "9": 0,
-        "10": 1,
-        "11": 0,
-        "12": 0,
-        "13": 0,
-        "14": 2,
-        "15": 1,
-        "16": 1,
-        "17": 0
+        "5": 0,
+        "6": 4
       },
       "skin": 0,
       "health": 150,
       "armor": 200,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T19:11:56Z",
-      "lastSeen": "2026-06-03T19:11:56Z",
+      "updatedAt": "2026-06-03T19:13:34Z",
+      "lastSeen": "2026-06-03T19:13:34Z",
       "characterId": "55",
       "active": true,
       "characters": [
@@ -1693,28 +1682,17 @@
           "rankId": "lt",
           "faction": "Великая Армия Республики",
           "factionId": "gar",
-          "model": "models/target/tc13/571st/para/para.mdl",
+          "model": "models/navy/gnavymedic.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
             "0": 0,
             "1": 0,
-            "2": 1,
-            "3": 5,
+            "2": 6,
+            "3": 7,
             "4": 1,
-            "5": 1,
-            "6": 2,
-            "7": 1,
-            "8": 1,
-            "9": 0,
-            "10": 1,
-            "11": 0,
-            "12": 0,
-            "13": 0,
-            "14": 2,
-            "15": 1,
-            "16": 1,
-            "17": 0
+            "5": 0,
+            "6": 4
           },
           "skin": 0,
           "health": 150,
@@ -1722,8 +1700,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T19:11:56Z",
-          "lastSeen": "2026-06-03T19:11:56Z"
+          "updatedAt": "2026-06-03T19:13:34Z",
+          "lastSeen": "2026-06-03T19:13:34Z"
         }
       ]
     },
@@ -5412,5 +5390,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T19:11:58.124Z"
+  "updatedAt": "2026-06-03T19:13:35.515Z"
 }
