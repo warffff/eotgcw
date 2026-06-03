@@ -689,7 +689,63 @@
           "lastSeen": "2026-06-03T11:41:36Z"
         }
       ]
+    },
+    "76561198960901640": {
+      "steamId64": "76561198960901640",
+      "steamId": "STEAM_0:0:500317956",
+      "nickname": "[BLT] ꧁༺FANATKA༻꧂",
+      "rpName": "[BLT] ꧁༺FANATKA༻꧂",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-03T11:41:41Z",
+      "lastSeen": "2026-06-03T11:41:41Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561198960901640",
+          "steamId": "STEAM_0:0:500317956",
+          "characterId": "active",
+          "nickname": "[BLT] ꧁༺FANATKA༻꧂",
+          "rpName": "[BLT] ꧁༺FANATKA༻꧂",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T11:41:41Z",
+          "lastSeen": "2026-06-03T11:41:41Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-03T11:41:37.667Z"
+  "updatedAt": "2026-06-03T11:41:42.538Z"
 }
