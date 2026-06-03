@@ -5885,7 +5885,63 @@
           "lastSeen": "2026-06-03T20:07:20Z"
         }
       ]
+    },
+    "76561199083618251": {
+      "steamId64": "76561199083618251",
+      "steamId": "STEAM_0:1:561676261",
+      "nickname": "Konfetocka92",
+      "rpName": "Konfetocka92",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-03T21:23:42Z",
+      "lastSeen": "2026-06-03T21:23:42Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561199083618251",
+          "steamId": "STEAM_0:1:561676261",
+          "characterId": "active",
+          "nickname": "Konfetocka92",
+          "rpName": "Konfetocka92",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T21:23:42Z",
+          "lastSeen": "2026-06-03T21:23:42Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-03T21:21:58.534Z"
+  "updatedAt": "2026-06-03T21:23:43.695Z"
 }
