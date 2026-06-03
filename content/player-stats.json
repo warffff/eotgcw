@@ -1840,41 +1840,27 @@
       "steamId64": "76561198438521197",
       "steamId": "STEAM_0:1:239127734",
       "nickname": "¿resonans?",
-      "rpName": "CPT 1-2099 Sentinel",
-      "formation": "Оператор Сумрак-9",
-      "formationId": "d9_trooper",
-      "rank": "Капитан",
-      "rankId": "cpt",
+      "rpName": "MC 06-9928 Resonans",
+      "formation": "Штаб",
+      "formationId": "8th_trooper",
+      "rank": "Маршал 8-ой секторальной",
+      "rankId": "marshal",
       "faction": "Великая Армия Республики",
       "factionId": "gar",
-      "model": "models/md/oto/oto.mdl",
+      "model": "models/212th_trp/pm_212th_trp.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0,
-        "10": 0,
-        "11": 0,
-        "12": 0,
-        "13": 0,
-        "14": 0
+        "0": 0
       },
       "skin": 0,
-      "health": 200,
-      "armor": 200,
+      "health": 170,
+      "armor": 250,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T14:23:36Z",
-      "lastSeen": "2026-06-03T14:23:36Z",
-      "characterId": "255",
+      "updatedAt": "2026-06-03T14:23:50Z",
+      "lastSeen": "2026-06-03T14:23:50Z",
+      "characterId": "14",
       "active": true,
       "characters": [
         {
@@ -1882,7 +1868,7 @@
           "steamId": "STEAM_0:1:239127734",
           "characterId": "14",
           "nickname": "¿resonans?",
-          "rpName": "{rank} 06-9928 Resonans",
+          "rpName": "MC 06-9928 Resonans",
           "formation": "Штаб",
           "formationId": "8th_trooper",
           "rank": "Маршал 8-ой секторальной",
@@ -1892,22 +1878,24 @@
           "model": "models/212th_trp/pm_212th_trp.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {},
+          "bodygroups": {
+            "0": 0
+          },
           "skin": 0,
-          "health": 200,
-          "armor": 200,
+          "health": 170,
+          "armor": 250,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:23:36Z",
-          "lastSeen": "2026-06-03T14:23:36Z"
+          "updatedAt": "2026-06-03T14:23:50Z",
+          "lastSeen": "2026-06-03T14:23:50Z"
         },
         {
           "steamId64": "76561198438521197",
           "steamId": "STEAM_0:1:239127734",
           "characterId": "255",
           "nickname": "¿resonans?",
-          "rpName": "CPT 1-2099 Sentinel",
+          "rpName": "{rank} 1-2099 Sentinel",
           "formation": "Оператор Сумрак-9",
           "formationId": "d9_trooper",
           "rank": "Капитан",
@@ -1917,31 +1905,15 @@
           "model": "models/md/oto/oto.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0,
-            "6": 0,
-            "7": 0,
-            "8": 0,
-            "9": 0,
-            "10": 0,
-            "11": 0,
-            "12": 0,
-            "13": 0,
-            "14": 0
-          },
+          "bodygroups": {},
           "skin": 0,
-          "health": 200,
-          "armor": 200,
+          "health": 170,
+          "armor": 250,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:23:36Z",
-          "lastSeen": "2026-06-03T14:23:36Z"
+          "updatedAt": "2026-06-03T14:23:50Z",
+          "lastSeen": "2026-06-03T14:23:50Z"
         },
         {
           "steamId64": "76561198438521197",
@@ -1965,13 +1937,13 @@
             "belt": 0
           },
           "skin": 0,
-          "health": 200,
-          "armor": 200,
+          "health": 170,
+          "armor": 250,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:23:36Z",
-          "lastSeen": "2026-06-03T14:23:36Z"
+          "updatedAt": "2026-06-03T14:23:50Z",
+          "lastSeen": "2026-06-03T14:23:50Z"
         },
         {
           "steamId64": "76561198438521197",
@@ -1997,13 +1969,13 @@
             "head": 0
           },
           "skin": 0,
-          "health": 200,
-          "armor": 200,
+          "health": 170,
+          "armor": 250,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:23:36Z",
-          "lastSeen": "2026-06-03T14:23:36Z"
+          "updatedAt": "2026-06-03T14:23:50Z",
+          "lastSeen": "2026-06-03T14:23:50Z"
         }
       ]
     },
@@ -2608,5 +2580,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T14:23:38.130Z"
+  "updatedAt": "2026-06-03T14:23:51.009Z"
 }
