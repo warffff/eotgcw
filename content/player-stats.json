@@ -4,7 +4,7 @@
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
       "nickname": "warf",
-      "rpName": "CDT 08-5818 Еблан",
+      "rpName": "CDT 08-4214 фвыфвф",
       "formation": "Кадет",
       "formationId": "cadet",
       "rank": "Кадет",
@@ -25,9 +25,9 @@
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T00:18:37Z",
-      "lastSeen": "2026-06-03T00:18:37Z",
-      "characterId": "370",
+      "updatedAt": "2026-06-03T00:18:57Z",
+      "lastSeen": "2026-06-03T00:18:57Z",
+      "characterId": "371",
       "active": true,
       "characters": [
         {
@@ -35,7 +35,32 @@
           "steamId": "STEAM_0:1:446812246",
           "characterId": "370",
           "nickname": "warf",
-          "rpName": "CDT 08-5818 Еблан",
+          "rpName": "{rank} 08-5818 Еблан",
+          "formation": "Кадет",
+          "formationId": "cadet",
+          "rank": "Кадет",
+          "rankId": "cadet",
+          "faction": "Великая Армия Республики",
+          "factionId": "gar",
+          "model": "models/cadet_red/pm_training_cadet_bravo.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {},
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": false,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T00:18:57Z",
+          "lastSeen": "2026-06-03T00:18:57Z"
+        },
+        {
+          "steamId64": "76561198853890221",
+          "steamId": "STEAM_0:1:446812246",
+          "characterId": "371",
+          "nickname": "warf",
+          "rpName": "CDT 08-4214 фвыфвф",
           "formation": "Кадет",
           "formationId": "cadet",
           "rank": "Кадет",
@@ -57,8 +82,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T00:18:37Z",
-          "lastSeen": "2026-06-03T00:18:37Z"
+          "updatedAt": "2026-06-03T00:18:57Z",
+          "lastSeen": "2026-06-03T00:18:57Z"
         }
       ]
     },
@@ -399,5 +424,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T00:18:39.440Z"
+  "updatedAt": "2026-06-03T00:18:57.472Z"
 }
