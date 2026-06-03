@@ -4,7 +4,7 @@
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
       "nickname": "warf",
-      "rpName": "SCC 08-4444 Варф",
+      "rpName": "{rank} 08-4444 Варф",
       "formation": "Боец 821-ого Батальона",
       "formationId": "821st_trooper",
       "rank": "Старший коммандер",
@@ -14,31 +14,23 @@
       "model": "models/salty/cgi/821/821_salty.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0
-      },
+      "bodygroups": {},
       "skin": 0,
-      "health": 100,
+      "health": 0,
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T15:57:36Z",
-      "lastSeen": "2026-06-03T15:57:36Z",
+      "updatedAt": "2026-06-03T21:36:51Z",
+      "lastSeen": "2026-06-03T21:36:51Z",
       "characterId": "381",
-      "active": true,
+      "active": false,
       "characters": [
         {
           "steamId64": "76561198853890221",
           "steamId": "STEAM_0:1:446812246",
           "characterId": "381",
           "nickname": "warf",
-          "rpName": "SCC 08-4444 Варф",
+          "rpName": "{rank} 08-4444 Варф",
           "formation": "Боец 821-ого Батальона",
           "formationId": "821st_trooper",
           "rank": "Старший коммандер",
@@ -48,23 +40,15 @@
           "model": "models/salty/cgi/821/821_salty.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0,
-            "6": 0
-          },
+          "bodygroups": {},
           "skin": 0,
-          "health": 100,
+          "health": 0,
           "armor": 0,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T15:57:36Z",
-          "lastSeen": "2026-06-03T15:57:36Z"
+          "updatedAt": "2026-06-03T21:36:51Z",
+          "lastSeen": "2026-06-03T21:36:51Z"
         }
       ]
     },
@@ -5992,5 +5976,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T21:36:42.186Z"
+  "updatedAt": "2026-06-03T21:36:52.492Z"
 }
