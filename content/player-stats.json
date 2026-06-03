@@ -4,28 +4,34 @@
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
       "nickname": "warf",
-      "rpName": "Youngling Варф",
-      "formation": "Лорный Джедай",
-      "formationId": "lore_jedi",
-      "rank": "Юнлинг",
-      "rankId": "youngling",
-      "faction": "Орден Джедаев",
-      "factionId": "jedi",
-      "model": "models/jazzmcfly/jka/younglings/jka_young_male.mdl",
+      "rpName": "CR 08-4444 Варф",
+      "formation": "Боец 442-ого батальона",
+      "formationId": "674th_trooper",
+      "rank": "Курсант",
+      "rankId": "cr",
+      "faction": "Великая Армия Республики",
+      "factionId": "gar",
+      "model": "models/blatt/player/442nd/442p1trp.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
         "0": 0,
         "1": 0,
-        "2": 0
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
       },
       "skin": 0,
       "health": 200,
       "armor": 200,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T22:24:32Z",
-      "lastSeen": "2026-06-03T22:24:32Z",
+      "updatedAt": "2026-06-03T22:24:57Z",
+      "lastSeen": "2026-06-03T22:24:57Z",
       "characterId": "381",
       "active": true,
       "characters": [
@@ -34,20 +40,26 @@
           "steamId": "STEAM_0:1:446812246",
           "characterId": "381",
           "nickname": "warf",
-          "rpName": "Youngling Варф",
-          "formation": "Лорный Джедай",
-          "formationId": "lore_jedi",
-          "rank": "Юнлинг",
-          "rankId": "youngling",
-          "faction": "Орден Джедаев",
-          "factionId": "jedi",
-          "model": "models/jazzmcfly/jka/younglings/jka_young_male.mdl",
+          "rpName": "CR 08-4444 Варф",
+          "formation": "Боец 442-ого батальона",
+          "formationId": "674th_trooper",
+          "rank": "Курсант",
+          "rankId": "cr",
+          "faction": "Великая Армия Республики",
+          "factionId": "gar",
+          "model": "models/blatt/player/442nd/442p1trp.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
             "0": 0,
             "1": 0,
-            "2": 0
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0
           },
           "skin": 0,
           "health": 200,
@@ -55,8 +67,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T22:24:32Z",
-          "lastSeen": "2026-06-03T22:24:32Z"
+          "updatedAt": "2026-06-03T22:24:57Z",
+          "lastSeen": "2026-06-03T22:24:57Z"
         }
       ]
     },
@@ -6040,5 +6052,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T22:24:33.260Z"
+  "updatedAt": "2026-06-03T22:24:58.122Z"
 }
