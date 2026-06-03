@@ -4048,7 +4048,7 @@
       "steamId64": "76561198771908471",
       "steamId": "STEAM_0:1:405821371",
       "nickname": "chigurh",
-      "rpName": "{rank} 06-4417 Kinder",
+      "rpName": "SPC 06-4417 Kinder",
       "formation": "Боец роты DOOM",
       "formationId": "doom_trooper",
       "rank": "Специалист",
@@ -4059,32 +4059,32 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "Medic_Leg_Left": 0,
-        "Facial Hair": 0,
-        "helmet attachments": 1,
-        "armor": 0,
-        "Backpack": 1,
-        "Hair": 0,
-        "Medic_Leg_Right": 0,
-        "helmet": 0,
-        "body": 0
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 150,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T16:00:23Z",
-      "lastSeen": "2026-06-03T16:00:23Z",
+      "updatedAt": "2026-06-03T16:01:36Z",
+      "lastSeen": "2026-06-03T16:01:36Z",
       "characterId": "118",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198771908471",
           "steamId": "STEAM_0:1:405821371",
           "characterId": "118",
           "nickname": "chigurh",
-          "rpName": "{rank} 06-4417 Kinder",
+          "rpName": "SPC 06-4417 Kinder",
           "formation": "Боец роты DOOM",
           "formationId": "doom_trooper",
           "rank": "Специалист",
@@ -4095,24 +4095,24 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "Medic_Leg_Left": 0,
-            "Facial Hair": 0,
-            "helmet attachments": 1,
-            "armor": 0,
-            "Backpack": 1,
-            "Hair": 0,
-            "Medic_Leg_Right": 0,
-            "helmet": 0,
-            "body": 0
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 150,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T16:00:23Z",
-          "lastSeen": "2026-06-03T16:00:23Z"
+          "updatedAt": "2026-06-03T16:01:36Z",
+          "lastSeen": "2026-06-03T16:01:36Z"
         }
       ]
     },
@@ -4321,5 +4321,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T16:01:31.820Z"
+  "updatedAt": "2026-06-03T16:01:37.470Z"
 }
