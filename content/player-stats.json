@@ -1803,7 +1803,7 @@
       "steamId64": "76561198438521197",
       "steamId": "STEAM_0:1:239127734",
       "nickname": "¿resonans?",
-      "rpName": "{rank} 06-9928 Resonans",
+      "rpName": "MC 06-9928 Resonans",
       "formation": "Штаб",
       "formationId": "8th_trooper",
       "rank": "Маршал 8-ой секторальной",
@@ -1813,23 +1813,25 @@
       "model": "models/212th_trp/pm_212th_trp.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {},
+      "bodygroups": {
+        "0": 0
+      },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 170,
+      "armor": 250,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T18:44:29Z",
-      "lastSeen": "2026-06-03T18:44:29Z",
+      "updatedAt": "2026-06-03T18:44:38Z",
+      "lastSeen": "2026-06-03T18:44:38Z",
       "characterId": "14",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198438521197",
           "steamId": "STEAM_0:1:239127734",
           "characterId": "14",
           "nickname": "¿resonans?",
-          "rpName": "{rank} 06-9928 Resonans",
+          "rpName": "MC 06-9928 Resonans",
           "formation": "Штаб",
           "formationId": "8th_trooper",
           "rank": "Маршал 8-ой секторальной",
@@ -1839,15 +1841,17 @@
           "model": "models/212th_trp/pm_212th_trp.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {},
+          "bodygroups": {
+            "0": 0
+          },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 170,
+          "armor": 250,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T18:44:29Z",
-          "lastSeen": "2026-06-03T18:44:29Z"
+          "updatedAt": "2026-06-03T18:44:38Z",
+          "lastSeen": "2026-06-03T18:44:38Z"
         },
         {
           "steamId64": "76561198438521197",
@@ -1866,13 +1870,13 @@
           "modelGltf": "",
           "bodygroups": {},
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 170,
+          "armor": 250,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T18:44:29Z",
-          "lastSeen": "2026-06-03T18:44:29Z"
+          "updatedAt": "2026-06-03T18:44:38Z",
+          "lastSeen": "2026-06-03T18:44:38Z"
         },
         {
           "steamId64": "76561198438521197",
@@ -1896,13 +1900,13 @@
             "belt": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 170,
+          "armor": 250,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T18:44:29Z",
-          "lastSeen": "2026-06-03T18:44:29Z"
+          "updatedAt": "2026-06-03T18:44:38Z",
+          "lastSeen": "2026-06-03T18:44:38Z"
         },
         {
           "steamId64": "76561198438521197",
@@ -1928,13 +1932,13 @@
             "head": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 170,
+          "armor": 250,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T18:44:29Z",
-          "lastSeen": "2026-06-03T18:44:29Z"
+          "updatedAt": "2026-06-03T18:44:38Z",
+          "lastSeen": "2026-06-03T18:44:38Z"
         }
       ]
     },
@@ -5208,5 +5212,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T18:44:30.689Z"
+  "updatedAt": "2026-06-03T18:44:39.661Z"
 }
