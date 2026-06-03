@@ -1821,8 +1821,8 @@
       "armor": 250,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T18:44:38Z",
-      "lastSeen": "2026-06-03T18:44:38Z",
+      "updatedAt": "2026-06-03T18:44:40Z",
+      "lastSeen": "2026-06-03T18:44:40Z",
       "characterId": "14",
       "active": true,
       "characters": [
@@ -1850,8 +1850,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T18:44:38Z",
-          "lastSeen": "2026-06-03T18:44:38Z"
+          "updatedAt": "2026-06-03T18:44:40Z",
+          "lastSeen": "2026-06-03T18:44:40Z"
         },
         {
           "steamId64": "76561198438521197",
@@ -1875,8 +1875,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T18:44:38Z",
-          "lastSeen": "2026-06-03T18:44:38Z"
+          "updatedAt": "2026-06-03T18:44:40Z",
+          "lastSeen": "2026-06-03T18:44:40Z"
         },
         {
           "steamId64": "76561198438521197",
@@ -1905,8 +1905,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T18:44:38Z",
-          "lastSeen": "2026-06-03T18:44:38Z"
+          "updatedAt": "2026-06-03T18:44:40Z",
+          "lastSeen": "2026-06-03T18:44:40Z"
         },
         {
           "steamId64": "76561198438521197",
@@ -1937,8 +1937,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T18:44:38Z",
-          "lastSeen": "2026-06-03T18:44:38Z"
+          "updatedAt": "2026-06-03T18:44:40Z",
+          "lastSeen": "2026-06-03T18:44:40Z"
         }
       ]
     },
@@ -5212,5 +5212,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T18:44:39.661Z"
+  "updatedAt": "2026-06-03T18:44:41.817Z"
 }
