@@ -1488,7 +1488,63 @@
           "lastSeen": "2026-06-03T13:01:36Z"
         }
       ]
+    },
+    "76561198340387530": {
+      "steamId64": "76561198340387530",
+      "steamId": "STEAM_0:0:190060901",
+      "nickname": "TheHussarGeneral",
+      "rpName": "TheHussarGeneral",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-03T13:03:10Z",
+      "lastSeen": "2026-06-03T13:03:10Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561198340387530",
+          "steamId": "STEAM_0:0:190060901",
+          "characterId": "active",
+          "nickname": "TheHussarGeneral",
+          "rpName": "TheHussarGeneral",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T13:03:10Z",
+          "lastSeen": "2026-06-03T13:03:10Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-03T13:01:42.323Z"
+  "updatedAt": "2026-06-03T13:03:11.830Z"
 }
