@@ -2258,30 +2258,30 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0,
-        "10": 0,
-        "11": 0,
-        "12": 0,
-        "13": 0
+        "Right shoulder": 0,
+        "Mech": 0,
+        "Left shin": 0,
+        "Left thigh": 0,
+        "Right forearm": 0,
+        "Left forearm": 0,
+        "Tech armor": 0,
+        "Right thigh": 0,
+        "Torso front": 0,
+        "Right shin": 0,
+        "Left shoulder": 0,
+        "Eyes": 0,
+        "Torso rear": 0,
+        "Head": 0
       },
       "skin": 0,
-      "health": 500,
-      "armor": 500,
+      "health": 0,
+      "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T17:27:39Z",
-      "lastSeen": "2026-06-03T17:27:39Z",
+      "updatedAt": "2026-06-03T17:26:30Z",
+      "lastSeen": "2026-06-03T17:26:30Z",
       "characterId": "265",
-      "active": true,
+      "active": false,
       "characters": [
         {
           "steamId64": "76561198059406754",
@@ -2299,29 +2299,29 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0,
-            "3": 0,
-            "4": 0,
-            "5": 0,
-            "6": 0,
-            "7": 0,
-            "8": 0,
-            "9": 0,
-            "10": 0,
-            "11": 0,
-            "12": 0,
-            "13": 0
+            "Right shoulder": 0,
+            "Mech": 0,
+            "Left shin": 0,
+            "Left thigh": 0,
+            "Right forearm": 0,
+            "Left forearm": 0,
+            "Tech armor": 0,
+            "Right thigh": 0,
+            "Torso front": 0,
+            "Right shin": 0,
+            "Left shoulder": 0,
+            "Eyes": 0,
+            "Torso rear": 0,
+            "Head": 0
           },
           "skin": 0,
-          "health": 500,
-          "armor": 500,
+          "health": 0,
+          "armor": 0,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:27:39Z",
-          "lastSeen": "2026-06-03T17:27:39Z"
+          "updatedAt": "2026-06-03T17:26:30Z",
+          "lastSeen": "2026-06-03T17:26:30Z"
         },
         {
           "steamId64": "76561198059406754",
@@ -2342,13 +2342,13 @@
             "Body": 0
           },
           "skin": 3,
-          "health": 500,
-          "armor": 500,
+          "health": 0,
+          "armor": 0,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:27:39Z",
-          "lastSeen": "2026-06-03T17:27:39Z"
+          "updatedAt": "2026-06-03T17:26:30Z",
+          "lastSeen": "2026-06-03T17:26:30Z"
         }
       ]
     },
@@ -4400,8 +4400,8 @@
       "armor": 300,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T17:27:38Z",
-      "lastSeen": "2026-06-03T17:27:38Z",
+      "updatedAt": "2026-06-03T17:27:40Z",
+      "lastSeen": "2026-06-03T17:27:40Z",
       "characterId": "19",
       "active": true,
       "characters": [
@@ -4433,8 +4433,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:27:38Z",
-          "lastSeen": "2026-06-03T17:27:38Z"
+          "updatedAt": "2026-06-03T17:27:40Z",
+          "lastSeen": "2026-06-03T17:27:40Z"
         },
         {
           "steamId64": "76561199001540506",
@@ -4468,8 +4468,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T17:27:38Z",
-          "lastSeen": "2026-06-03T17:27:38Z"
+          "updatedAt": "2026-06-03T17:27:40Z",
+          "lastSeen": "2026-06-03T17:27:40Z"
         }
       ]
     },
@@ -4644,5 +4644,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T17:27:40.456Z"
+  "updatedAt": "2026-06-03T17:27:41.317Z"
 }
