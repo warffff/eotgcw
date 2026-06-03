@@ -2827,7 +2827,7 @@
       "steamId64": "76561199367301524",
       "steamId": "STEAM_0:0:703517898",
       "nickname": "Mar",
-      "rpName": "{rank} 06-1364 Topchik",
+      "rpName": "CPL 06-1364 Topchik",
       "formation": "Боец 442-ого батальона",
       "formationId": "674th_trooper",
       "rank": "Капрал",
@@ -2838,26 +2838,24 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "Kama": 0,
-        "Helmet2": 0,
-        "Body1": 0
+        "0": 0
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T14:49:36Z",
-      "lastSeen": "2026-06-03T14:49:36Z",
+      "updatedAt": "2026-06-03T14:49:39Z",
+      "lastSeen": "2026-06-03T14:49:39Z",
       "characterId": "107",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561199367301524",
           "steamId": "STEAM_0:0:703517898",
           "characterId": "107",
           "nickname": "Mar",
-          "rpName": "{rank} 06-1364 Topchik",
+          "rpName": "CPL 06-1364 Topchik",
           "formation": "Боец 442-ого батальона",
           "formationId": "674th_trooper",
           "rank": "Капрал",
@@ -2868,21 +2866,19 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "Kama": 0,
-            "Helmet2": 0,
-            "Body1": 0
+            "0": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 100,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:49:36Z",
-          "lastSeen": "2026-06-03T14:49:36Z"
+          "updatedAt": "2026-06-03T14:49:39Z",
+          "lastSeen": "2026-06-03T14:49:39Z"
         }
       ]
     }
   },
-  "updatedAt": "2026-06-03T14:49:37.987Z"
+  "updatedAt": "2026-06-03T14:49:40.239Z"
 }
