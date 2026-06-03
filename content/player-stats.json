@@ -5211,7 +5211,7 @@
       "steamId64": "76561198145381616",
       "steamId": "STEAM_0:0:92557944",
       "nickname": "Пальто",
-      "rpName": "LT 06-7781 13",
+      "rpName": "LT 06-7781 03",
       "formation": "Оператор Сумрак-9",
       "formationId": "d9_trooper",
       "rank": "Лейтенант",
@@ -5241,8 +5241,8 @@
       "armor": 720,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T19:20:26Z",
-      "lastSeen": "2026-06-03T19:20:26Z",
+      "updatedAt": "2026-06-03T19:20:31Z",
+      "lastSeen": "2026-06-03T19:20:31Z",
       "characterId": "57",
       "active": true,
       "characters": [
@@ -5251,7 +5251,7 @@
           "steamId": "STEAM_0:0:92557944",
           "characterId": "57",
           "nickname": "Пальто",
-          "rpName": "LT 06-7781 13",
+          "rpName": "LT 06-7781 03",
           "formation": "Оператор Сумрак-9",
           "formationId": "d9_trooper",
           "rank": "Лейтенант",
@@ -5282,8 +5282,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T19:20:26Z",
-          "lastSeen": "2026-06-03T19:20:26Z"
+          "updatedAt": "2026-06-03T19:20:31Z",
+          "lastSeen": "2026-06-03T19:20:31Z"
         }
       ]
     },
@@ -5378,5 +5378,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T19:20:27.880Z"
+  "updatedAt": "2026-06-03T19:20:32.693Z"
 }
