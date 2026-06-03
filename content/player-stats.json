@@ -195,7 +195,7 @@
       "rankId": "spc",
       "faction": "Великая Армия Республики",
       "factionId": "gar",
-      "model": "models/doom/joker/arf/doom_arf.mdl",
+      "model": "models/doom/joker/soldier/doom_soldier.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
@@ -204,23 +204,16 @@
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 1,
-        "9": 0,
-        "10": 0,
-        "11": 0,
-        "12": 0,
-        "13": 0
+        "5": 2,
+        "6": 0
       },
       "skin": 0,
       "health": 100,
       "armor": 150,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T14:41:36Z",
-      "lastSeen": "2026-06-03T14:41:36Z",
+      "updatedAt": "2026-06-03T14:42:48Z",
+      "lastSeen": "2026-06-03T14:42:48Z",
       "characterId": "117",
       "active": true,
       "characters": [
@@ -236,7 +229,7 @@
           "rankId": "spc",
           "faction": "Великая Армия Республики",
           "factionId": "gar",
-          "model": "models/doom/joker/arf/doom_arf.mdl",
+          "model": "models/doom/joker/soldier/doom_soldier.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
@@ -245,15 +238,8 @@
             "2": 0,
             "3": 0,
             "4": 0,
-            "5": 0,
-            "6": 0,
-            "7": 0,
-            "8": 1,
-            "9": 0,
-            "10": 0,
-            "11": 0,
-            "12": 0,
-            "13": 0
+            "5": 2,
+            "6": 0
           },
           "skin": 0,
           "health": 100,
@@ -261,8 +247,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T14:41:36Z",
-          "lastSeen": "2026-06-03T14:41:36Z"
+          "updatedAt": "2026-06-03T14:42:48Z",
+          "lastSeen": "2026-06-03T14:42:48Z"
         }
       ]
     },
@@ -2780,5 +2766,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T14:42:45.908Z"
+  "updatedAt": "2026-06-03T14:42:48.850Z"
 }
