@@ -4,7 +4,7 @@
       "steamId64": "76561198853890221",
       "steamId": "STEAM_0:1:446812246",
       "nickname": "warf",
-      "rpName": "{rank} 08-4444 Варф",
+      "rpName": "CR 08-4444 Варф",
       "formation": "Боец 442-ого батальона",
       "formationId": "674th_trooper",
       "rank": "Курсант",
@@ -14,23 +14,33 @@
       "model": "models/blatt/player/442nd/442p1trp.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {},
+      "bodygroups": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
       "skin": 0,
-      "health": 0,
+      "health": 100,
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T22:39:51Z",
-      "lastSeen": "2026-06-03T22:39:51Z",
+      "updatedAt": "2026-06-03T22:40:01Z",
+      "lastSeen": "2026-06-03T22:40:01Z",
       "characterId": "381",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198853890221",
           "steamId": "STEAM_0:1:446812246",
           "characterId": "381",
           "nickname": "warf",
-          "rpName": "{rank} 08-4444 Варф",
+          "rpName": "CR 08-4444 Варф",
           "formation": "Боец 442-ого батальона",
           "formationId": "674th_trooper",
           "rank": "Курсант",
@@ -40,15 +50,25 @@
           "model": "models/blatt/player/442nd/442p1trp.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {},
+          "bodygroups": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0
+          },
           "skin": 0,
-          "health": 0,
+          "health": 100,
           "armor": 0,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T22:39:51Z",
-          "lastSeen": "2026-06-03T22:39:51Z"
+          "updatedAt": "2026-06-03T22:40:01Z",
+          "lastSeen": "2026-06-03T22:40:01Z"
         }
       ]
     },
@@ -6032,5 +6052,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T22:39:52.619Z"
+  "updatedAt": "2026-06-03T22:40:02.409Z"
 }
