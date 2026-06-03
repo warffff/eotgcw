@@ -2517,7 +2517,63 @@
           "lastSeen": "2026-06-03T13:59:44Z"
         }
       ]
+    },
+    "76561198414528697": {
+      "steamId64": "76561198414528697",
+      "steamId": "STEAM_0:1:227131484",
+      "nickname": "Realm (分野)► ✔",
+      "rpName": "Realm (分野)► ✔",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-03T13:59:53Z",
+      "lastSeen": "2026-06-03T13:59:53Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561198414528697",
+          "steamId": "STEAM_0:1:227131484",
+          "characterId": "active",
+          "nickname": "Realm (分野)► ✔",
+          "rpName": "Realm (分野)► ✔",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T13:59:53Z",
+          "lastSeen": "2026-06-03T13:59:53Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-03T13:59:45.373Z"
+  "updatedAt": "2026-06-03T13:59:54.816Z"
 }
