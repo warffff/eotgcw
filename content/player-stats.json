@@ -1119,7 +1119,63 @@
           "lastSeen": "2026-06-03T12:55:47Z"
         }
       ]
+    },
+    "76561199231561617": {
+      "steamId64": "76561199231561617",
+      "steamId": "STEAM_0:1:635647944",
+      "nickname": "Сын Candy (Rayna)",
+      "rpName": "Сын Candy (Rayna)",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-03T12:55:52Z",
+      "lastSeen": "2026-06-03T12:55:52Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561199231561617",
+          "steamId": "STEAM_0:1:635647944",
+          "characterId": "active",
+          "nickname": "Сын Candy (Rayna)",
+          "rpName": "Сын Candy (Rayna)",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-03T12:55:52Z",
+          "lastSeen": "2026-06-03T12:55:52Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-03T12:55:48.392Z"
+  "updatedAt": "2026-06-03T12:55:53.037Z"
 }
