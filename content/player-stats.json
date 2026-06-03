@@ -366,7 +366,7 @@
       "steamId64": "76561198867354063",
       "steamId": "STEAM_0:1:453544167",
       "nickname": "Manik",
-      "rpName": "{rank} Ragnar Dann",
+      "rpName": "Knight Ragnar Dann",
       "formation": "Джедай",
       "formationId": "jedi",
       "rank": "Рыцарь",
@@ -377,24 +377,24 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "body": 0
+        "0": 0
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 900,
+      "armor": 300,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T21:35:57Z",
-      "lastSeen": "2026-06-03T21:35:57Z",
+      "updatedAt": "2026-06-03T21:36:00Z",
+      "lastSeen": "2026-06-03T21:36:00Z",
       "characterId": "137",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198867354063",
           "steamId": "STEAM_0:1:453544167",
           "characterId": "137",
           "nickname": "Manik",
-          "rpName": "{rank} Ragnar Dann",
+          "rpName": "Knight Ragnar Dann",
           "formation": "Джедай",
           "formationId": "jedi",
           "rank": "Рыцарь",
@@ -405,16 +405,16 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "body": 0
+            "0": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 900,
+          "armor": 300,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T21:35:57Z",
-          "lastSeen": "2026-06-03T21:35:57Z"
+          "updatedAt": "2026-06-03T21:36:00Z",
+          "lastSeen": "2026-06-03T21:36:00Z"
         }
       ]
     },
@@ -5992,5 +5992,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-03T21:35:58.657Z"
+  "updatedAt": "2026-06-03T21:36:01.959Z"
 }
