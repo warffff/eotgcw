@@ -265,8 +265,8 @@
       "armor": 350,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T08:09:58Z",
-      "lastSeen": "2026-06-04T08:09:58Z",
+      "updatedAt": "2026-06-04T08:11:58Z",
+      "lastSeen": "2026-06-04T08:11:58Z",
       "characterId": "224",
       "active": true,
       "characters": [
@@ -311,8 +311,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T08:09:58Z",
-          "lastSeen": "2026-06-04T08:09:58Z"
+          "updatedAt": "2026-06-04T08:11:58Z",
+          "lastSeen": "2026-06-04T08:11:58Z"
         }
       ]
     },
@@ -508,55 +508,51 @@
       "steamId64": "76561199060525791",
       "steamId": "STEAM_0:1:550130031",
       "nickname": "Igris",
-      "rpName": "Igris",
-      "formation": "Unassigned",
-      "formationId": "",
-      "rank": "Не указано",
-      "rankId": "Не указано",
-      "faction": "",
-      "factionId": "",
-      "model": "models/player.mdl",
+      "rpName": "{rank} 08-9090 Killmonger",
+      "formation": "Боец 442-ого батальона",
+      "formationId": "674th_trooper",
+      "rank": "Курсант",
+      "rankId": "cr",
+      "faction": "Великая Армия Республики",
+      "factionId": "gar",
+      "model": "models/blatt/player/442nd/442p1trp.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {
-        "0": 0
-      },
+      "bodygroups": {},
       "skin": 0,
-      "health": 100,
+      "health": 0,
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T08:11:12Z",
-      "lastSeen": "2026-06-04T08:11:12Z",
-      "characterId": "active",
-      "active": true,
+      "updatedAt": "2026-06-04T08:11:58Z",
+      "lastSeen": "2026-06-04T08:11:58Z",
+      "characterId": "375",
+      "active": false,
       "characters": [
         {
           "steamId64": "76561199060525791",
           "steamId": "STEAM_0:1:550130031",
-          "characterId": "active",
+          "characterId": "375",
           "nickname": "Igris",
-          "rpName": "Igris",
-          "formation": "Unassigned",
-          "formationId": "",
-          "rank": "Не указано",
-          "rankId": "Не указано",
-          "faction": "",
-          "factionId": "",
-          "model": "models/player.mdl",
+          "rpName": "{rank} 08-9090 Killmonger",
+          "formation": "Боец 442-ого батальона",
+          "formationId": "674th_trooper",
+          "rank": "Курсант",
+          "rankId": "cr",
+          "faction": "Великая Армия Республики",
+          "factionId": "gar",
+          "model": "models/blatt/player/442nd/442p1trp.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {
-            "0": 0
-          },
+          "bodygroups": {},
           "skin": 0,
-          "health": 100,
+          "health": 0,
           "armor": 0,
           "online": true,
-          "active": true,
+          "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T08:11:12Z",
-          "lastSeen": "2026-06-04T08:11:12Z"
+          "updatedAt": "2026-06-04T08:11:58Z",
+          "lastSeen": "2026-06-04T08:11:58Z"
         }
       ]
     },
@@ -1702,8 +1698,8 @@
       "armor": 200,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T08:09:58Z",
-      "lastSeen": "2026-06-04T08:09:58Z",
+      "updatedAt": "2026-06-04T08:11:58Z",
+      "lastSeen": "2026-06-04T08:11:58Z",
       "characterId": "55",
       "active": true,
       "characters": [
@@ -1748,8 +1744,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T08:09:58Z",
-          "lastSeen": "2026-06-04T08:09:58Z"
+          "updatedAt": "2026-06-04T08:11:58Z",
+          "lastSeen": "2026-06-04T08:11:58Z"
         }
       ]
     },
@@ -6096,5 +6092,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T08:11:13.144Z"
+  "updatedAt": "2026-06-04T08:11:59.953Z"
 }
