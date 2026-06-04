@@ -6170,7 +6170,63 @@
           "lastSeen": "2026-06-04T10:32:19Z"
         }
       ]
+    },
+    "76561199385049827": {
+      "steamId64": "76561199385049827",
+      "steamId": "STEAM_0:1:712392049",
+      "nickname": "///zXcHalinda\\\\\\",
+      "rpName": "///zXcHalinda\\\\\\",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-04T10:36:40Z",
+      "lastSeen": "2026-06-04T10:36:40Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561199385049827",
+          "steamId": "STEAM_0:1:712392049",
+          "characterId": "active",
+          "nickname": "///zXcHalinda\\\\\\",
+          "rpName": "///zXcHalinda\\\\\\",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-04T10:36:40Z",
+          "lastSeen": "2026-06-04T10:36:40Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-04T10:35:59.953Z"
+  "updatedAt": "2026-06-04T10:36:41.657Z"
 }
