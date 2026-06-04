@@ -388,55 +388,55 @@
       "steamId64": "76561198867354063",
       "steamId": "STEAM_0:1:453544167",
       "nickname": "Manik",
-      "rpName": "Knight Ragnar Dann",
-      "formation": "Джедай",
-      "formationId": "jedi",
-      "rank": "Рыцарь",
-      "rankId": "knight",
-      "faction": "Орден Джедаев",
-      "factionId": "jedi",
-      "model": "models/models/player/jedi/knight/knight_ragnar.mdl",
+      "rpName": "Manik",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
         "0": 0
       },
       "skin": 0,
-      "health": 900,
-      "armor": 300,
+      "health": 100,
+      "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-03T22:20:09Z",
-      "lastSeen": "2026-06-03T22:20:09Z",
-      "characterId": "137",
+      "updatedAt": "2026-06-04T08:59:49Z",
+      "lastSeen": "2026-06-04T08:59:49Z",
+      "characterId": "active",
       "active": true,
       "characters": [
         {
           "steamId64": "76561198867354063",
           "steamId": "STEAM_0:1:453544167",
-          "characterId": "137",
+          "characterId": "active",
           "nickname": "Manik",
-          "rpName": "Knight Ragnar Dann",
-          "formation": "Джедай",
-          "formationId": "jedi",
-          "rank": "Рыцарь",
-          "rankId": "knight",
-          "faction": "Орден Джедаев",
-          "factionId": "jedi",
-          "model": "models/models/player/jedi/knight/knight_ragnar.mdl",
+          "rpName": "Manik",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
             "0": 0
           },
           "skin": 0,
-          "health": 900,
-          "armor": 300,
+          "health": 100,
+          "armor": 0,
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-03T22:20:09Z",
-          "lastSeen": "2026-06-03T22:20:09Z"
+          "updatedAt": "2026-06-04T08:59:49Z",
+          "lastSeen": "2026-06-04T08:59:49Z"
         }
       ]
     },
@@ -6114,5 +6114,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T08:57:59.557Z"
+  "updatedAt": "2026-06-04T08:59:50.380Z"
 }
