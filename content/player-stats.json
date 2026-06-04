@@ -1,0 +1,83 @@
+{
+  "players": {
+    "76561198929774291": {
+      "steamId64": "76561198929774291",
+      "steamId": "STEAM_0:1:484754281",
+      "nickname": "𝓢𝓲𝓰𝓷𝓸𝓻",
+      "rpName": "LT 06-1873 Кили",
+      "formation": "Боец 501-го легиона",
+      "formationId": "501st_trooper",
+      "rank": "Лейтенант",
+      "rankId": "lt",
+      "faction": "Великая Армия Республики",
+      "factionId": "gar",
+      "model": "models/501st_xo/pm_501st_xo.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0
+      },
+      "skin": 0,
+      "health": 150,
+      "armor": 150,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-04T15:24:10Z",
+      "lastSeen": "2026-06-04T15:24:10Z",
+      "characterId": "54",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561198929774291",
+          "steamId": "STEAM_0:1:484754281",
+          "characterId": "54",
+          "nickname": "𝓢𝓲𝓰𝓷𝓸𝓻",
+          "rpName": "LT 06-1873 Кили",
+          "formation": "Боец 501-го легиона",
+          "formationId": "501st_trooper",
+          "rank": "Лейтенант",
+          "rankId": "lt",
+          "faction": "Великая Армия Республики",
+          "factionId": "gar",
+          "model": "models/501st_xo/pm_501st_xo.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "skin": 0,
+          "health": 150,
+          "armor": 150,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-04T15:24:10Z",
+          "lastSeen": "2026-06-04T15:24:10Z"
+        }
+      ]
+    }
+  },
+  "updatedAt": "2026-06-04T15:24:10.964Z"
+}
