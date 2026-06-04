@@ -1036,7 +1036,7 @@
       "steamId64": "76561198315390034",
       "steamId": "STEAM_0:0:177562153",
       "nickname": "DarkGhostius",
-      "rpName": "{rank} 07-5582 Juss",
+      "rpName": "PFC 07-5582 Juss",
       "formation": "Боец роты DOOM",
       "formationId": "doom_trooper",
       "rank": "Рядовой 1-го класса",
@@ -1047,30 +1047,30 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "Hair": 0,
-        "Facial Hair": 0,
-        "helmet attachments": 1,
-        "helmet": 0,
-        "body": 0,
-        "armor": 0,
-        "Backpack": 1
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 100,
+      "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T15:01:33Z",
-      "lastSeen": "2026-06-04T15:01:33Z",
+      "updatedAt": "2026-06-04T15:01:37Z",
+      "lastSeen": "2026-06-04T15:01:37Z",
       "characterId": "343",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198315390034",
           "steamId": "STEAM_0:0:177562153",
           "characterId": "343",
           "nickname": "DarkGhostius",
-          "rpName": "{rank} 07-5582 Juss",
+          "rpName": "PFC 07-5582 Juss",
           "formation": "Боец роты DOOM",
           "formationId": "doom_trooper",
           "rank": "Рядовой 1-го класса",
@@ -1081,22 +1081,22 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "Hair": 0,
-            "Facial Hair": 0,
-            "helmet attachments": 1,
-            "helmet": 0,
-            "body": 0,
-            "armor": 0,
-            "Backpack": 1
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 100,
+          "armor": 100,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T15:01:33Z",
-          "lastSeen": "2026-06-04T15:01:33Z"
+          "updatedAt": "2026-06-04T15:01:37Z",
+          "lastSeen": "2026-06-04T15:01:37Z"
         }
       ]
     },
@@ -6381,5 +6381,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T15:01:34.825Z"
+  "updatedAt": "2026-06-04T15:01:38.221Z"
 }
