@@ -6461,7 +6461,63 @@
           "lastSeen": "2026-06-04T15:15:33Z"
         }
       ]
+    },
+    "76561198848893039": {
+      "steamId64": "76561198848893039",
+      "steamId": "STEAM_0:1:444313655",
+      "nickname": "zzun1cr0nzz",
+      "rpName": "zzun1cr0nzz",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-04T15:16:13Z",
+      "lastSeen": "2026-06-04T15:16:13Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561198848893039",
+          "steamId": "STEAM_0:1:444313655",
+          "characterId": "active",
+          "nickname": "zzun1cr0nzz",
+          "rpName": "zzun1cr0nzz",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-04T15:16:13Z",
+          "lastSeen": "2026-06-04T15:16:13Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-04T15:15:35.224Z"
+  "updatedAt": "2026-06-04T15:16:14.343Z"
 }
