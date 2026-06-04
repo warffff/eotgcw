@@ -4190,7 +4190,7 @@
       "rankId": "sgt",
       "faction": "Великая Армия Республики",
       "factionId": "gar",
-      "model": "models/t_tcw_gar_alpha_wa_lt/t_tcw_gar_alpha_wa_lt.mdl",
+      "model": "models/t_tcw_gar_alpha_wa_cpt/t_tcw_gar_alpha_wa_cpt.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
@@ -4213,8 +4213,8 @@
       "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:21:05Z",
-      "lastSeen": "2026-06-04T14:21:05Z",
+      "updatedAt": "2026-06-04T14:21:55Z",
+      "lastSeen": "2026-06-04T14:21:55Z",
       "characterId": "349",
       "active": true,
       "characters": [
@@ -4230,7 +4230,7 @@
           "rankId": "sgt",
           "faction": "Великая Армия Республики",
           "factionId": "gar",
-          "model": "models/t_tcw_gar_alpha_wa_lt/t_tcw_gar_alpha_wa_lt.mdl",
+          "model": "models/t_tcw_gar_alpha_wa_cpt/t_tcw_gar_alpha_wa_cpt.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
@@ -4254,8 +4254,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:21:05Z",
-          "lastSeen": "2026-06-04T14:21:05Z"
+          "updatedAt": "2026-06-04T14:21:55Z",
+          "lastSeen": "2026-06-04T14:21:55Z"
         }
       ]
     },
@@ -6324,5 +6324,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T14:21:21.389Z"
+  "updatedAt": "2026-06-04T14:21:56.730Z"
 }
