@@ -230,7 +230,7 @@
       "steamId64": "76561198065492977",
       "steamId": "STEAM_0:1:52613624",
       "nickname": "Feda",
-      "rpName": "CPL 01-1953 Hawk",
+      "rpName": "CPL 01-1953 Ainz",
       "formation": "Оператор Сумрак-9",
       "formationId": "d9_trooper",
       "rank": "Капрал",
@@ -265,8 +265,8 @@
       "armor": 350,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T08:03:00Z",
-      "lastSeen": "2026-06-04T08:03:00Z",
+      "updatedAt": "2026-06-04T08:03:20Z",
+      "lastSeen": "2026-06-04T08:03:20Z",
       "characterId": "224",
       "active": true,
       "characters": [
@@ -275,7 +275,7 @@
           "steamId": "STEAM_0:1:52613624",
           "characterId": "224",
           "nickname": "Feda",
-          "rpName": "CPL 01-1953 Hawk",
+          "rpName": "CPL 01-1953 Ainz",
           "formation": "Оператор Сумрак-9",
           "formationId": "d9_trooper",
           "rank": "Капрал",
@@ -311,8 +311,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T08:03:00Z",
-          "lastSeen": "2026-06-04T08:03:00Z"
+          "updatedAt": "2026-06-04T08:03:20Z",
+          "lastSeen": "2026-06-04T08:03:20Z"
         }
       ]
     },
@@ -6096,5 +6096,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T08:03:01.567Z"
+  "updatedAt": "2026-06-04T08:03:21.934Z"
 }
