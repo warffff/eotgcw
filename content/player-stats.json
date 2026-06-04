@@ -5963,19 +5963,22 @@
       "rankId": "padawan",
       "faction": "Орден Джедаев",
       "factionId": "jedi",
-      "model": "models/player/jedi/gungan.mdl",
+      "model": "models/player/jedi/human.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
       },
       "skin": 0,
       "health": 200,
       "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T11:23:59Z",
-      "lastSeen": "2026-06-04T11:23:59Z",
+      "updatedAt": "2026-06-04T11:24:27Z",
+      "lastSeen": "2026-06-04T11:24:27Z",
       "characterId": "290",
       "active": true,
       "characters": [
@@ -6021,8 +6024,8 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T11:23:59Z",
-          "lastSeen": "2026-06-04T11:23:59Z"
+          "updatedAt": "2026-06-04T11:24:27Z",
+          "lastSeen": "2026-06-04T11:24:27Z"
         },
         {
           "steamId64": "76561199083618251",
@@ -6036,11 +6039,14 @@
           "rankId": "padawan",
           "faction": "Орден Джедаев",
           "factionId": "jedi",
-          "model": "models/player/jedi/gungan.mdl",
+          "model": "models/player/jedi/human.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0
           },
           "skin": 0,
           "health": 200,
@@ -6048,8 +6054,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T11:23:59Z",
-          "lastSeen": "2026-06-04T11:23:59Z"
+          "updatedAt": "2026-06-04T11:24:27Z",
+          "lastSeen": "2026-06-04T11:24:27Z"
         }
       ]
     },
@@ -6242,5 +6248,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T11:23:59.973Z"
+  "updatedAt": "2026-06-04T11:24:28.587Z"
 }
