@@ -5974,10 +5974,10 @@
       "skin": 8,
       "health": 500,
       "armor": 200,
-      "online": true,
+      "online": false,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T13:29:59Z",
-      "lastSeen": "2026-06-04T13:29:59Z",
+      "updatedAt": "2026-06-04T13:31:21Z",
+      "lastSeen": "2026-06-04T13:31:21Z",
       "characterId": "290",
       "active": true,
       "characters": [
@@ -6005,26 +6005,26 @@
             "Left Holster": 0,
             "Upper Armor": 0,
             "Kama": 1,
-            "Bandolier": 0,
+            "Macrobinoculars": 0,
             "Right Holster": 0,
             "Backpack": 3,
             "Tool Kit": 0,
-            "Head": 0,
             "Pauldron": 1,
+            "Head": 0,
             "Ankle Pouches": 1,
             "Tech Pad": 1,
             "Earpiece | Hair": 1,
-            "Macrobinoculars": 0,
+            "Bandolier": 0,
             "Kama Holsters": 1
           },
           "skin": 0,
           "health": 500,
           "armor": 200,
-          "online": true,
+          "online": false,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T13:29:59Z",
-          "lastSeen": "2026-06-04T13:29:59Z"
+          "updatedAt": "2026-06-04T13:31:21Z",
+          "lastSeen": "2026-06-04T13:31:21Z"
         },
         {
           "steamId64": "76561199083618251",
@@ -6049,11 +6049,11 @@
           "skin": 8,
           "health": 500,
           "armor": 200,
-          "online": true,
+          "online": false,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T13:29:59Z",
-          "lastSeen": "2026-06-04T13:29:59Z"
+          "updatedAt": "2026-06-04T13:31:21Z",
+          "lastSeen": "2026-06-04T13:31:21Z"
         }
       ]
     },
@@ -6244,5 +6244,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T13:30:00.434Z"
+  "updatedAt": "2026-06-04T13:31:23.250Z"
 }
