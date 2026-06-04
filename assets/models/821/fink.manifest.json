@@ -1,0 +1,63 @@
+{
+  "source": "/mnt/data/model_821/cgi_821st_support_battalion_3034140388/models/player/jedi/knight/fink.mdl",
+  "version": 48,
+  "textures": [
+    "female_body",
+    "knight_body",
+    "knight_boots",
+    "belt_attachments",
+    "female_head",
+    "swoop",
+    "coat",
+    "hood_down",
+    "hood"
+  ],
+  "bodygroups": [
+    {
+      "id": 0,
+      "name": "outfit",
+      "options": [
+        {
+          "id": 0,
+          "name": "sleeves.smd",
+          "meshes": [
+            "bg_00_outfit__option_00_sleeves.smd__mesh_00",
+            "bg_00_outfit__option_00_sleeves.smd__mesh_01",
+            "bg_00_outfit__option_00_sleeves.smd__mesh_02",
+            "bg_00_outfit__option_00_sleeves.smd__mesh_03",
+            "bg_00_outfit__option_00_sleeves.smd__mesh_04",
+            "bg_00_outfit__option_00_sleeves.smd__mesh_05"
+          ]
+        },
+        {
+          "id": 1,
+          "name": "jedi_cloak.smd",
+          "meshes": [
+            "bg_00_outfit__option_01_jedi_cloak.smd__mesh_00",
+            "bg_00_outfit__option_01_jedi_cloak.smd__mesh_01",
+            "bg_00_outfit__option_01_jedi_cloak.smd__mesh_02",
+            "bg_00_outfit__option_01_jedi_cloak.smd__mesh_03",
+            "bg_00_outfit__option_01_jedi_cloak.smd__mesh_04",
+            "bg_00_outfit__option_01_jedi_cloak.smd__mesh_05",
+            "bg_00_outfit__option_01_jedi_cloak.smd__mesh_06"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "jedi_cloak_hooded.smd",
+          "meshes": [
+            "bg_00_outfit__option_02_jedi_cloak_hooded.smd__mesh_00",
+            "bg_00_outfit__option_02_jedi_cloak_hooded.smd__mesh_01",
+            "bg_00_outfit__option_02_jedi_cloak_hooded.smd__mesh_02",
+            "bg_00_outfit__option_02_jedi_cloak_hooded.smd__mesh_03",
+            "bg_00_outfit__option_02_jedi_cloak_hooded.smd__mesh_04",
+            "bg_00_outfit__option_02_jedi_cloak_hooded.smd__mesh_05",
+            "bg_00_outfit__option_02_jedi_cloak_hooded.smd__mesh_06"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": "Converted by minimal Source MDL parser. Geometry and bodygroup options are preserved as named GLB nodes; Source materials/VTF textures and runtime bodygroup toggling require viewer support.",
+  "sitePath": "assets/models/821/fink.glb"
+}
