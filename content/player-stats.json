@@ -5972,12 +5972,12 @@
         "2": 0
       },
       "skin": 1,
-      "health": 200,
-      "armor": 100,
+      "health": 500,
+      "armor": 200,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T11:27:59Z",
-      "lastSeen": "2026-06-04T11:27:59Z",
+      "updatedAt": "2026-06-04T11:28:54Z",
+      "lastSeen": "2026-06-04T11:28:54Z",
       "characterId": "290",
       "active": true,
       "characters": [
@@ -6018,13 +6018,13 @@
             "Kama Holsters": 1
           },
           "skin": 0,
-          "health": 200,
-          "armor": 100,
+          "health": 500,
+          "armor": 200,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T11:27:59Z",
-          "lastSeen": "2026-06-04T11:27:59Z"
+          "updatedAt": "2026-06-04T11:28:54Z",
+          "lastSeen": "2026-06-04T11:28:54Z"
         },
         {
           "steamId64": "76561199083618251",
@@ -6047,13 +6047,13 @@
             "2": 0
           },
           "skin": 1,
-          "health": 200,
-          "armor": 100,
+          "health": 500,
+          "armor": 200,
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T11:27:59Z",
-          "lastSeen": "2026-06-04T11:27:59Z"
+          "updatedAt": "2026-06-04T11:28:54Z",
+          "lastSeen": "2026-06-04T11:28:54Z"
         }
       ]
     },
@@ -6246,5 +6246,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T11:28:00.079Z"
+  "updatedAt": "2026-06-04T11:28:55.730Z"
 }
