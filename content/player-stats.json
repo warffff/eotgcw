@@ -5956,28 +5956,26 @@
       "steamId64": "76561199083618251",
       "steamId": "STEAM_0:1:561676261",
       "nickname": "Konfetocka92",
-      "rpName": "Youngling Nakoa Tey",
+      "rpName": "Padawan Nakoa Tey",
       "formation": "Джедай",
       "formationId": "jedi",
-      "rank": "Юнлинг",
-      "rankId": "youngling",
+      "rank": "Падаван",
+      "rankId": "padawan",
       "faction": "Орден Джедаев",
       "factionId": "jedi",
-      "model": "models/jazzmcfly/jka/younglings/jka_young_male.mdl",
+      "model": "models/player/jedi/gungan.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0,
-        "1": 0,
-        "2": 0
+        "0": 0
       },
       "skin": 0,
       "health": 200,
       "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T11:22:07Z",
-      "lastSeen": "2026-06-04T11:22:07Z",
+      "updatedAt": "2026-06-04T11:23:30Z",
+      "lastSeen": "2026-06-04T11:23:30Z",
       "characterId": "290",
       "active": true,
       "characters": [
@@ -6023,28 +6021,26 @@
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T11:22:07Z",
-          "lastSeen": "2026-06-04T11:22:07Z"
+          "updatedAt": "2026-06-04T11:23:30Z",
+          "lastSeen": "2026-06-04T11:23:30Z"
         },
         {
           "steamId64": "76561199083618251",
           "steamId": "STEAM_0:1:561676261",
           "characterId": "290",
           "nickname": "Konfetocka92",
-          "rpName": "Youngling Nakoa Tey",
+          "rpName": "Padawan Nakoa Tey",
           "formation": "Джедай",
           "formationId": "jedi",
-          "rank": "Юнлинг",
-          "rankId": "youngling",
+          "rank": "Падаван",
+          "rankId": "padawan",
           "faction": "Орден Джедаев",
           "factionId": "jedi",
-          "model": "models/jazzmcfly/jka/younglings/jka_young_male.mdl",
+          "model": "models/player/jedi/gungan.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0,
-            "1": 0,
-            "2": 0
+            "0": 0
           },
           "skin": 0,
           "health": 200,
@@ -6052,8 +6048,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T11:22:07Z",
-          "lastSeen": "2026-06-04T11:22:07Z"
+          "updatedAt": "2026-06-04T11:23:30Z",
+          "lastSeen": "2026-06-04T11:23:30Z"
         }
       ]
     },
@@ -6246,5 +6242,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T11:22:59.599Z"
+  "updatedAt": "2026-06-04T11:23:31.597Z"
 }
