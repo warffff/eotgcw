@@ -82,7 +82,7 @@
       "steamId64": "76561199001540506",
       "steamId": "STEAM_0:0:520637389",
       "nickname": "Hail",
-      "rpName": "{rank} Shanks Akagami",
+      "rpName": "Knight Shanks Akagami",
       "formation": "Джедай",
       "formationId": "jedi",
       "rank": "Рыцарь",
@@ -93,28 +93,28 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "hair": 4,
-        "facial hair": 6,
-        "body": 0,
-        "cape": 1,
-        "head": 0
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
       },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 900,
+      "armor": 300,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T15:24:32Z",
-      "lastSeen": "2026-06-04T15:24:32Z",
+      "updatedAt": "2026-06-04T15:24:47Z",
+      "lastSeen": "2026-06-04T15:24:47Z",
       "characterId": "19",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561199001540506",
           "steamId": "STEAM_0:0:520637389",
           "characterId": "19",
           "nickname": "Hail",
-          "rpName": "{rank} Shanks Akagami",
+          "rpName": "Knight Shanks Akagami",
           "formation": "Джедай",
           "formationId": "jedi",
           "rank": "Рыцарь",
@@ -125,20 +125,20 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "hair": 4,
-            "facial hair": 6,
-            "body": 0,
-            "cape": 1,
-            "head": 0
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 900,
+          "armor": 300,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T15:24:32Z",
-          "lastSeen": "2026-06-04T15:24:32Z"
+          "updatedAt": "2026-06-04T15:24:47Z",
+          "lastSeen": "2026-06-04T15:24:47Z"
         },
         {
           "steamId64": "76561199001540506",
@@ -167,13 +167,13 @@
             "pauldron": 0
           },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 900,
+          "armor": 300,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T15:24:32Z",
-          "lastSeen": "2026-06-04T15:24:32Z"
+          "updatedAt": "2026-06-04T15:24:47Z",
+          "lastSeen": "2026-06-04T15:24:47Z"
         }
       ]
     },
@@ -270,5 +270,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T15:24:43.825Z"
+  "updatedAt": "2026-06-04T15:24:48.138Z"
 }
