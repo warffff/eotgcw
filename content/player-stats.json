@@ -28,8 +28,8 @@
       "armor": 200,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:23:59Z",
-      "lastSeen": "2026-06-04T14:23:59Z",
+      "updatedAt": "2026-06-04T14:25:59Z",
+      "lastSeen": "2026-06-04T14:25:59Z",
       "characterId": "381",
       "active": true,
       "characters": [
@@ -63,8 +63,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:23:59Z",
-          "lastSeen": "2026-06-04T14:23:59Z"
+          "updatedAt": "2026-06-04T14:25:59Z",
+          "lastSeen": "2026-06-04T14:25:59Z"
         }
       ]
     },
@@ -243,26 +243,21 @@
         "3": 0,
         "4": 0,
         "5": 0,
-        "6": 0,
+        "6": 1,
         "7": 0,
         "8": 0,
         "9": 0,
-        "10": 0,
-        "11": 0,
-        "12": 0,
-        "13": 0,
-        "14": 0,
-        "15": 0,
-        "16": 0,
-        "17": 0
+        "10": 1,
+        "11": 1,
+        "12": 0
       },
       "skin": 0,
       "health": 200,
       "armor": 300,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:23:59Z",
-      "lastSeen": "2026-06-04T14:23:59Z",
+      "updatedAt": "2026-06-04T14:25:59Z",
+      "lastSeen": "2026-06-04T14:25:59Z",
       "characterId": "224",
       "active": true,
       "characters": [
@@ -288,18 +283,13 @@
             "3": 0,
             "4": 0,
             "5": 0,
-            "6": 0,
+            "6": 1,
             "7": 0,
             "8": 0,
             "9": 0,
-            "10": 0,
-            "11": 0,
-            "12": 0,
-            "13": 0,
-            "14": 0,
-            "15": 0,
-            "16": 0,
-            "17": 0
+            "10": 1,
+            "11": 1,
+            "12": 0
           },
           "skin": 0,
           "health": 200,
@@ -307,8 +297,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:23:59Z",
-          "lastSeen": "2026-06-04T14:23:59Z"
+          "updatedAt": "2026-06-04T14:25:59Z",
+          "lastSeen": "2026-06-04T14:25:59Z"
         }
       ]
     },
@@ -628,8 +618,8 @@
       "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:23:59Z",
-      "lastSeen": "2026-06-04T14:23:59Z",
+      "updatedAt": "2026-06-04T14:25:59Z",
+      "lastSeen": "2026-06-04T14:25:59Z",
       "characterId": "129",
       "active": true,
       "characters": [
@@ -675,8 +665,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:23:59Z",
-          "lastSeen": "2026-06-04T14:23:59Z"
+          "updatedAt": "2026-06-04T14:25:59Z",
+          "lastSeen": "2026-06-04T14:25:59Z"
         }
       ]
     },
@@ -710,8 +700,8 @@
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:23:59Z",
-      "lastSeen": "2026-06-04T14:23:59Z",
+      "updatedAt": "2026-06-04T14:25:59Z",
+      "lastSeen": "2026-06-04T14:25:59Z",
       "characterId": "378",
       "active": true,
       "characters": [
@@ -747,8 +737,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:23:59Z",
-          "lastSeen": "2026-06-04T14:23:59Z"
+          "updatedAt": "2026-06-04T14:25:59Z",
+          "lastSeen": "2026-06-04T14:25:59Z"
         }
       ]
     },
@@ -1343,8 +1333,8 @@
       "armor": 200,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:23:59Z",
-      "lastSeen": "2026-06-04T14:23:59Z",
+      "updatedAt": "2026-06-04T14:25:59Z",
+      "lastSeen": "2026-06-04T14:25:59Z",
       "characterId": "258",
       "active": true,
       "characters": [
@@ -1392,8 +1382,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:23:59Z",
-          "lastSeen": "2026-06-04T14:23:59Z"
+          "updatedAt": "2026-06-04T14:25:59Z",
+          "lastSeen": "2026-06-04T14:25:59Z"
         }
       ]
     },
@@ -3759,8 +3749,8 @@
       "armor": 0,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:25:51Z",
-      "lastSeen": "2026-06-04T14:25:51Z",
+      "updatedAt": "2026-06-04T14:25:59Z",
+      "lastSeen": "2026-06-04T14:25:59Z",
       "characterId": "active",
       "active": true,
       "characters": [
@@ -3788,8 +3778,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:25:51Z",
-          "lastSeen": "2026-06-04T14:25:51Z"
+          "updatedAt": "2026-06-04T14:25:59Z",
+          "lastSeen": "2026-06-04T14:25:59Z"
         }
       ]
     },
@@ -4154,8 +4144,8 @@
       "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:23:59Z",
-      "lastSeen": "2026-06-04T14:23:59Z",
+      "updatedAt": "2026-06-04T14:25:59Z",
+      "lastSeen": "2026-06-04T14:25:59Z",
       "characterId": "349",
       "active": true,
       "characters": [
@@ -4195,8 +4185,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:23:59Z",
-          "lastSeen": "2026-06-04T14:23:59Z"
+          "updatedAt": "2026-06-04T14:25:59Z",
+          "lastSeen": "2026-06-04T14:25:59Z"
         }
       ]
     },
@@ -6219,8 +6209,8 @@
       "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:23:59Z",
-      "lastSeen": "2026-06-04T14:23:59Z",
+      "updatedAt": "2026-06-04T14:25:59Z",
+      "lastSeen": "2026-06-04T14:25:59Z",
       "characterId": "45",
       "active": true,
       "characters": [
@@ -6259,11 +6249,11 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:23:59Z",
-          "lastSeen": "2026-06-04T14:23:59Z"
+          "updatedAt": "2026-06-04T14:25:59Z",
+          "lastSeen": "2026-06-04T14:25:59Z"
         }
       ]
     }
   },
-  "updatedAt": "2026-06-04T14:25:52.953Z"
+  "updatedAt": "2026-06-04T14:26:00.274Z"
 }
