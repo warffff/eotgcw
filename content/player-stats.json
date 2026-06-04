@@ -6345,7 +6345,63 @@
           "lastSeen": "2026-06-04T15:05:53Z"
         }
       ]
+    },
+    "76561198272874359": {
+      "steamId64": "76561198272874359",
+      "steamId": "STEAM_0:1:156304315",
+      "nickname": "3лой Военком",
+      "rpName": "3лой Военком",
+      "formation": "Unassigned",
+      "formationId": "",
+      "rank": "Не указано",
+      "rankId": "Не указано",
+      "faction": "",
+      "factionId": "",
+      "model": "models/player.mdl",
+      "modelImage": "",
+      "modelGltf": "",
+      "bodygroups": {
+        "0": 0
+      },
+      "skin": 0,
+      "health": 100,
+      "armor": 0,
+      "online": true,
+      "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+      "updatedAt": "2026-06-04T15:08:28Z",
+      "lastSeen": "2026-06-04T15:08:28Z",
+      "characterId": "active",
+      "active": true,
+      "characters": [
+        {
+          "steamId64": "76561198272874359",
+          "steamId": "STEAM_0:1:156304315",
+          "characterId": "active",
+          "nickname": "3лой Военком",
+          "rpName": "3лой Военком",
+          "formation": "Unassigned",
+          "formationId": "",
+          "rank": "Не указано",
+          "rankId": "Не указано",
+          "faction": "",
+          "factionId": "",
+          "model": "models/player.mdl",
+          "modelImage": "",
+          "modelGltf": "",
+          "bodygroups": {
+            "0": 0
+          },
+          "skin": 0,
+          "health": 100,
+          "armor": 0,
+          "online": true,
+          "active": true,
+          "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
+          "updatedAt": "2026-06-04T15:08:28Z",
+          "lastSeen": "2026-06-04T15:08:28Z"
+        }
+      ]
     }
   },
-  "updatedAt": "2026-06-04T15:08:18.509Z"
+  "updatedAt": "2026-06-04T15:08:28.978Z"
 }
