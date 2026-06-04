@@ -1504,11 +1504,11 @@
       },
       "skin": 0,
       "health": 350,
-      "armor": 221,
+      "armor": 400,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T08:23:58Z",
-      "lastSeen": "2026-06-04T08:23:58Z",
+      "updatedAt": "2026-06-04T08:24:19Z",
+      "lastSeen": "2026-06-04T08:24:19Z",
       "characterId": "384",
       "active": true,
       "characters": [
@@ -1530,12 +1530,12 @@
           "bodygroups": {},
           "skin": 0,
           "health": 350,
-          "armor": 221,
+          "armor": 400,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T08:23:58Z",
-          "lastSeen": "2026-06-04T08:23:58Z"
+          "updatedAt": "2026-06-04T08:24:19Z",
+          "lastSeen": "2026-06-04T08:24:19Z"
         },
         {
           "steamId64": "76561198340387530",
@@ -1555,12 +1555,12 @@
           "bodygroups": {},
           "skin": 0,
           "health": 350,
-          "armor": 221,
+          "armor": 400,
           "online": true,
           "active": false,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T08:23:58Z",
-          "lastSeen": "2026-06-04T08:23:58Z"
+          "updatedAt": "2026-06-04T08:24:19Z",
+          "lastSeen": "2026-06-04T08:24:19Z"
         },
         {
           "steamId64": "76561198340387530",
@@ -1594,12 +1594,12 @@
           },
           "skin": 0,
           "health": 350,
-          "armor": 221,
+          "armor": 400,
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T08:23:58Z",
-          "lastSeen": "2026-06-04T08:23:58Z"
+          "updatedAt": "2026-06-04T08:24:19Z",
+          "lastSeen": "2026-06-04T08:24:19Z"
         }
       ]
     },
@@ -6118,5 +6118,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T08:23:59.566Z"
+  "updatedAt": "2026-06-04T08:24:20.341Z"
 }
