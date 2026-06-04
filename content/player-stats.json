@@ -1905,7 +1905,7 @@
       "steamId64": "76561198848893039",
       "steamId": "STEAM_0:1:444313655",
       "nickname": "zzun1cr0nzz",
-      "rpName": "{rank} R2-С2",
+      "rpName": "Youngling R2-С2",
       "formation": "Джедай",
       "formationId": "jedi",
       "rank": "Юнлинг",
@@ -1916,24 +1916,24 @@
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "body": 0
+        "0": 0
       },
       "skin": 8,
-      "health": 0,
-      "armor": 0,
+      "health": 200,
+      "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T15:23:33Z",
-      "lastSeen": "2026-06-04T15:23:33Z",
+      "updatedAt": "2026-06-04T15:23:56Z",
+      "lastSeen": "2026-06-04T15:23:56Z",
       "characterId": "228",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198848893039",
           "steamId": "STEAM_0:1:444313655",
           "characterId": "228",
           "nickname": "zzun1cr0nzz",
-          "rpName": "{rank} R2-С2",
+          "rpName": "Youngling R2-С2",
           "formation": "Джедай",
           "formationId": "jedi",
           "rank": "Юнлинг",
@@ -1944,16 +1944,16 @@
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "body": 0
+            "0": 0
           },
           "skin": 8,
-          "health": 0,
-          "armor": 0,
+          "health": 200,
+          "armor": 100,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T15:23:33Z",
-          "lastSeen": "2026-06-04T15:23:33Z"
+          "updatedAt": "2026-06-04T15:23:56Z",
+          "lastSeen": "2026-06-04T15:23:56Z"
         }
       ]
     },
@@ -2310,5 +2310,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T15:23:53.868Z"
+  "updatedAt": "2026-06-04T15:23:57.145Z"
 }
