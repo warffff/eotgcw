@@ -4366,14 +4366,14 @@
       "steamId64": "76561198449954761",
       "steamId": "STEAM_0:1:244844516",
       "nickname": "s1ynce",
-      "rpName": "PVT 08-3627 Niko",
-      "formation": "Боец 501-го легиона",
-      "formationId": "501st_trooper",
-      "rank": "Рядовой",
-      "rankId": "pvt",
+      "rpName": "SGT 08-3627 Niko",
+      "formation": "Боец 5-ого отделения",
+      "formationId": "5th_trooper",
+      "rank": "Сержант",
+      "rankId": "sgt",
       "faction": "Великая Армия Республики",
       "factionId": "gar",
-      "model": "models/501st_nco/pm_501st_nco.mdl",
+      "model": "models/t_tcw_gar_alpha_wa_cpt/t_tcw_gar_alpha_wa_cpt.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
@@ -4383,15 +4383,21 @@
         "3": 0,
         "4": 0,
         "5": 0,
-        "6": 0
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0
       },
       "skin": 0,
       "health": 100,
       "armor": 100,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:55:33Z",
-      "lastSeen": "2026-06-04T14:55:33Z",
+      "updatedAt": "2026-06-04T14:56:13Z",
+      "lastSeen": "2026-06-04T14:56:13Z",
       "characterId": "383",
       "active": true,
       "characters": [
@@ -4400,14 +4406,14 @@
           "steamId": "STEAM_0:1:244844516",
           "characterId": "383",
           "nickname": "s1ynce",
-          "rpName": "PVT 08-3627 Niko",
-          "formation": "Боец 501-го легиона",
-          "formationId": "501st_trooper",
-          "rank": "Рядовой",
-          "rankId": "pvt",
+          "rpName": "SGT 08-3627 Niko",
+          "formation": "Боец 5-ого отделения",
+          "formationId": "5th_trooper",
+          "rank": "Сержант",
+          "rankId": "sgt",
           "faction": "Великая Армия Республики",
           "factionId": "gar",
-          "model": "models/501st_nco/pm_501st_nco.mdl",
+          "model": "models/t_tcw_gar_alpha_wa_cpt/t_tcw_gar_alpha_wa_cpt.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
@@ -4417,7 +4423,13 @@
             "3": 0,
             "4": 0,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0
           },
           "skin": 0,
           "health": 100,
@@ -4425,8 +4437,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:55:33Z",
-          "lastSeen": "2026-06-04T14:55:33Z"
+          "updatedAt": "2026-06-04T14:56:13Z",
+          "lastSeen": "2026-06-04T14:56:13Z"
         }
       ]
     },
@@ -6369,5 +6381,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T14:55:34.855Z"
+  "updatedAt": "2026-06-04T14:56:14.517Z"
 }
