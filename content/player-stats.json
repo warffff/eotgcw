@@ -388,26 +388,29 @@
       "steamId64": "76561198867354063",
       "steamId": "STEAM_0:1:453544167",
       "nickname": "Manik",
-      "rpName": "Knight Ragnar Dann",
+      "rpName": "Master Ragnar Dann",
       "formation": "Джедай",
       "formationId": "jedi",
-      "rank": "Рыцарь",
-      "rankId": "knight",
+      "rank": "Мастер",
+      "rankId": "master",
       "faction": "Орден Джедаев",
       "factionId": "jedi",
-      "model": "models/models/player/jedi/knight/knight_ragnar.mdl",
+      "model": "models/player/jedi/pantoran.mdl",
       "modelImage": "",
       "modelGltf": "",
       "bodygroups": {
-        "0": 0
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
       },
       "skin": 0,
       "health": 900,
       "armor": 300,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T14:54:05Z",
-      "lastSeen": "2026-06-04T14:54:05Z",
+      "updatedAt": "2026-06-04T14:55:16Z",
+      "lastSeen": "2026-06-04T14:55:16Z",
       "characterId": "137",
       "active": true,
       "characters": [
@@ -416,18 +419,21 @@
           "steamId": "STEAM_0:1:453544167",
           "characterId": "137",
           "nickname": "Manik",
-          "rpName": "Knight Ragnar Dann",
+          "rpName": "Master Ragnar Dann",
           "formation": "Джедай",
           "formationId": "jedi",
-          "rank": "Рыцарь",
-          "rankId": "knight",
+          "rank": "Мастер",
+          "rankId": "master",
           "faction": "Орден Джедаев",
           "factionId": "jedi",
-          "model": "models/models/player/jedi/knight/knight_ragnar.mdl",
+          "model": "models/player/jedi/pantoran.mdl",
           "modelImage": "",
           "modelGltf": "",
           "bodygroups": {
-            "0": 0
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0
           },
           "skin": 0,
           "health": 900,
@@ -435,8 +441,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T14:54:05Z",
-          "lastSeen": "2026-06-04T14:54:05Z"
+          "updatedAt": "2026-06-04T14:55:16Z",
+          "lastSeen": "2026-06-04T14:55:16Z"
         }
       ]
     },
@@ -6369,5 +6375,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T14:55:13.379Z"
+  "updatedAt": "2026-06-04T14:55:17.591Z"
 }
