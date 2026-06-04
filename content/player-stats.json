@@ -1695,7 +1695,7 @@
       "steamId64": "76561198305025215",
       "steamId": "STEAM_0:1:172379743",
       "nickname": "Uncle Bao",
-      "rpName": "{rank} 04-2776 Shalltear",
+      "rpName": "LT 04-2776 Shalltear",
       "formation": "Оператор Сумрак-9",
       "formationId": "d9_trooper",
       "rank": "Лейтенант",
@@ -1705,23 +1705,37 @@
       "model": "models/player/hecc/ri_hgz/covert/leader.mdl",
       "modelImage": "",
       "modelGltf": "",
-      "bodygroups": {},
+      "bodygroups": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0
+      },
       "skin": 0,
-      "health": 0,
-      "armor": 0,
+      "health": 150,
+      "armor": 220,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T11:02:47Z",
-      "lastSeen": "2026-06-04T11:02:47Z",
+      "updatedAt": "2026-06-04T11:03:33Z",
+      "lastSeen": "2026-06-04T11:03:33Z",
       "characterId": "55",
-      "active": false,
+      "active": true,
       "characters": [
         {
           "steamId64": "76561198305025215",
           "steamId": "STEAM_0:1:172379743",
           "characterId": "55",
           "nickname": "Uncle Bao",
-          "rpName": "{rank} 04-2776 Shalltear",
+          "rpName": "LT 04-2776 Shalltear",
           "formation": "Оператор Сумрак-9",
           "formationId": "d9_trooper",
           "rank": "Лейтенант",
@@ -1731,15 +1745,29 @@
           "model": "models/player/hecc/ri_hgz/covert/leader.mdl",
           "modelImage": "",
           "modelGltf": "",
-          "bodygroups": {},
+          "bodygroups": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
           "skin": 0,
-          "health": 0,
-          "armor": 0,
+          "health": 150,
+          "armor": 220,
           "online": true,
-          "active": false,
+          "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T11:02:47Z",
-          "lastSeen": "2026-06-04T11:02:47Z"
+          "updatedAt": "2026-06-04T11:03:33Z",
+          "lastSeen": "2026-06-04T11:03:33Z"
         }
       ]
     },
@@ -6216,5 +6244,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T11:02:48.423Z"
+  "updatedAt": "2026-06-04T11:03:34.402Z"
 }
