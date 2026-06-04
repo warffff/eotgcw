@@ -1699,7 +1699,7 @@
       "steamId64": "76561198305025215",
       "steamId": "STEAM_0:1:172379743",
       "nickname": "Uncle Bao",
-      "rpName": "CR 06-2776 Lime",
+      "rpName": "CR 04-2776 Shalltear",
       "formation": "Оператор Сумрак-9",
       "formationId": "d9_trooper",
       "rank": "Курсант",
@@ -1734,8 +1734,8 @@
       "armor": 200,
       "online": true,
       "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-      "updatedAt": "2026-06-04T08:21:58Z",
-      "lastSeen": "2026-06-04T08:21:58Z",
+      "updatedAt": "2026-06-04T08:22:23Z",
+      "lastSeen": "2026-06-04T08:22:23Z",
       "characterId": "55",
       "active": true,
       "characters": [
@@ -1744,7 +1744,7 @@
           "steamId": "STEAM_0:1:172379743",
           "characterId": "55",
           "nickname": "Uncle Bao",
-          "rpName": "CR 06-2776 Lime",
+          "rpName": "CR 04-2776 Shalltear",
           "formation": "Оператор Сумрак-9",
           "formationId": "d9_trooper",
           "rank": "Курсант",
@@ -1780,8 +1780,8 @@
           "online": true,
           "active": true,
           "serverName": "Edge of the Galaxy | discord.gg/eotg 1 Фаза",
-          "updatedAt": "2026-06-04T08:21:58Z",
-          "lastSeen": "2026-06-04T08:21:58Z"
+          "updatedAt": "2026-06-04T08:22:23Z",
+          "lastSeen": "2026-06-04T08:22:23Z"
         }
       ]
     },
@@ -6128,5 +6128,5 @@
       ]
     }
   },
-  "updatedAt": "2026-06-04T08:21:59.917Z"
+  "updatedAt": "2026-06-04T08:22:24.715Z"
 }
