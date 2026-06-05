@@ -1,0 +1,253 @@
+{
+  "source": "/mnt/data/model_821/cgi_821st_support_battalion_3034140388/models/salty/cgi/821/821_engineer.mdl",
+  "version": 48,
+  "textures": [
+    "body",
+    "armor",
+    "helmet_engineer",
+    "helmet_visor",
+    "face_clone",
+    "right_eye",
+    "hair",
+    "clone_attachments"
+  ],
+  "bodygroups": [
+    {
+      "id": 0,
+      "name": "body",
+      "options": [
+        {
+          "id": 0,
+          "name": "body.smd",
+          "meshes": [
+            "bg_00_body__option_00_body.smd__mesh_00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "armor",
+      "options": [
+        {
+          "id": 0,
+          "name": "clone_armor.smd",
+          "meshes": [
+            "bg_01_armor__option_00_clone_armor.smd__mesh_00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "helmet",
+      "options": [
+        {
+          "id": 0,
+          "name": "helmet_engineer.smd",
+          "meshes": [
+            "bg_02_helmet__option_00_helmet_engineer.smd__mesh_00",
+            "bg_02_helmet__option_00_helmet_engineer.smd__mesh_01"
+          ]
+        },
+        {
+          "id": 1,
+          "name": "new_head.smd",
+          "meshes": [
+            "bg_02_helmet__option_01_new_head.smd__mesh_00",
+            "bg_02_helmet__option_01_new_head.smd__mesh_01"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Hair",
+      "options": [
+        {
+          "id": 0,
+          "name": "none",
+          "meshes": []
+        },
+        {
+          "id": 1,
+          "name": "hair.smd",
+          "meshes": [
+            "bg_03_Hair__option_01_hair.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "hair2_reference.smd",
+          "meshes": [
+            "bg_03_Hair__option_02_hair2_reference.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "hair3_reference.smd",
+          "meshes": [
+            "bg_03_Hair__option_03_hair3_reference.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "hair4_reference.smd",
+          "meshes": [
+            "bg_03_Hair__option_04_hair4_reference.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "hair5_reference.smd",
+          "meshes": [
+            "bg_03_Hair__option_05_hair5_reference.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 6,
+          "name": "hair6_reference.smd",
+          "meshes": [
+            "bg_03_Hair__option_06_hair6_reference.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "hair7_reference.smd",
+          "meshes": [
+            "bg_03_Hair__option_07_hair7_reference.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "clone_hair_elvis.smd",
+          "meshes": [
+            "bg_03_Hair__option_08_clone_hair_elvis.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "clone_hair_irok.smd",
+          "meshes": [
+            "bg_03_Hair__option_09_clone_hair_irok.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "clone_hair_party.smd",
+          "meshes": [
+            "bg_03_Hair__option_10_clone_hair_party.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 11,
+          "name": "hair_tail.smd",
+          "meshes": [
+            "bg_03_Hair__option_11_hair_tail.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "hair_spike.smd",
+          "meshes": [
+            "bg_03_Hair__option_12_hair_spike.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 13,
+          "name": "hair_gree.smd",
+          "meshes": [
+            "bg_03_Hair__option_13_hair_gree.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 14,
+          "name": "hair_long2.smd",
+          "meshes": [
+            "bg_03_Hair__option_14_hair_long2.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 15,
+          "name": "hair_slick.smd",
+          "meshes": [
+            "bg_03_Hair__option_15_hair_slick.smd__mesh_00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Facial Hair",
+      "options": [
+        {
+          "id": 0,
+          "name": "none",
+          "meshes": []
+        },
+        {
+          "id": 1,
+          "name": "fhair1_reference.smd",
+          "meshes": [
+            "bg_04_Facial Hair__option_01_fhair1_reference.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "fhair2_reference.smd",
+          "meshes": [
+            "bg_04_Facial Hair__option_02_fhair2_reference.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "fhair3_reference.smd",
+          "meshes": [
+            "bg_04_Facial Hair__option_03_fhair3_reference.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "fhair_goatee.smd",
+          "meshes": [
+            "bg_04_Facial Hair__option_04_fhair_goatee.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "fhair_beard.smd",
+          "meshes": [
+            "bg_04_Facial Hair__option_05_fhair_beard.smd__mesh_00"
+          ]
+        },
+        {
+          "id": 6,
+          "name": "fhair_stache.smd",
+          "meshes": [
+            "bg_04_Facial Hair__option_06_fhair_stache.smd__mesh_00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Backpack",
+      "options": [
+        {
+          "id": 0,
+          "name": "none",
+          "meshes": []
+        },
+        {
+          "id": 1,
+          "name": "backpack.smd",
+          "meshes": [
+            "bg_05_Backpack__option_01_backpack.smd__mesh_00"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": "Converted by minimal Source MDL parser. Geometry and bodygroup options are preserved as named GLB nodes; Source materials/VTF textures and runtime bodygroup toggling require viewer support.",
+  "sitePath": "assets/models/821/821_engineer.glb"
+}
