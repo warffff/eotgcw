@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-09T17:47:19.719Z",
+  "updatedAt": "2026-06-09T18:05:28.335Z",
   "updatedBy": "TortiMilk(Jax)",
   "planets": [
     {
@@ -187,7 +187,7 @@
       "name": "Викиндор",
       "sector": 4,
       "region": "Среднее Кольцо",
-      "control": "neutral",
+      "control": "cis",
       "value": "Гарнизон",
       "x": 476.7,
       "y": 543.6,
