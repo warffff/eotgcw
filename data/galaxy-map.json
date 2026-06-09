@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-09T17:44:50.574Z",
+  "updatedAt": "2026-06-09T17:46:49.537Z",
   "updatedBy": "TortiMilk(Jax)",
   "planets": [
     {
@@ -194,10 +194,10 @@
       "desc": "Оборонительный пункт Среднего Кольца."
     },
     {
-      "name": "Кашиик",
+      "name": "Телос IV",
       "sector": 3,
       "region": "Среднее Кольцо",
-      "control": "republic",
+      "control": "neutral",
       "value": "Союзники вуки",
       "x": 1122.8,
       "y": 421.8,
