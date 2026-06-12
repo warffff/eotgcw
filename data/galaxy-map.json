@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-09T21:06:26.047Z",
-  "updatedBy": "TortiMilk(Jax)",
+  "updatedAt": "2026-06-12T05:44:04.011Z",
+  "updatedBy": "EternalMilitant",
   "planets": [
     {
       "name": "Кейл",
@@ -227,7 +227,7 @@
       "name": "Вортекс",
       "sector": 4,
       "region": "Среднее Кольцо",
-      "control": "republic",
+      "control": "neutral",
       "value": "Передовой рубеж",
       "x": 263,
       "y": 544,
