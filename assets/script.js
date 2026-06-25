@@ -615,6 +615,7 @@ const editCancel = document.getElementById('editCancel');
 const editableDocs = [...document.querySelectorAll('.editable-doc[data-doc-key]')];
 let authState = { user: null, canEdit: false, permissions: { canEditAll:false, canEditDocs:false, canEditAny:false, canAccessAllTabs:false } };
 let steamAuthState = { authenticated:false, steam:null, sam:{rank:'user'}, permissions:{canEditAll:false, canEditDocs:false, canEditAny:false, canAccessAllTabs:false} };
+let steamAuthLoaded = false;
 let authLoaded = false;
 let editingDoc = null;
 let editingBefore = '';
@@ -633,7 +634,7 @@ function canEditDocument(doc){
   const permissions = authState?.permissions || {};
   if (permissions.canEditAll) return true;
   if (permissions.canEditDocs && key === 'charter') return true;
-  return Boolean(authState?.canEdit && key !== 'charter');
+  return false;
 }
 
 function samRankLabel(){
@@ -744,7 +745,7 @@ async function loadAuthState(){
 
 
 async function loadSteamAuthState(){
-  if (!steamAuthLink) return;
+  if (!steamAuthLink) { steamAuthLoaded = true; return; }
   try {
     const data = await apiJson('/api/steam-auth/me?t=' + Date.now(), { cache: 'no-store', credentials: 'same-origin' });
     steamAuthState = {
@@ -755,6 +756,7 @@ async function loadSteamAuthState(){
       displayName: data?.displayName || ''
     };
 
+    steamAuthLoaded = true;
     steamAuthLink.classList.toggle('is-authenticated', steamAuthState.authenticated);
     steamAuthLink.classList.toggle('is-admin', Boolean(steamAuthState.permissions.canEditAll));
     steamAuthLink.classList.toggle('is-commander', Boolean(!steamAuthState.permissions.canEditAll && steamAuthState.permissions.canEditDocs));
@@ -793,10 +795,13 @@ async function loadSteamAuthState(){
     updateRoleGatedNavigation();
     window.dispatchEvent(new CustomEvent('eotg:auth-updated'));
   } catch (_) {
+    steamAuthLoaded = true;
     steamAuthState = { authenticated:false, steam:null, sam:{rank:'user'}, permissions:{canEditAll:false, canEditDocs:false, canEditAny:false, canAccessAllTabs:false} };
     steamAuthLink.classList.remove('is-authenticated', 'is-admin', 'is-commander');
     steamAuthLink.setAttribute('title', 'Авторизация через Steam');
     steamAuthLink.setAttribute('aria-label', 'Авторизация через Steam');
+    updateRoleGatedNavigation();
+    window.dispatchEvent(new CustomEvent('eotg:auth-updated'));
   }
 }
 
@@ -886,8 +891,8 @@ editSave?.addEventListener('click', saveEditing);
 editCancel?.addEventListener('click', () => stopEditing(true));
 
 
-const commandCenterRoleId = '1493983291152400444';
-const commandCenterRoleMention = '<@&1493983291152400444>';
+const commandCenterRoleId = 'sam-admin';
+const commandCenterRoleMention = 'SAM rank admin/superadmin';
 const commandCenterLock = document.getElementById('commandCenterLock');
 const commandCenterView = document.getElementById('commandCenterView');
 const commandCenterAccessText = document.getElementById('commandCenterAccessText');
@@ -903,9 +908,7 @@ let commandCenterCache = { players: [], jobs: [], recentCommands: [] };
 let commandCenterLoading = false;
 
 function commandCenterHasAccess(){
-  if (authState?.permissions?.canAccessAllTabs) return true;
-  const roles = Array.isArray(authState?.roles) ? authState.roles.map(String) : [];
-  return roles.includes(commandCenterRoleId);
+  return Boolean(authState?.permissions?.canAccessAllTabs);
 }
 function commandCenterSetGate(text, status, showLogin){
   if (commandCenterAccessText) commandCenterAccessText.textContent = text || '';
@@ -1039,19 +1042,14 @@ function commandCenterRenderPlayers(){
 }
 async function commandCenterRefreshData(showLoading = true){
   if (!commandCenterLock || !commandCenterView) return;
-  if (!authLoaded) {
+  if (!steamAuthLoaded) {
     commandCenterLockView();
-    commandCenterSetGate('Проверяем Discord-авторизацию и роли...', 'Проверка доступа...', false);
-    return;
-  }
-  if ((!authState.user || authState.hintOnly) && !authState?.permissions?.canAccessAllTabs) {
-    commandCenterLockView();
-    commandCenterSetGate('Командный центр доступен администраторам SAM или игрокам с ролью ' + commandCenterRoleMention + '.', 'Авторизуйтесь через Steam или Discord, чтобы подтвердить доступ.', true);
+    commandCenterSetGate('Проверяем Steam-авторизацию и SAM-привилегии...', 'Проверка доступа...', false);
     return;
   }
   if (!commandCenterHasAccess()) {
     commandCenterLockView();
-    commandCenterSetGate('У вашего Discord-профиля нет доступа к Командному центру.', 'Нужна роль ' + commandCenterRoleMention + '.', false);
+    commandCenterSetGate('Командный центр доступен только Steam-аккаунтам с SAM rank admin/superadmin.', authState?.steam ? 'Недостаточно прав в SAM.' : 'Авторизуйтесь через Steam.', !authState?.steam);
     return;
   }
   commandCenterUnlockView();
@@ -1083,7 +1081,7 @@ function commandCenterRefreshIfActive(){
     commandCenterRefreshData(false);
   }
 }
-commandCenterAuthButton?.addEventListener('click', () => { location.href = '/api/auth/login'; });
+commandCenterAuthButton?.addEventListener('click', () => { location.href = '/api/steam-auth/login'; });
 commandCenterRefresh?.addEventListener('click', () => commandCenterRefreshData(true));
 window.addEventListener('eotg:auth-updated', commandCenterRefreshIfActive);
 window.addEventListener('hashchange', () => { if (location.hash === '#command-center') setTimeout(() => commandCenterRefreshData(true), 120); });
@@ -1182,17 +1180,14 @@ const galaxyCoords = document.getElementById('galaxyCoords');
 const galaxyFilters = [...document.querySelectorAll('.galaxy-filter')];
 const galaxyClickAudioUrl = 'assets/sounds/galaxy-click.mp3';
 const galaxyLoadAudioUrl = 'assets/sounds/galaxy-load.mp3';
-const galaxyAccessRoles = ['1493983291152400444', '1509282764695011580', '1305567485218521169'];
-const galaxyAccessRoleMentions = '<@&1493983291152400444>, <@&1509282764695011580>, <@&1305567485218521169>';
-const galaxyMapAdminRoles = ['1305567485218521169'];
+const galaxyAccessRoles = [];
+const galaxyAccessRoleMentions = 'SAM rank admin/superadmin';
+const galaxyMapAdminRoles = [];
 
 function updateRoleGatedNavigation(){
-  const roles = Array.isArray(authState?.roles) ? authState.roles.map(String) : [];
   const allTabs = Boolean(authState?.permissions?.canAccessAllTabs);
-  const canGalaxy = allTabs || roles.some(role => galaxyAccessRoles.includes(role));
-  const canCommandCenter = allTabs || roles.includes(commandCenterRoleId);
-  document.querySelectorAll('[data-role-gated="galaxy"]').forEach(el => { el.hidden = !canGalaxy; });
-  document.querySelectorAll('[data-role-gated="command-center"]').forEach(el => { el.hidden = !canCommandCenter; });
+  document.querySelectorAll('[data-role-gated="galaxy"]').forEach(el => { el.hidden = !allTabs; });
+  document.querySelectorAll('[data-role-gated="command-center"]').forEach(el => { el.hidden = !allTabs; });
 }
 
 let galaxyLoadingStarted = false;
@@ -1205,14 +1200,10 @@ let galaxyPlanetDrag = null;
 let galaxySuppressPlanetClick = false;
 
 function galaxyHasRoleAccess(){
-  if (authState?.permissions?.canAccessAllTabs) return true;
-  const roles = Array.isArray(authState?.roles) ? authState.roles.map(String) : [];
-  return galaxyAccessRoles.some(role => roles.includes(role));
+  return Boolean(authState?.permissions?.canAccessAllTabs);
 }
 function galaxyCanMapAdmin(){
-  if (authState?.permissions?.canEditAll) return true;
-  const roles = Array.isArray(authState?.roles) ? authState.roles.map(String) : [];
-  return galaxyMapAdminRoles.some(role => roles.includes(role));
+  return Boolean(authState?.permissions?.canEditAll);
 }
 function galaxyIsUnlocked(){
   return !!(galaxyView && !galaxyView.hidden);
@@ -1325,22 +1316,9 @@ function galaxyStartLoadSound(){
   return a;
 }
 function galaxyBeginLoading(){
-  if (!galaxyHasRoleAccess()) {
-    updateGalaxyAccessGate(false);
-    return;
-  }
-  if (galaxyLoadingStarted || galaxyIsUnlocked()) return;
-  galaxyLoadingStarted = true;
-  if (!galaxyLock || !galaxyView) return unlockGalaxy();
-  galaxyLock.classList.add('loading');
-  galaxySetGate('Доступ подтверждён Discord-ролями. Загружаем тактическую карту...', 'Инициализация тактической сети...', false);
-  galaxyStartLoadSound();
-  setTimeout(() => {
-    sessionStorage.setItem('eotgGalaxyAccess','1');
-    galaxyLock.classList.remove('loading');
-    galaxyLoadingStarted = false;
-    unlockGalaxy();
-  }, 5000);
+  if (!galaxyHasRoleAccess()) return updateGalaxyAccessGate(false);
+  sessionStorage.setItem('eotgGalaxyAccess','1');
+  unlockGalaxy();
 }
 
 function galaxySetMapAdminStatus(text, mode){
@@ -1442,7 +1420,7 @@ async function loadGalaxyMapLayout(force){
   return false;
 }
 async function saveGalaxyMapLayout(){
-  if (!galaxyCanMapAdmin()) return galaxySetMapAdminStatus('нет роли для сохранения карты', 'err');
+  if (!galaxyCanMapAdmin()) return galaxySetMapAdminStatus('нужен SAM rank admin/superadmin для сохранения карты', 'err');
   const planets = galaxyPlanetPayload();
   if (!planets.length) return galaxySetMapAdminStatus('нельзя сохранить пустую карту', 'err');
   galaxySetMapAdminStatus('сохранение карты...', 'loading');
@@ -1738,43 +1716,34 @@ function unlockGalaxy(){
     updateGalaxyAccessGate(false);
     return;
   }
+  galaxyLock.classList.remove('loading');
   galaxyLock.hidden = true;
   galaxyView.hidden = false;
   galaxySetTransform(0, 0, 1);
   renderGalaxy();
   galaxyUpdateMapAdminVisibility();
   loadGalaxyMapLayout(false);
-  setTimeout(() => loadGalaxyEventBookings(false), 250);
 }
 function updateGalaxyAccessGate(autoLoad){
   if (!galaxyLock || !galaxyView) return;
-  if (!authLoaded) {
+  if (!steamAuthLoaded) {
     lockGalaxy();
-    galaxySetGate('Проверяем Discord-авторизацию и роли...', 'Проверка доступа...', false);
-    return;
-  }
-  if (!authState.user || authState.hintOnly) {
-    sessionStorage.removeItem('eotgGalaxyAccess');
-    lockGalaxy();
-    galaxySetGate('Доступ к галактической карте открыт только игрокам с Discord-ролями: ' + galaxyAccessRoleMentions + '.', 'Авторизуйтесь через Discord, чтобы подтвердить роль.', true);
+    galaxyLock.classList.remove('loading');
+    galaxySetGate('Проверяем Steam-авторизацию и SAM-привилегии...', 'Проверка доступа...', false);
     return;
   }
   if (!galaxyHasRoleAccess()) {
     sessionStorage.removeItem('eotgGalaxyAccess');
     lockGalaxy();
-    galaxySetGate('У вашего Discord-профиля нет роли для доступа к галактической карте.', 'Нужна одна из ролей: ' + galaxyAccessRoleMentions + '.', false);
+    galaxyLock.classList.remove('loading');
+    galaxySetGate('Галактическая карта доступна только Steam-аккаунтам с SAM rank admin/superadmin.', authState?.steam ? 'Недостаточно прав в SAM.' : 'Авторизуйтесь через Steam.', !authState?.steam);
     return;
   }
-  if (sessionStorage.getItem('eotgGalaxyAccess') === '1') {
-    unlockGalaxy();
-  } else {
-    lockGalaxy();
-    galaxySetGate('Доступ подтверждён. Запускаем загрузку галактической карты.', 'Подготовка загрузки...', false);
-    if (autoLoad) galaxyBeginLoading();
-  }
+  sessionStorage.setItem('eotgGalaxyAccess','1');
+  unlockGalaxy();
 }
 function checkGalaxyAccess(){ updateGalaxyAccessGate(true); }
-galaxyAuthButton?.addEventListener('click', () => { location.href = '/api/auth/login'; });
+galaxyAuthButton?.addEventListener('click', () => { location.href = '/api/steam-auth/login'; });
 
 function galaxyEventSetStatus(text, cls){
   if (!galaxyEventStatus) return;
@@ -1862,7 +1831,7 @@ galaxyEventForm?.addEventListener('submit', async (event) => {
 });
 
 galaxyMapAdminToggle?.addEventListener('click', () => {
-  if (!galaxyCanMapAdmin()) return galaxySetMapAdminStatus('нет роли ивентолога для редактирования', 'err');
+  if (!galaxyCanMapAdmin()) return galaxySetMapAdminStatus('нужен SAM rank admin/superadmin для редактирования', 'err');
   galaxyMapAdminEnabled = !galaxyMapAdminEnabled;
   galaxyMap?.classList.toggle('admin-editing', galaxyMapAdminEnabled);
   renderGalaxyMapAdmin();
@@ -2074,8 +2043,8 @@ window.addEventListener('hashchange', () => { if (location.hash === '#galaxy') s
   function finishBattleEarlyRandom(){
     const s=state();
     if(!s || s.status!=='battle' || operationType(s)==='diplomacy') return;
-    if(!authState || !authState.canEdit){
-      alert('Закончить битву флота досрочно может только администратор с нужной Discord-ролью.');
+    if(!authState?.permissions?.canEditAll){
+      alert('Закончить битву флота досрочно может только администратор с SAM rank admin/superadmin.');
       return;
     }
     if(!confirm('Закончить битву флота досрочно? Победитель битвы флота будет определён случайно, затем боевой вылет перейдёт к решению администратора.')) return;
@@ -2087,8 +2056,8 @@ window.addEventListener('hashchange', () => { if (location.hash === '#galaxy') s
   function finishByAdmin(winner){
     const s=state();
     if(!s || s.status!=='awaiting_admin') return;
-    if(!authState || !authState.canEdit){
-      alert('Завершить боевой вылет может только администратор с нужной Discord-ролью. Авторизуйтесь через Discord.');
+    if(!authState?.permissions?.canEditAll){
+      alert('Завершить боевой вылет может только администратор с SAM rank admin/superadmin. Авторизуйтесь через Steam.');
       return;
     }
     const result = winner === 'republic' ? 'republic' : 'cis';
@@ -2209,17 +2178,17 @@ window.addEventListener('hashchange', () => { if (location.hash === '#galaxy') s
     }
     if(s.status==='battle'){
       const left=fmt((s.battleAt||Date.now())+battleDurationMs-Date.now());
-      const admin = authState && authState.canEdit;
+      const admin = Boolean(authState?.permissions?.canEditAll);
       const early = admin ? '<div class="galaxy-admin-finish"><button type="button" class="galaxy-fleet-button galaxy-early-finish">Закончить битву флота досрочно</button><p class="galaxy-war-warning">Победитель будет определён рандомно.</p></div>' : '';
       return `<p>У орбиты идёт сражение. Мунифиценты КНС появляются только у этой планеты и ведут бой с Venator.</p><p class="galaxy-war-time">До решения исхода боя: ${left}</p>${hpHtml(s)}${early}`;
     }
     if(s.status==='awaiting_admin'){
-      const admin = authState && authState.canEdit;
+      const admin = Boolean(authState?.permissions?.canEditAll);
       if(diplomacy){
-        return `<p>Дипломатическая миссия прибыла. Venator удерживают орбиту без боя, пока администратор не выберет итог миссии.</p>${admin ? adminHtml(s) : '<p class="galaxy-war-warning">Ожидается администратор с Discord-ролью для завершения дипломатической миссии.</p>'}`;
+        return `<p>Дипломатическая миссия прибыла. Venator удерживают орбиту без боя, пока администратор не выберет итог миссии.</p>${admin ? adminHtml(s) : '<p class="galaxy-war-warning">Ожидается администратор с SAM rank admin/superadmin для завершения дипломатической миссии.</p>'}`;
       }
       const fleetResult = s.fleetBattleResult ? `<p class="galaxy-war-warning">Итог битвы флота: <b>${s.fleetBattleResult==='republic' ? 'победили Venator' : 'победили силы КНС'}</b>. Финальный статус планеты всё ещё выбирает администратор.</p>` : '';
-      return `<p>Бой флота завершён. Планета пока остаётся во вражеском статусе, а Venator удерживают орбиту до решения администратора.</p>${fleetResult}${hpHtml(s)}${admin ? adminHtml(s) : '<p class="galaxy-war-warning">Ожидается администратор с Discord-ролью для завершения боевого вылета.</p>'}`;
+      return `<p>Бой флота завершён. Планета пока остаётся во вражеском статусе, а Venator удерживают орбиту до решения администратора.</p>${fleetResult}${hpHtml(s)}${admin ? adminHtml(s) : '<p class="galaxy-war-warning">Ожидается администратор с SAM rank admin/superadmin для завершения боевого вылета.</p>'}`;
     }
     return `${s.log?.[0]||'Операция завершена.'}${diplomacy ? '' : hpHtml(s)}`;
   }
@@ -2425,6 +2394,6 @@ window.addEventListener('hashchange', () => { if (location.hash === '#galaxy') s
   }
   const oldUnlock=unlockGalaxy; unlockGalaxy=function(){ oldUnlock(); startTimer(); maybeVideo(); };
   window.addEventListener('hashchange',()=>{ if(location.hash==='#galaxy') { videoMark=''; setTimeout(()=>{startTimer();renderGalaxy();},180); } });
-  window.addEventListener('eotg:auth-updated',()=>{ if(location.hash==='#galaxy') { checkGalaxyAccess(); galaxyUpdateMapAdminVisibility(); if(galaxyIsUnlocked()) { renderGalaxyPanel(galaxySelected); renderGalaxyMapAdmin(); renderShips(); loadGalaxyEventBookings(true); loadGalaxyMapLayout(false); } } });
+  window.addEventListener('eotg:auth-updated',()=>{ if(location.hash==='#galaxy') { checkGalaxyAccess(); galaxyUpdateMapAdminVisibility(); if(galaxyIsUnlocked()) { renderGalaxyPanel(galaxySelected); renderGalaxyMapAdmin(); renderShips(); loadGalaxyMapLayout(false); } } });
 })();
 
