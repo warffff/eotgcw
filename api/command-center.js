@@ -1,4 +1,5 @@
 const { getFreshSession, sendJson } = require('./_utils');
+const { getSamAccess } = require('./_samAuth');
 const { query, table } = require('./_commandCenterDb');
 
 const COMMAND_CENTER_ROLE_ID = String(process.env.COMMAND_CENTER_ROLE_ID || '1493983291152400444');
@@ -9,11 +10,16 @@ function hasCommandCenterRole(roles = []) {
 }
 
 async function requireAccess(req, res) {
+  const samAccess = await getSamAccess(req);
+  if (samAccess.permissions && samAccess.permissions.canAccessAllTabs) {
+    return { ok:true, access:{ sam:samAccess, session:{ user:{ id:samAccess.steam?.steamId64 || '', username:samAccess.displayName, global_name:samAccess.displayName } } } };
+  }
+
   const access = await getFreshSession(req, res);
-  if (!access.session) return { ok:false, status:403, error:'Нужно авторизоваться через Discord.' };
+  if (!access.session) return { ok:false, status:403, error:'Нужно авторизоваться через Steam с rank admin/superadmin или через Discord.' };
   if (!access.fresh) return { ok:false, status:403, error:'Не удалось актуально проверить роли Discord.' };
   if (!hasCommandCenterRole(access.roles || [])) {
-    return { ok:false, status:403, error:`Недостаточно прав: нужна Discord-роль <@&${COMMAND_CENTER_ROLE_ID}>.` };
+    return { ok:false, status:403, error:`Недостаточно прав: нужна Discord-роль <@&${COMMAND_CENTER_ROLE_ID}> или SAM rank admin/superadmin.` };
   }
   return { ok:true, access };
 }

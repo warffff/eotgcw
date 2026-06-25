@@ -52,6 +52,7 @@ function showView(id, push = true, sound = true) {
     });
 
     currentView = target;
+    document.body.dataset.currentView = target;
     nextView.classList.add('active', 'entering');
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -104,6 +105,363 @@ window.addEventListener('hashchange', () => {
   if (!hash) return showView('home', false, false);
   if (viewExists(hash)) showView(hash, false, false);
 });
+
+
+function initHomeHeroVideo(){
+  const video = document.querySelector('.hero-video');
+  if (!video) return;
+  let resetPending = false;
+
+  const ensurePlaying = () => {
+    try {
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === 'function') playPromise.catch(() => {});
+    } catch (_) {}
+  };
+
+  video.muted = true;
+  video.defaultMuted = true;
+  video.loop = false;
+
+  const rewindBeforeEnd = () => {
+    if (!Number.isFinite(video.duration) || video.duration <= 0) return;
+    const cutoff = Math.max(0.08, video.duration - 0.10);
+    if (video.currentTime >= cutoff && !resetPending) {
+      resetPending = true;
+      try { video.currentTime = 0.04; } catch (_) { video.currentTime = 0; }
+      ensurePlaying();
+      requestAnimationFrame(() => { resetPending = false; });
+    } else if (video.currentTime < 0.5) {
+      resetPending = false;
+    }
+  };
+
+  video.addEventListener('timeupdate', rewindBeforeEnd);
+  video.addEventListener('ended', () => {
+    try { video.currentTime = 0.04; } catch (_) { video.currentTime = 0; }
+    ensurePlaying();
+  });
+  video.addEventListener('loadedmetadata', ensurePlaying);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && document.body?.dataset?.currentView === 'home') ensurePlaying();
+  });
+  ensurePlaying();
+}
+
+initHomeHeroVideo();
+
+
+
+function initVarDocsExplorer(){
+  const shell = document.querySelector('.var-docs-shell');
+  if (!shell) return;
+
+  const search = document.getElementById('varDocsSearch');
+  const grid = document.getElementById('varFolderGrid');
+  const empty = document.getElementById('varDocsEmpty');
+  const title = document.getElementById('varDocsFolderTitle');
+  const count = document.getElementById('varDocsCount');
+  const detail = document.getElementById('varDocDetail');
+  const detailBack = document.getElementById('varDocBack');
+  const detailKicker = document.getElementById('varDocPageKicker');
+  const detailTitle = document.getElementById('varDocPageTitle');
+  const detailLead = document.getElementById('varDocPageLead');
+  const detailBody = document.getElementById('varDocPageBody');
+  const items = [...shell.querySelectorAll('.var-sidebar-item, .var-sidebar-link')];
+  const cards = [...shell.querySelectorAll('.var-folder-card')];
+
+  let activeCategory = 'general';
+  let activeDoc = null;
+
+  const folderNames = {
+    general: 'ОБЩЕВОЙСКОВОЙ УСТАВ',
+    regulations: 'РЕГЛАМЕНТЫ',
+    security: 'СЛУЖБА БЕЗОПАСНОСТИ',
+    legion501: '501 ЛЕГИОН',
+    recon91: '91-Й РАЗВЕДЫВАТЕЛЬНЫЙ',
+    wolf104: '104TH БАТАЛЬОН'
+  };
+
+  const docPages = {
+    'Основные строевые понятия': {
+      kicker:'Кодекс Республики',
+      lead:'Краткий свод базовой терминологии, необходимой для понимания строевых команд, элементов построения и повседневного взаимодействия в подразделении.',
+      sections:[
+        { heading:'Ключевые термины', paragraphs:['Документ описывает основные понятия строя: фронт, тыл, фланг, дистанция, интервал, колонна, шеренга и другие базовые элементы построения.', 'Материал используется как стартовая справка для каждого бойца перед изучением практических строевых дисциплин.'] },
+        { heading:'Что должен знать боец', list:['Различать основные типы построений и положение в строю.', 'Понимать голосовые команды командира отделения.', 'Соблюдать дистанцию, равнение и порядок движения подразделения.'] }
+      ]
+    },
+    'Построения': {
+      kicker:'Кодекс Республики',
+      lead:'Справочный раздел по формированию строя, вариантам колонн и шеренг, а также применению построений на плацу, при передвижении и в торжественных мероприятиях.',
+      sections:[
+        { heading:'Содержимое папки', paragraphs:['В папке собраны материалы по линейным построениям, перестроению в движении, разворотам на месте и при смене направления.', 'Документы используются при проведении плац-подготовки и церемониальных построений.'] },
+        { heading:'Основные темы', list:['Построение в одну и две шеренги.', 'Колонна по одному, по два и по отделениям.', 'Перестроение и развороты по команде.'] }
+      ]
+    },
+    'Дисциплинарный устав': {
+      kicker:'Кодекс Республики',
+      lead:'Раздел, посвящённый дисциплине, поощрениям, взысканиям и общему порядку рассмотрения нарушений внутри подразделений ВАР.',
+      sections:[
+        { heading:'Назначение', paragraphs:['Устав определяет, как фиксируются нарушения, кто выносит взыскания и в каком порядке рассматриваются спорные ситуации.', 'Также здесь описываются варианты поощрений за образцовую службу и высокие показатели.'] },
+        { heading:'Ключевые блоки', list:['Поощрения и формы служебного поощрения.', 'Замечания, выговоры и дисциплинарные взыскания.', 'Порядок служебного разбирательства.'] }
+      ]
+    },
+    'Устав ВАР': {
+      kicker:'Кодекс Республики',
+      lead:'Основной нормативный раздел, содержащий принципы службы в Великой Армии Республики, общие обязанности военнослужащих и базовые требования к личному составу.',
+      sections:[
+        { heading:'Что включает папка', paragraphs:['Папка объединяет главный свод внутренних норм, описывает структуру подчинения и закрепляет общие правила службы.', 'Используется как основной ориентир для повседневной деятельности бойцов и командного состава.'] },
+        { heading:'Основные положения', list:['Статус и обязанности военнослужащего ВАР.', 'Подчинение приказам и соблюдение регламентов.', 'Ответственность за дисциплину и службу.'] }
+      ]
+    },
+    'Правила и обязанности в строю': {
+      kicker:'Кодекс Республики',
+      lead:'Практический раздел о поведении военнослужащего в строю: от выправки и реакции на команды до обязанностей рядового состава во время построений и смотров.',
+      sections:[
+        { heading:'О чём раздел', paragraphs:['В документах раскрываются поведение в строю, форма обращения к старшим, правила выхода из строя и действия по тревоге.', 'Материал нужен для ежедневной дисциплины и единообразного поведения личного состава.'] },
+        { heading:'Особое внимание', list:['Соблюдение субординации.', 'Реакция на строевые команды.', 'Порядок доклада и выхода из строя.'] }
+      ]
+    },
+    'Проверка': {
+      kicker:'Кодекс Республики',
+      lead:'Сборник положений о проведении проверок подразделений, смотров внешнего вида, контроля оснащения и оценки готовности личного состава.',
+      sections:[
+        { heading:'Для чего нужен раздел', paragraphs:['Папка описывает порядок инспекций, проверок состояния подразделения и оформление результатов смотров.', 'Используется командирами и проверяющими лицами при контроле боевой и дисциплинарной готовности.'] },
+        { heading:'Внутри раздела', list:['Смотр внешнего вида.', 'Проверка вооружения и снаряжения.', 'Оформление результатов проверки.'] }
+      ]
+    },
+    'Курс молодого бойца': {
+      kicker:'Регламент ВАР',
+      lead:'Вводный раздел для кадетов и новичков: этапы обучения, обязательные занятия, нормативы допуска и базовые требования к прохождению КМБ.',
+      sections:[
+        { heading:'О разделе', paragraphs:['Материалы КМБ помогают новичкам быстрее освоиться в гарнизоне, изучить внутренние требования и получить стартовый набор знаний.', 'Папка используется инструкторами и кураторами при обучении рекрутов.'] },
+        { heading:'Содержимое', list:['Порядок обучения и сдачи нормативов.', 'Базовая строевая и тактическая подготовка.', 'Критерии допуска к дальнейшей службе.'] }
+      ]
+    },
+    'Техника безопасности': {
+      kicker:'Регламент ВАР',
+      lead:'Нормы безопасного обращения с оружием, техникой и служебным оснащением, а также правила поведения в гарнизоне и на тренировочных площадках.',
+      sections:[
+        { heading:'Что описано', paragraphs:['Папка фиксирует основные ограничения и правила предотвращения инцидентов при тренировках, патрулях и службе в казармах.', 'Особое внимание уделяется использованию оружия и работе в потенциально опасных зонах.'] },
+        { heading:'Темы', list:['Безопасность обращения с вооружением.', 'Правила в арсенале и на полигоне.', 'Общие меры предупреждения происшествий.'] }
+      ]
+    },
+    'Повышение и учёт': {
+      kicker:'Регламент ВАР',
+      lead:'Материалы по ведению кадрового учёта, отчётности подразделений, порядку повышений и фиксации служебных достижений бойцов.',
+      sections:[
+        { heading:'Содержимое', paragraphs:['В разделе собраны базовые правила учёта состава, оформления повышений и ведения внутренней документации подразделений.', 'Используется командирами отделений и кадровыми офицерами.'] },
+        { heading:'Основные темы', list:['Критерии повышения.', 'Учёт активности и состава.', 'Ведение отчётных таблиц и журналов.'] }
+      ]
+    },
+    'Полномочия СБ': {
+      kicker:'Служба Безопасности',
+      lead:'Описание полномочий сотрудников СБ, пределов вмешательства, оснований для проверок, задержаний и проведения внутренних расследований.',
+      sections:[
+        { heading:'Раздел охватывает', paragraphs:['Документы определяют рамки работы Службы Безопасности, её взаимодействие с командованием и порядок применения мер воздействия.', 'Также регламентируются основания для досмотров, проверок и служебных действий.'] },
+        { heading:'Базовые блоки', list:['Полномочия и ограничения сотрудников СБ.', 'Проверочные мероприятия.', 'Основания для задержаний и докладов.'] }
+      ]
+    },
+    'Процессуальные действия': {
+      kicker:'Служба Безопасности',
+      lead:'Внутренние процедуры оформления проверок, задержаний, протоколов и докладов, а также порядок работы с материалами расследований.',
+      sections:[
+        { heading:'Назначение', paragraphs:['Раздел нужен для единообразного проведения процессуальных действий и корректного оформления служебных материалов.', 'Используется СБ и уполномоченными должностными лицами при внутренней работе.'] },
+        { heading:'Внутри папки', list:['Оформление протоколов.', 'Порядок допроса и опроса.', 'Рапорты и фиксация результатов расследований.'] }
+      ]
+    },
+    'Документы 501 Легиона': {
+      kicker:'501 Легион',
+      lead:'Внутренний раздел 501-го Легиона: стандарты подразделения, организационные материалы, боевые указания и внутренняя нормативная база.',
+      sections:[
+        { heading:'О разделе', paragraphs:['Папка объединяет локальные документы конкретного подразделения и служит отдельной базой для личного состава легиона.', 'Содержимое актуализируется по мере развития внутренней структуры и задач подразделения.'] },
+        { heading:'Основные материалы', list:['Внутренние стандарты подразделения.', 'Боевые и организационные инструкции.', 'Памятки для состава легиона.'] }
+      ]
+    },
+    '91-й разведывательный корпус': {
+      kicker:'91-й корпус',
+      lead:'Специализированный раздел по материалам разведывательного корпуса: патрули, разведзадачи, доклады и порядок действий в полевых операциях.',
+      sections:[
+        { heading:'Содержимое папки', paragraphs:['Материалы ориентированы на разведывательные подразделения и описывают порядок сбора данных, маршруты патрулей и подготовку отчётности.', 'Раздел также может включать тактические памятки и регламенты для полевых задач.'] },
+        { heading:'Что внутри', list:['Патрули и разведывательные задачи.', 'Полевые доклады.', 'Поведение на разведоперациях.'] }
+      ]
+    },
+    '104th Батальон': {
+      kicker:'104th Батальон',
+      lead:'Локальный архив батальона Wolfpack: внутренние инструкции, требования подразделения, памятки и организационные документы для состава.',
+      sections:[
+        { heading:'О странице', paragraphs:['Эта папка служит точкой входа во внутреннюю документацию 104-го батальона и объединяет материалы, актуальные только для его личного состава.', 'Материалы могут обновляться в зависимости от изменений во внутренней организации подразделения.'] },
+        { heading:'Ключевые блоки', list:['Внутренние правила подразделения.', 'Инструкции и памятки.', 'Организационные материалы Wolfpack.'] }
+      ]
+    }
+  };
+
+  const pluralizeDocs = visible => `${visible} ${visible === 1 ? 'документ' : (visible >= 2 && visible <= 4 ? 'документа' : 'документов')} в папке`;
+
+  const renderDetailBody = doc => {
+    if (!detailBody) return;
+    detailBody.innerHTML = (doc.sections || []).map(section => {
+      const paragraphs = (section.paragraphs || []).map(text => `<p>${holonetEscape(text)}</p>`).join('');
+      const list = Array.isArray(section.list) && section.list.length
+        ? `<ul>${section.list.map(item => `<li>${holonetEscape(item)}</li>`).join('')}</ul>`
+        : '';
+      return `<section class="var-doc-section"><h4>${holonetEscape(section.heading || '')}</h4>${paragraphs}${list}</section>`;
+    }).join('');
+  };
+
+  const openDoc = card => {
+    if (!card || !detail || !grid) return;
+    const name = card.dataset.varTitle || card.querySelector('b')?.textContent?.trim() || 'Документ ВАР';
+    const doc = docPages[name] || {
+      kicker: card.querySelector('span')?.textContent?.trim() || folderNames[activeCategory] || 'Архив ВАР',
+      lead: card.querySelector('small')?.textContent?.trim() || 'Материал готовится к наполнению.',
+      sections:[{ heading:'Описание', paragraphs:['Эта страница подготовлена как отдельная карточка документа ВАР. Контент можно будет заменить на полноценный текст документа позже.'] }]
+    };
+
+    activeDoc = name;
+    if (detailKicker) detailKicker.textContent = doc.kicker || 'Архив ВАР';
+    if (detailTitle) detailTitle.textContent = name;
+    if (detailLead) detailLead.textContent = doc.lead || '';
+    renderDetailBody(doc);
+
+    detail.hidden = false;
+    shell.classList.add('showing-doc');
+    requestAnimationFrame(() => detail.classList.add('is-active'));
+    if (title) title.textContent = name.toUpperCase();
+    if (count) count.textContent = 'страница документа';
+  };
+
+  const closeDoc = () => {
+    activeDoc = null;
+    if (!detail) return;
+    const keepY = window.scrollY;
+    detail.classList.remove('is-active');
+    detail.hidden = true;
+    shell.classList.remove('showing-doc');
+    update(false);
+    requestAnimationFrame(() => window.scrollTo({ top: keepY, left: 0, behavior: 'instant' }));
+  };
+
+  const update = (animate = true) => {
+    const query = (search?.value || '').trim().toLowerCase();
+    let visible = 0;
+
+    if (grid && animate) {
+      grid.classList.remove('is-updating');
+      void grid.offsetWidth;
+      grid.classList.add('is-updating');
+    }
+
+    cards.forEach(card => {
+      const inCategory = card.dataset.varCategory === activeCategory;
+      const haystack = `${card.dataset.varTitle || ''} ${card.dataset.varText || ''} ${card.textContent || ''}`.toLowerCase();
+      const matched = !query || haystack.includes(query);
+      const show = inCategory && matched;
+      card.hidden = !show;
+      if (show) visible += 1;
+    });
+
+    if (title) title.textContent = folderNames[activeCategory] || 'ДОКУМЕНТАЦИЯ';
+    if (count) count.textContent = pluralizeDocs(visible);
+    if (empty) empty.hidden = visible !== 0;
+    if (grid) grid.classList.toggle('is-empty', visible === 0);
+  };
+
+  const setCategory = category => {
+    if (!category) return;
+    activeCategory = category;
+    items.forEach(x => x.classList.toggle('active', x.dataset.varCategory === category && x.classList.contains('var-sidebar-item')));
+    if (activeDoc) closeDoc(); else update();
+  };
+
+  items.forEach(item => {
+    item.addEventListener('click', () => setCategory(item.dataset.varCategory));
+  });
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => openDoc(card));
+  });
+
+  detailBack?.addEventListener('click', closeDoc);
+  search?.addEventListener('input', () => { if (activeDoc) closeDoc(); else update(); });
+  update();
+}
+
+initVarDocsExplorer();
+
+
+
+let holonetLastLoadedAt = 0;
+let holonetLoading = false;
+
+function holonetEscape(value){
+  return String(value ?? '').replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+}
+function holonetFormatTime(value){
+  if (!value) return '';
+  try {
+    return new Date(value).toLocaleDateString('ru-RU', { day:'2-digit', month:'short' }).replace('.', '');
+  } catch (_) {
+    return '';
+  }
+}
+function holonetSetStatus(text){
+  const status = document.getElementById('holonetStatus');
+  if (status) status.textContent = text || '';
+}
+function holonetRender(items){
+  const feed = document.getElementById('holonetFeed');
+  const list = document.getElementById('holonetList');
+  if (!feed || !list) return;
+
+  if (!Array.isArray(items) || !items.length) {
+    list.innerHTML = '<p class="hero-holonet-empty">Опубликованных передач пока нет.</p>';
+    feed.classList.remove('has-items');
+    holonetSetStatus('нет сигнала');
+    return;
+  }
+
+  feed.classList.add('has-items');
+  holonetSetStatus('последние публикации');
+  list.innerHTML = items.map(item => {
+    const date = holonetFormatTime(item.timestamp);
+    const author = item.author ? `<small>${holonetEscape(item.author)}</small>` : '';
+    const link = item.url ? ` href="${holonetEscape(item.url)}" target="_blank" rel="noopener"` : '';
+    return `<article class="hero-holonet-item">
+      <a${link}>
+        <div class="hero-holonet-meta"><span>${date || 'сводка'}</span>${author}</div>
+        <b>${holonetEscape(item.title || 'Передача Голонета')}</b>
+        <p>${holonetEscape(item.text || '')}</p>
+      </a>
+    </article>`;
+  }).join('');
+}
+async function loadHolonetAnnouncements(force = false){
+  const feed = document.getElementById('holonetFeed');
+  if (!feed || holonetLoading) return;
+  const now = Date.now();
+  if (!force && holonetLastLoadedAt && now - holonetLastLoadedAt < 120000) return;
+  holonetLoading = true;
+  holonetSetStatus('приём сигнала…');
+  try {
+    const data = await apiJson('/api/announcements?t=' + Date.now(), { cache:'no-store' });
+    holonetLastLoadedAt = Date.now();
+    holonetRender(Array.isArray(data?.announcements) ? data.announcements : []);
+    if (data && data.ok === false) holonetSetStatus('сигнал недоступен');
+  } catch (_) {
+    holonetRender([]);
+    holonetSetStatus('сигнал недоступен');
+  } finally {
+    holonetLoading = false;
+  }
+}
+function refreshHolonetIfActive(){
+  const homeActive = document.getElementById('view-home')?.classList.contains('active') || document.body?.dataset?.currentView === 'home';
+  if (homeActive) loadHolonetAnnouncements(false);
+}
+loadHolonetAnnouncements(true);
+setInterval(refreshHolonetIfActive, 120000);
 
 document.addEventListener('click', (event) => {
   const link = event.target.closest('.charter-index a[href^="#"], .charter-side-nav a[href^="#"]');
@@ -248,13 +606,15 @@ const authUser = document.getElementById('authUser');
 const authAvatar = document.getElementById('authAvatar');
 const authName = document.getElementById('authName');
 const logoutButton = document.getElementById('logoutButton');
+const steamAuthLink = document.querySelector('[data-steam-auth-link]');
 const editorToolbar = document.getElementById('editorToolbar');
 const editorSection = document.getElementById('editorSection');
 const editToggle = document.getElementById('editToggle');
 const editSave = document.getElementById('editSave');
 const editCancel = document.getElementById('editCancel');
 const editableDocs = [...document.querySelectorAll('.editable-doc[data-doc-key]')];
-let authState = { user: null, canEdit: false };
+let authState = { user: null, canEdit: false, permissions: { canEditAll:false, canEditDocs:false, canEditAny:false, canAccessAllTabs:false } };
+let steamAuthState = { authenticated:false, steam:null, sam:{rank:'user'}, permissions:{canEditAll:false, canEditDocs:false, canEditAny:false, canAccessAllTabs:false} };
 let authLoaded = false;
 let editingDoc = null;
 let editingBefore = '';
@@ -263,8 +623,38 @@ function docTitle(doc){
   const key = doc?.dataset?.docKey || '';
   if (key === 'rules') return 'Правила';
   if (key === 'lore') return 'Лор';
-  if (key === 'charter') return 'Устав';
+  if (key === 'charter') return 'Документация';
   return 'Документ';
+}
+
+function canEditDocument(doc){
+  if (!doc) return false;
+  const key = doc.dataset?.docKey || '';
+  const permissions = authState?.permissions || {};
+  if (permissions.canEditAll) return true;
+  if (permissions.canEditDocs && key === 'charter') return true;
+  return Boolean(authState?.canEdit && key !== 'charter');
+}
+
+function samRankLabel(){
+  return authState?.sam?.rank || steamAuthState?.sam?.rank || 'user';
+}
+
+function formatContentMeta(meta){
+  if (!meta || !meta.updatedAt) return 'Последнее изменение: пока нет';
+  let when = meta.updatedAt;
+  try {
+    when = new Date(meta.updatedAt).toLocaleString('ru-RU', { day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit' });
+  } catch (_) {}
+  const name = meta.updatedByName || meta.updatedBySteamId64 || 'неизвестно';
+  const rank = meta.updatedByRank ? ` • ${meta.updatedByRank}` : '';
+  return `Последнее изменение: ${name}${rank} • ${when}`;
+}
+
+function renderContentMeta(key, meta){
+  document.querySelectorAll(`[data-content-meta="${key}"]`).forEach(node => {
+    node.textContent = formatContentMeta(meta);
+  });
 }
 
 async function apiJson(url, options){
@@ -276,6 +666,14 @@ async function apiJson(url, options){
   return data;
 }
 
+
+function removeDocumentNumberEyebrows(){
+  document.querySelectorAll('.eyebrow').forEach((node) => {
+    const text = (node.textContent || '').trim();
+    if (/^Документ\s*\d+/i.test(text)) node.remove();
+  });
+}
+
 async function loadEditableContent(){
   for (const doc of editableDocs) {
     const key = doc.dataset.docKey;
@@ -285,6 +683,8 @@ async function loadEditableContent(){
       if (data && data.html) {
         doc.innerHTML = data.html;
         doc.dataset.originalHtml = data.html;
+        if (data.meta) renderContentMeta(key, data.meta);
+        if (key === 'charter' && typeof initVarDocsExplorer === 'function') setTimeout(initVarDocsExplorer, 0);
       }
     } catch (_) {}
   }
@@ -341,16 +741,76 @@ async function loadAuthState(){
   window.dispatchEvent(new CustomEvent('eotg:auth-updated'));
 }
 
+
+
+async function loadSteamAuthState(){
+  if (!steamAuthLink) return;
+  try {
+    const data = await apiJson('/api/steam-auth/me?t=' + Date.now(), { cache: 'no-store', credentials: 'same-origin' });
+    steamAuthState = {
+      authenticated: Boolean(data && data.authenticated && data.steam && data.steam.steamId64),
+      steam: data?.steam || null,
+      sam: data?.sam || { rank:'user' },
+      permissions: data?.permissions || { canEditAll:false, canEditDocs:false, canEditAny:false, canAccessAllTabs:false },
+      displayName: data?.displayName || ''
+    };
+
+    steamAuthLink.classList.toggle('is-authenticated', steamAuthState.authenticated);
+    steamAuthLink.classList.toggle('is-admin', Boolean(steamAuthState.permissions.canEditAll));
+    steamAuthLink.classList.toggle('is-commander', Boolean(!steamAuthState.permissions.canEditAll && steamAuthState.permissions.canEditDocs));
+
+    if (steamAuthState.authenticated) {
+      const persona = steamAuthState.displayName || steamAuthState.steam?.personaName || steamAuthState.steam?.steamId64 || 'Steam авторизация активна';
+      const rank = steamAuthState.sam?.rank || 'user';
+      steamAuthLink.setAttribute('title', `${persona} • SAM: ${rank}`);
+      steamAuthLink.setAttribute('aria-label', `Steam авторизован: ${persona}, SAM: ${rank}`);
+
+      authState.steam = steamAuthState.steam;
+      authState.sam = steamAuthState.sam;
+      authState.permissions = steamAuthState.permissions;
+      authState.canEdit = Boolean(steamAuthState.permissions.canEditAny);
+
+      if (!authState.user || authState.hintOnly) {
+        authState.user = {
+          id: steamAuthState.steam?.steamId64 || '',
+          username: persona,
+          global_name: persona,
+          avatar_url: steamAuthState.steam?.avatar || 'assets/steam-auth-icon.png'
+        };
+        authState.hintOnly = false;
+      }
+    } else {
+      steamAuthLink.setAttribute('title', 'Авторизация через Steam');
+      steamAuthLink.setAttribute('aria-label', 'Авторизация через Steam');
+      authState.steam = null;
+      authState.sam = { rank:'user' };
+      authState.permissions = { canEditAll:false, canEditDocs:false, canEditAny:false, canAccessAllTabs:false };
+      authState.canEdit = false;
+    }
+
+    renderAuthState();
+    updateEditorToolbar();
+    updateRoleGatedNavigation();
+    window.dispatchEvent(new CustomEvent('eotg:auth-updated'));
+  } catch (_) {
+    steamAuthState = { authenticated:false, steam:null, sam:{rank:'user'}, permissions:{canEditAll:false, canEditDocs:false, canEditAny:false, canAccessAllTabs:false} };
+    steamAuthLink.classList.remove('is-authenticated', 'is-admin', 'is-commander');
+    steamAuthLink.setAttribute('title', 'Авторизация через Steam');
+    steamAuthLink.setAttribute('aria-label', 'Авторизация через Steam');
+  }
+}
+
 function renderAuthState(){
   if (authState.user) {
-    authButton.hidden = true;
-    authUser.hidden = false;
-    authName.textContent = authState.user.global_name || authState.user.username || 'Пользователь';
-    authAvatar.src = authState.user.avatar_url || 'assets/favicon.png';
+    if (authButton) authButton.hidden = true;
+    if (authUser) authUser.hidden = false;
+    if (authName) authName.textContent = (authState.user.global_name || authState.user.username || 'Пользователь') + (authState.sam?.rank && authState.sam.rank !== 'user' ? ' • ' + authState.sam.rank : '');
+    if (authAvatar) authAvatar.src = authState.user.avatar_url || 'assets/favicon.png';
   } else {
-    authButton.hidden = false;
-    authUser.hidden = true;
+    if (authButton) authButton.hidden = false;
+    if (authUser) authUser.hidden = true;
   }
+  updateRoleGatedNavigation();
 }
 
 function activeEditableDoc(){
@@ -361,7 +821,7 @@ function activeEditableDoc(){
 
 function updateEditorToolbar(){
   const doc = activeEditableDoc();
-  const show = Boolean(authState.canEdit && doc);
+  const show = Boolean(canEditDocument(doc));
   if (!editorToolbar) return;
   editorToolbar.hidden = !show;
   if (!show) return;
@@ -382,7 +842,7 @@ function stopEditing(reset){
 
 function startEditing(){
   const doc = activeEditableDoc();
-  if (!doc || !authState.canEdit) return;
+  if (!doc || !canEditDocument(doc)) return;
   stopEditing(false);
   editingDoc = doc;
   editingBefore = doc.innerHTML;
@@ -402,14 +862,16 @@ async function saveEditing(){
   const after = doc.innerHTML;
   editSave.disabled = true;
   try {
-    await apiJson('/api/content', {
+    const result = await apiJson('/api/content', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ key, before, after })
     });
     doc.dataset.originalHtml = after;
+    if (result && result.meta) renderContentMeta(key, result.meta);
     stopEditing(false);
-    alert('Изменения сохранены в GitHub. Vercel автоматически обновит сайт после redeploy. Лог отправлен в Discord.');
+    if (key === 'charter' && typeof initVarDocsExplorer === 'function') setTimeout(initVarDocsExplorer, 0);
+    alert('Изменения сохранены. Права проверены через Steam + SAM MySQL. Лог отправлен в Discord.');
   } catch (err) {
     alert('Не удалось сохранить изменения: ' + err.message);
   } finally {
@@ -441,6 +903,7 @@ let commandCenterCache = { players: [], jobs: [], recentCommands: [] };
 let commandCenterLoading = false;
 
 function commandCenterHasAccess(){
+  if (authState?.permissions?.canAccessAllTabs) return true;
   const roles = Array.isArray(authState?.roles) ? authState.roles.map(String) : [];
   return roles.includes(commandCenterRoleId);
 }
@@ -581,9 +1044,9 @@ async function commandCenterRefreshData(showLoading = true){
     commandCenterSetGate('Проверяем Discord-авторизацию и роли...', 'Проверка доступа...', false);
     return;
   }
-  if (!authState.user || authState.hintOnly) {
+  if ((!authState.user || authState.hintOnly) && !authState?.permissions?.canAccessAllTabs) {
     commandCenterLockView();
-    commandCenterSetGate('Командный центр доступен только игрокам с ролью ' + commandCenterRoleMention + '.', 'Авторизуйтесь через Discord, чтобы подтвердить роль.', true);
+    commandCenterSetGate('Командный центр доступен администраторам SAM или игрокам с ролью ' + commandCenterRoleMention + '.', 'Авторизуйтесь через Steam или Discord, чтобы подтвердить доступ.', true);
     return;
   }
   if (!commandCenterHasAccess()) {
@@ -632,99 +1095,36 @@ const originalShowViewForEditor = showView;
 showView = function(id, push = true, sound = true){
   stopEditing(false);
   originalShowViewForEditor(id, push, sound);
-  setTimeout(() => { updateEditorToolbar(); updateCharterSideNav(); refreshHolonetIfActive(); commandCenterRefreshIfActive(); }, 470);
+  setTimeout(() => { updateEditorToolbar(); updateCharterSideNav(); updateRoleGatedNavigation(); refreshHolonetIfActive(); commandCenterRefreshIfActive(); }, 470);
 };
 
-loadEditableContent().then(loadAuthState);
+loadEditableContent().then(async () => { removeDocumentNumberEyebrows(); await loadAuthState(); await loadSteamAuthState(); updateEditorToolbar(); updateRoleGatedNavigation(); });
+
 
 const canvas = document.getElementById('stars');
-const ctx = canvas.getContext('2d');
-const fxCanvas = document.getElementById('battleFx');
-const fx = fxCanvas.getContext('2d');
-let w, h, stars, sabers, duelBursts;
-const saberColors = [
-  'rgba(72,170,255,',
-  'rgba(125,211,252,',
-  'rgba(176,226,255,',
-  'rgba(38,146,232,',
-  'rgba(135,206,235,'
-];
+const ctx = canvas?.getContext('2d');
+let w, h, stars;
 
 function resize(){
+  if (!canvas || !ctx) return;
   const ratio = devicePixelRatio || 1;
-  w = canvas.width = fxCanvas.width = innerWidth * ratio;
-  h = canvas.height = fxCanvas.height = innerHeight * ratio;
-  canvas.style.width = fxCanvas.style.width = innerWidth + 'px';
-  canvas.style.height = fxCanvas.style.height = innerHeight + 'px';
-  const count = Math.min(360, Math.floor(innerWidth * innerHeight / 4200));
+  w = canvas.width = innerWidth * ratio;
+  h = canvas.height = innerHeight * ratio;
+  canvas.style.width = innerWidth + 'px';
+  canvas.style.height = innerHeight + 'px';
+  const count = Math.min(420, Math.floor(innerWidth * innerHeight / 3600));
   stars = Array.from({length:count}, () => ({
     x: Math.random()*w,
     y: Math.random()*h,
-    r: (Math.random()*1.45 + .2) * ratio,
+    r: (Math.random()*1.35 + .18) * ratio,
     a: Math.random()*0.65 + 0.15,
     s: Math.random()*0.018 + 0.004,
-    vx: (Math.random()*0.055 + 0.01) * ratio
+    vx: (Math.random()*0.045 + 0.008) * ratio
   }));
-  sabers = [];
-  duelBursts = [];
-}
-
-function spawnSaber(){
-  const ratio = devicePixelRatio || 1;
-  const side = Math.random() > .5 ? -1 : 1;
-  const y = (Math.random() * 0.72 + 0.12) * h;
-  const len = (Math.random()*170 + 130) * ratio;
-  const speed = (Math.random()*6 + 7) * ratio * side;
-  const angle = (Math.random()*.22 - .11);
-  sabers.push({
-    x: side > 0 ? -len : w + len,
-    y, len, speed, angle,
-    life: 1,
-    width: (Math.random()*3 + 3) * ratio,
-    color: saberColors[Math.floor(Math.random()*saberColors.length)]
-  });
-}
-
-function spawnDuel(){
-  const ratio = devicePixelRatio || 1;
-  duelBursts.push({
-    x: (Math.random()*.7 + .15) * w,
-    y: (Math.random()*.45 + .28) * h,
-    t: 0,
-    life: Math.random()*90 + 95,
-    s: (Math.random()*0.5 + 0.75) * ratio,
-    c1: saberColors[Math.floor(Math.random()*saberColors.length)],
-    c2: saberColors[Math.floor(Math.random()*saberColors.length)]
-  });
-}
-
-function drawHumanSilhouette(x, y, s, alpha){
-  fx.save();
-  fx.globalAlpha = alpha;
-  fx.fillStyle = 'rgba(7,19,32,.52)';
-  fx.beginPath(); fx.arc(x, y - 18*s, 6*s, 0, Math.PI*2); fx.fill();
-  fx.fillRect(x - 5*s, y - 12*s, 10*s, 28*s);
-  fx.fillRect(x - 13*s, y + 13*s, 8*s, 22*s);
-  fx.fillRect(x + 5*s, y + 13*s, 8*s, 22*s);
-  fx.restore();
-}
-
-function drawSaberLine(x1,y1,x2,y2,width,color,alpha){
-  fx.save();
-  fx.lineCap = 'round';
-  fx.strokeStyle = color + (0.28*alpha) + ')';
-  fx.lineWidth = width * 4.4;
-  fx.beginPath(); fx.moveTo(x1,y1); fx.lineTo(x2,y2); fx.stroke();
-  fx.strokeStyle = color + (0.86*alpha) + ')';
-  fx.lineWidth = width * 2.1;
-  fx.beginPath(); fx.moveTo(x1,y1); fx.lineTo(x2,y2); fx.stroke();
-  fx.strokeStyle = 'rgba(255,240,244,' + (0.92*alpha) + ')';
-  fx.lineWidth = Math.max(1, width * .75);
-  fx.beginPath(); fx.moveTo(x1,y1); fx.lineTo(x2,y2); fx.stroke();
-  fx.restore();
 }
 
 function draw(){
+  if (!canvas || !ctx) return;
   ctx.clearRect(0,0,w,h);
   for(const st of stars){
     st.a += st.s;
@@ -736,47 +1136,13 @@ function draw(){
     ctx.arc(st.x, st.y, st.r, 0, Math.PI*2);
     ctx.fill();
   }
-
-  fx.clearRect(0,0,w,h);
-  if(Math.random() < 0.0018 && sabers.length < 1) spawnSaber();
-  if(Math.random() < 0.00055 && duelBursts.length < 1) spawnDuel();
-
-  for(let i=sabers.length-1;i>=0;i--){
-    const s = sabers[i];
-    s.x += s.speed;
-    s.life -= .0068;
-    const dx = Math.cos(s.angle)*s.len;
-    const dy = Math.sin(s.angle)*s.len;
-    const alpha = Math.max(0, Math.min(1, s.life));
-    drawSaberLine(s.x, s.y, s.x + dx, s.y + dy, s.width, s.color, alpha);
-    if(s.x < -s.len*2 || s.x > w+s.len*2 || s.life <= 0) sabers.splice(i,1);
-  }
-
-  for(let i=duelBursts.length-1;i>=0;i--){
-    const d = duelBursts[i];
-    d.t++;
-    const p = d.t / d.life;
-    const alpha = Math.sin(Math.PI * p) * .28;
-    const swing = Math.sin(d.t*.075) * 32 * d.s;
-    drawHumanSilhouette(d.x - 46*d.s, d.y + 32*d.s, d.s, alpha*.75);
-    drawHumanSilhouette(d.x + 46*d.s, d.y + 32*d.s, d.s, alpha*.75);
-    drawSaberLine(d.x - 48*d.s, d.y + 2*d.s, d.x + 38*d.s, d.y - 36*d.s + swing, 3.2*d.s, d.c1, alpha);
-    drawSaberLine(d.x + 48*d.s, d.y + 2*d.s, d.x - 40*d.s, d.y - 30*d.s - swing, 3.2*d.s, d.c2, alpha);
-    if(d.t % 48 === 0){
-      fx.save();
-      fx.fillStyle = `rgba(190,230,255,${alpha*.25})`;
-      fx.beginPath(); fx.arc(d.x, d.y - 18*d.s, 28*d.s, 0, Math.PI*2); fx.fill();
-      fx.restore();
-    }
-    if(d.t > d.life) duelBursts.splice(i,1);
-  }
   requestAnimationFrame(draw);
 }
-resize(); draw();
-addEventListener('resize', resize);
-
-
-
+if (canvas && ctx) {
+  resize();
+  draw();
+  addEventListener('resize', resize);
+}
 
 
 
@@ -819,6 +1185,16 @@ const galaxyLoadAudioUrl = 'assets/sounds/galaxy-load.mp3';
 const galaxyAccessRoles = ['1493983291152400444', '1509282764695011580', '1305567485218521169'];
 const galaxyAccessRoleMentions = '<@&1493983291152400444>, <@&1509282764695011580>, <@&1305567485218521169>';
 const galaxyMapAdminRoles = ['1305567485218521169'];
+
+function updateRoleGatedNavigation(){
+  const roles = Array.isArray(authState?.roles) ? authState.roles.map(String) : [];
+  const allTabs = Boolean(authState?.permissions?.canAccessAllTabs);
+  const canGalaxy = allTabs || roles.some(role => galaxyAccessRoles.includes(role));
+  const canCommandCenter = allTabs || roles.includes(commandCenterRoleId);
+  document.querySelectorAll('[data-role-gated="galaxy"]').forEach(el => { el.hidden = !canGalaxy; });
+  document.querySelectorAll('[data-role-gated="command-center"]').forEach(el => { el.hidden = !canCommandCenter; });
+}
+
 let galaxyLoadingStarted = false;
 let galaxyEventBookings = [];
 let galaxyEventBookingsLoading = false;
@@ -829,10 +1205,12 @@ let galaxyPlanetDrag = null;
 let galaxySuppressPlanetClick = false;
 
 function galaxyHasRoleAccess(){
+  if (authState?.permissions?.canAccessAllTabs) return true;
   const roles = Array.isArray(authState?.roles) ? authState.roles.map(String) : [];
   return galaxyAccessRoles.some(role => roles.includes(role));
 }
 function galaxyCanMapAdmin(){
+  if (authState?.permissions?.canEditAll) return true;
   const roles = Array.isArray(authState?.roles) ? authState.roles.map(String) : [];
   return galaxyMapAdminRoles.some(role => roles.includes(role));
 }
@@ -1528,6 +1906,8 @@ galaxyMap?.addEventListener('pointermove', e => {
 });
 ['pointerup','pointercancel','pointerleave'].forEach(ev => galaxyMap?.addEventListener(ev, e => { stopGalaxyPlanetDrag(); galaxyPointerDown = false; galaxyMapShell?.classList.remove('dragging'); }));
 ['pointerup','pointercancel','blur'].forEach(ev => window.addEventListener(ev, () => { stopGalaxyPlanetDrag(); galaxyPointerDown = false; galaxyMapShell?.classList.remove('dragging'); }, {passive:true}));
+window.addEventListener('eotg:auth-updated', updateRoleGatedNavigation);
+window.addEventListener('DOMContentLoaded', updateRoleGatedNavigation);
 window.addEventListener('DOMContentLoaded', checkGalaxyAccess);
 window.addEventListener('hashchange', () => { if (location.hash === '#galaxy') setTimeout(checkGalaxyAccess, 120); });
 

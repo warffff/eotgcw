@@ -1,4 +1,5 @@
 const { getFreshSession, sendJson } = require('./_utils');
+const { getSamAccess } = require('./_samAuth');
 
 const CHANNEL_ID = process.env.DISCORD_MAP_LOG_CHANNEL_ID || '1512549066058236014';
 const MAP_LOG_MENTION_ROLE_IDS = ['1493983291152400444', '1305567485218521169'];
@@ -20,7 +21,11 @@ function shortFaction(value){
   if (value === 'neutral') return 'нейтралитет';
   return 'неизвестно';
 }
-function actorName(session){
+function actorName(session, samAccess){
+  if (samAccess && samAccess.permissions && samAccess.permissions.canEditAll) {
+    const name = samAccess.displayName || samAccess.steam?.steamId64 || 'Steam admin';
+    return `${name} (SAM: ${samAccess.sam?.rank || 'admin'})`;
+  }
   const user = session && session.user ? session.user : null;
   if (!user) return 'Неизвестный оператор';
   const name = user.global_name || user.username || user.id || 'Пользователь Discord';
@@ -167,15 +172,20 @@ module.exports = async (req, res) => {
   }
 
   let fresh = { session:null, canEdit:false };
+  let samAccess = null;
+  try {
+    samAccess = await getSamAccess(req);
+  } catch (_) {}
   try {
     fresh = await getFreshSession(req, res);
   } catch (_) {}
 
-  if ((event === 'fleet_battle_result' || event === 'operation_final_result') && !fresh.canEdit) {
+  const canAdminLog = Boolean(fresh.canEdit || samAccess?.permissions?.canEditAll);
+  if ((event === 'fleet_battle_result' || event === 'operation_final_result') && !canAdminLog) {
     return sendJson(res, 403, { ok:false, error:'Admin role required for this log event' });
   }
 
-  const embed = buildEmbed(event, data, actorName(fresh.session));
+  const embed = buildEmbed(event, data, actorName(fresh.session, samAccess));
   const discordRes = await fetch(`https://discord.com/api/v10/channels/${encodeURIComponent(CHANNEL_ID)}/messages`, {
     method:'POST',
     headers:{

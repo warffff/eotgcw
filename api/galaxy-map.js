@@ -1,6 +1,7 @@
 const fs = require('fs/promises');
 const path = require('path');
 const { getFreshSession, clearSessionCookie, sendJson } = require('./_utils');
+const { getSamAccess } = require('./_samAuth');
 
 const MAP_ADMIN_ROLES = ['1305567485218521169'];
 const MAP_PATH = process.env.GITHUB_GALAXY_MAP_PATH || 'data/galaxy-map.json';
@@ -103,19 +104,27 @@ module.exports = async (req, res) => {
       return sendJson(res, 200, { ok:true, planets, updatedAt:map?.updatedAt || '', updatedBy:map?.updatedBy || '' });
     }
     if (req.method !== 'POST') return sendJson(res, 405, { ok:false, error:'Method not allowed' });
-    const access = await getFreshSession(req, res);
-    if (!access.session) return sendJson(res, 403, { ok:false, error:'Нужно авторизоваться через Discord' });
-    if (!access.fresh) return sendJson(res, 403, { ok:false, error:'Не удалось актуально проверить роли Discord' });
-    if (!hasMapAdminRole(access.roles || [])) {
-      clearSessionCookie(res);
-      return sendJson(res, 403, { ok:false, error:'Недостаточно прав: нужна роль ивентолога для редактирования карты' });
+
+    const samAccess = await getSamAccess(req);
+    let access = null;
+    let editor = samAccess.permissions?.canEditAll ? (samAccess.displayName || samAccess.steam?.steamId64 || 'Steam admin') : '';
+
+    if (!samAccess.permissions?.canEditAll) {
+      access = await getFreshSession(req, res);
+      if (!access.session) return sendJson(res, 403, { ok:false, error:'Нужно авторизоваться через Steam с SAM rank admin/superadmin или через Discord' });
+      if (!access.fresh) return sendJson(res, 403, { ok:false, error:'Не удалось актуально проверить роли Discord' });
+      if (!hasMapAdminRole(access.roles || [])) {
+        clearSessionCookie(res);
+        return sendJson(res, 403, { ok:false, error:'Недостаточно прав: нужна роль ивентолога или SAM rank admin/superadmin для редактирования карты' });
+      }
+      editor = access.session.user?.global_name || access.session.user?.username || access.session.user?.id || 'unknown';
     }
+
     let raw = '';
     for await (const chunk of req) raw += chunk;
     const body = JSON.parse(raw || '{}');
     const planets = cleanPlanets(body.planets || []);
     if (!planets.length) return sendJson(res, 400, { ok:false, error:'Карта не может быть пустой' });
-    const editor = access.session.user?.global_name || access.session.user?.username || access.session.user?.id || 'unknown';
     const result = githubConfigured() ? await writeGithubMap(planets, editor) : await writeLocalMap(planets, editor);
     return sendJson(res, 200, { ok:true, savedTo:githubConfigured() ? 'github' : 'local', ...result });
   } catch (err) {
