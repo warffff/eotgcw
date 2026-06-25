@@ -1,9 +1,8 @@
 const fs = require('fs/promises');
 const path = require('path');
-const { getFreshSession, clearSessionCookie, sendJson } = require('./_utils');
+const { sendJson } = require('./_utils');
 const { getSamAccess } = require('./_samAuth');
 
-const MAP_ADMIN_ROLES = ['1305567485218521169'];
 const MAP_PATH = process.env.GITHUB_GALAXY_MAP_PATH || 'data/galaxy-map.json';
 
 function githubConfigured(){ return Boolean(process.env.GITHUB_TOKEN && process.env.GITHUB_OWNER && process.env.GITHUB_REPO); }
@@ -20,7 +19,6 @@ function ghBaseUrl(filePath){
   const repo = process.env.GITHUB_REPO;
   return `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(filePath).replace(/%2F/g,'/')}`;
 }
-function hasMapAdminRole(roles=[]){ return roles.map(String).some(r => MAP_ADMIN_ROLES.includes(r)); }
 function cleanPlanet(p){
   const name = String(p?.name || '').trim().slice(0, 80);
   if (!name) return null;
@@ -106,19 +104,10 @@ module.exports = async (req, res) => {
     if (req.method !== 'POST') return sendJson(res, 405, { ok:false, error:'Method not allowed' });
 
     const samAccess = await getSamAccess(req);
-    let access = null;
-    let editor = samAccess.permissions?.canEditAll ? (samAccess.displayName || samAccess.steam?.steamId64 || 'Steam admin') : '';
-
     if (!samAccess.permissions?.canEditAll) {
-      access = await getFreshSession(req, res);
-      if (!access.session) return sendJson(res, 403, { ok:false, error:'Нужно авторизоваться через Steam с SAM rank admin/superadmin или через Discord' });
-      if (!access.fresh) return sendJson(res, 403, { ok:false, error:'Не удалось актуально проверить роли Discord' });
-      if (!hasMapAdminRole(access.roles || [])) {
-        clearSessionCookie(res);
-        return sendJson(res, 403, { ok:false, error:'Недостаточно прав: нужна роль ивентолога или SAM rank admin/superadmin для редактирования карты' });
-      }
-      editor = access.session.user?.global_name || access.session.user?.username || access.session.user?.id || 'unknown';
+      return sendJson(res, 403, { ok:false, error:'Недостаточно прав: нужен Steam-аккаунт с SAM rank admin/superadmin для редактирования карты.' });
     }
+    const editor = samAccess.displayName || samAccess.steam?.steamId64 || 'Steam admin';
 
     let raw = '';
     for await (const chunk of req) raw += chunk;

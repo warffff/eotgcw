@@ -1,27 +1,15 @@
-const { getFreshSession, sendJson } = require('./_utils');
+const { sendJson } = require('./_utils');
 const { getSamAccess } = require('./_samAuth');
 const { query, table } = require('./_commandCenterDb');
 
-const COMMAND_CENTER_ROLE_ID = String(process.env.COMMAND_CENTER_ROLE_ID || '1493983291152400444');
 const ONLINE_TTL_SECONDS = Number(process.env.COMMAND_CENTER_ONLINE_TTL || 20);
-
-function hasCommandCenterRole(roles = []) {
-  return roles.map(String).includes(COMMAND_CENTER_ROLE_ID);
-}
 
 async function requireAccess(req, res) {
   const samAccess = await getSamAccess(req);
   if (samAccess.permissions && samAccess.permissions.canAccessAllTabs) {
     return { ok:true, access:{ sam:samAccess, session:{ user:{ id:samAccess.steam?.steamId64 || '', username:samAccess.displayName, global_name:samAccess.displayName } } } };
   }
-
-  const access = await getFreshSession(req, res);
-  if (!access.session) return { ok:false, status:403, error:'Нужно авторизоваться через Steam с rank admin/superadmin или через Discord.' };
-  if (!access.fresh) return { ok:false, status:403, error:'Не удалось актуально проверить роли Discord.' };
-  if (!hasCommandCenterRole(access.roles || [])) {
-    return { ok:false, status:403, error:`Недостаточно прав: нужна Discord-роль <@&${COMMAND_CENTER_ROLE_ID}> или SAM rank admin/superadmin.` };
-  }
-  return { ok:true, access };
+  return { ok:false, status:403, error:'Командный центр доступен только Steam-аккаунтам с SAM rank admin/superadmin.' };
 }
 
 async function readBody(req) {
@@ -78,7 +66,7 @@ function publicPlayer(row) {
 module.exports = async (req, res) => {
   try {
     const guard = await requireAccess(req, res);
-    if (!guard.ok) return sendJson(res, guard.status, { ok:false, error:guard.error, roleId:COMMAND_CENTER_ROLE_ID });
+    if (!guard.ok) return sendJson(res, guard.status, { ok:false, error:guard.error });
 
     const now = Math.floor(Date.now() / 1000);
 
@@ -91,7 +79,6 @@ module.exports = async (req, res) => {
 
       return sendJson(res, 200, {
         ok:true,
-        roleId:COMMAND_CENTER_ROLE_ID,
         onlineTtl:ONLINE_TTL_SECONDS,
         players:players.map(publicPlayer),
         jobs:jobs.map(publicJob),
