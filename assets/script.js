@@ -2397,3 +2397,71 @@ window.addEventListener('hashchange', () => { if (location.hash === '#galaxy') s
   window.addEventListener('eotg:auth-updated',()=>{ if(location.hash==='#galaxy') { checkGalaxyAccess(); galaxyUpdateMapAdminVisibility(); if(galaxyIsUnlocked()) { renderGalaxyPanel(galaxySelected); renderGalaxyMapAdmin(); renderShips(); loadGalaxyMapLayout(false); } } });
 })();
 
+
+
+let eotgWeatherAlertLastId = 0;
+let eotgWeatherAlertBootstrapped = false;
+
+function eotgWeatherAlertEscape(value){
+  return String(value ?? '').replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]));
+}
+
+function eotgWeatherAlertContainer(){
+  let wrap = document.getElementById('eotgWeatherAlerts');
+  if (wrap) return wrap;
+  wrap = document.createElement('div');
+  wrap.id = 'eotgWeatherAlerts';
+  wrap.className = 'eotg-weather-alerts';
+  wrap.setAttribute('aria-live', 'polite');
+  wrap.setAttribute('aria-label', 'Оповещения погодных датчиков базы');
+  document.body.appendChild(wrap);
+  return wrap;
+}
+
+function eotgShowWeatherAlert(event){
+  const wrap = eotgWeatherAlertContainer();
+  const item = document.createElement('article');
+  const severity = String(event?.severity || 'low').toLowerCase();
+  item.className = 'eotg-weather-alert ' + (severity === 'high' ? 'high' : severity === 'medium' ? 'medium' : 'low');
+  const name = event?.weatherName || 'Погодная активность';
+  const message = event?.message || 'Датчики базы зафиксировали сейсмические изменения в погоде.';
+  item.innerHTML = `<span>СЕНСОРЫ БАЗЫ</span><b>${eotgWeatherAlertEscape(name)}</b><p>${eotgWeatherAlertEscape(message)}</p>`;
+  wrap.prepend(item);
+  requestAnimationFrame(() => item.classList.add('is-visible'));
+  setTimeout(() => {
+    item.classList.remove('is-visible');
+    setTimeout(() => item.remove(), 520);
+  }, severity === 'high' ? 14000 : 10500);
+  while (wrap.children.length > 4) wrap.lastElementChild?.remove();
+}
+
+async function eotgPollWeatherAlerts(){
+  try {
+    const data = await apiJson('/api/weather-alerts?since=' + encodeURIComponent(eotgWeatherAlertLastId || 0) + '&limit=10&t=' + Date.now(), { cache:'no-store' });
+    const events = Array.isArray(data?.events) ? data.events.slice().sort((a, b) => Number(a.id || 0) - Number(b.id || 0)) : [];
+    if (!events.length) {
+      eotgWeatherAlertBootstrapped = true;
+      return;
+    }
+
+    const newestId = events.reduce((max, item) => Math.max(max, Number(item.id || 0)), eotgWeatherAlertLastId || 0);
+    const now = Date.now();
+
+    for (const item of events) {
+      const id = Number(item.id || 0);
+      if (id <= (eotgWeatherAlertLastId || 0)) continue;
+      const age = item.occurredAt ? now - new Date(item.occurredAt).getTime() : 0;
+      if (eotgWeatherAlertBootstrapped || age < 120000) eotgShowWeatherAlert(item);
+    }
+
+    eotgWeatherAlertLastId = newestId;
+    eotgWeatherAlertBootstrapped = true;
+  } catch (_) {
+    eotgWeatherAlertBootstrapped = true;
+  }
+}
+
+setTimeout(() => {
+  eotgPollWeatherAlerts();
+  setInterval(eotgPollWeatherAlerts, 7000);
+}, 2200);
