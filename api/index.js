@@ -1,7 +1,3 @@
-// Vercel Hobby friendly API router.
-// Keeps only one Serverless Function in /api.
-// Vercel rewrites /api/* to /api?path=* in vercel.json.
-
 const handlers = {
   'auth/callback': () => require('../server/api-handlers/auth/callback'),
   'auth/login': () => require('../server/api-handlers/auth/login'),
@@ -19,17 +15,18 @@ const handlers = {
   'event-bookings': () => require('../server/api-handlers/event-bookings'),
   'galaxy-log': () => require('../server/api-handlers/galaxy-log'),
   'galaxy-map': () => require('../server/api-handlers/galaxy-map'),
-  'announcements': () => require('../server/api-handlers/announcements')
+  'announcements': () => require('../server/api-handlers/announcements'),
+  'weather-alerts': () => require('../server/api-handlers/weather-alerts')
 };
 
 function getRoute(req){
   const host = req.headers.host || 'localhost';
   const url = new URL(req.url || '/', `https://${host}`);
 
-  // Main path used by Vercel rewrite: /api/steam-auth/login -> /api?path=steam-auth/login
+
   let route = String(url.searchParams.get('path') || '').trim();
 
-  // Fallback for local dev or direct /api/index/route calls.
+
   if (!route) {
     route = url.pathname
       .replace(/^\/api(?:\/index)?\/?/i, '')
