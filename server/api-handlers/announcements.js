@@ -4,29 +4,73 @@ const ANNOUNCEMENT_CHANNEL_ID = process.env.ANNOUNCEMENT_CHANNEL_ID || '14864690
 const DISCORD_API = 'https://discord.com/api/v10';
 const CROSSPOSTED_FLAG = 1 << 0;
 const CACHE_TTL_MS = 60 * 1000;
+const ROLE_CACHE_TTL_MS = 5 * 60 * 1000;
 
 let cache = { at: 0, data: null };
+let roleCache = { at: 0, guildId: '', roles: new Map() };
 
-function stripMarkdown(value){
+function escapeMentionName(value){
   return String(value || '')
+    .replace(/[@`*_~|<>]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+async function loadRoleMap(token, guildId){
+  const safeGuildId = String(guildId || GUILD_ID || '').trim();
+  if (!token || !safeGuildId) return new Map();
+
+  const now = Date.now();
+  if (roleCache.guildId === safeGuildId && roleCache.roles && now - roleCache.at < ROLE_CACHE_TTL_MS) {
+    return roleCache.roles;
+  }
+
+  try {
+    const response = await fetch(`${DISCORD_API}/guilds/${encodeURIComponent(safeGuildId)}/roles`, {
+      headers:{ Authorization:`Bot ${token}` }
+    });
+
+    if (!response.ok) return roleCache.roles || new Map();
+
+    const roles = await response.json();
+    const map = new Map();
+    for (const role of Array.isArray(roles) ? roles : []) {
+      const id = String(role?.id || '').trim();
+      const name = escapeMentionName(role?.name || '');
+      if (id && name && name !== '@everyone') map.set(id, name);
+    }
+
+    roleCache = { at: now, guildId: safeGuildId, roles: map };
+    return map;
+  } catch {
+    return roleCache.roles || new Map();
+  }
+}
+
+function formatDiscordText(value, roleMap = new Map()){
+  return String(value || '')
+    .replace(/<@&(\d+)>/g, (_, id) => {
+      const name = roleMap.get(String(id));
+      return name ? `@${name}` : '@роль';
+    })
+    .replace(/<@!?(\d+)>/g, '@пользователь')
+    .replace(/<#(\d+)>/g, '#канал')
+    .replace(/<a?:(\w+):(\d+)>/g, ':$1:')
     .replace(/```[\s\S]*?```/g, ' ')
     .replace(/`([^`]+)`/g, '$1')
     .replace(/^#{1,6}\s*/gm, '')
     .replace(/[*_~>|]/g, '')
-    .replace(/<@&?(\d+)>/g, '')
-    .replace(/<#(\d+)>/g, '')
-    .replace(/<a?:\w+:(\d+)>/g, '')
     .replace(/\s+/g, ' ')
     .trim();
 }
-function truncate(value, max){
-  const text = stripMarkdown(value);
+function truncate(value, max, roleMap){
+  const text = formatDiscordText(value, roleMap);
   return text.length > max ? text.slice(0, Math.max(0, max - 1)).trimEnd() + '…' : text;
 }
 function firstNonEmptyLine(text){
   return String(text || '').split(/\r?\n/).map(s => s.trim()).find(Boolean) || '';
 }
-function normalizeMessage(message){
+function normalizeMessage(message, roleMap){
   const embeds = Array.isArray(message.embeds) ? message.embeds : [];
   const firstEmbed = embeds[0] || {};
   const content = String(message.content || '').trim();
@@ -48,9 +92,9 @@ function normalizeMessage(message){
 
   return {
     id,
-    title: truncate(rawTitle, 74),
-    text: truncate(rawBody, 190),
-    author: truncate(message.author?.global_name || message.author?.username || '', 42),
+    title: truncate(rawTitle, 74, roleMap),
+    text: truncate(rawBody, 190, roleMap),
+    author: truncate(message.author?.global_name || message.author?.username || '', 42, roleMap),
     timestamp,
     url: guildId && channelId && id ? `https://discord.com/channels/${guildId}/${channelId}/${id}` : '',
     isCrossposted: Boolean(Number(message.flags || 0) & CROSSPOSTED_FLAG)
@@ -77,9 +121,13 @@ module.exports = async (req, res) => {
     }
 
     const messages = await response.json();
-    const announcements = (Array.isArray(messages) ? messages : [])
+    const safeMessages = Array.isArray(messages) ? messages : [];
+    const guildId = safeMessages.find(message => message?.guild_id)?.guild_id || GUILD_ID;
+    const roleMap = await loadRoleMap(token, guildId);
+
+    const announcements = safeMessages
       .filter(message => Boolean(Number(message.flags || 0) & CROSSPOSTED_FLAG))
-      .map(normalizeMessage)
+      .map(message => normalizeMessage(message, roleMap))
       .filter(item => item.title || item.text)
       .slice(0, 2);
 
